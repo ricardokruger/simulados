@@ -1,0 +1,2281 @@
+{
+  "id": "matematica-6-ano",
+  "version": 1,
+  "title": "Matemática",
+  "topics": [
+    "Operações com números naturais",
+    "Expressões numéricas",
+    "Frações e porcentagens",
+    "Operações com números racionais",
+    "Medidas de ângulos",
+    "Unidades de comprimento"
+  ],
+  "questions": [
+    {
+      "id": "mat-1-01",
+      "topic": 0,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Uma biblioteca recebeu 145 livros na segunda-feira e 87 na terça. Quantos livros recebeu ao todo?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "232"
+            },
+            {
+              "id": "b",
+              "label": "222"
+            },
+            {
+              "id": "c",
+              "label": "231"
+            },
+            {
+              "id": "d",
+              "label": "242"
+            },
+            {
+              "id": "e",
+              "label": "58"
+            }
+          ],
+          "why": "145 + 87 = 232."
+        }
+      ]
+    },
+    {
+      "id": "mat-1-02",
+      "topic": 0,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Há 144 lápis em 8 caixas com a mesma quantidade. Quantos lápis há em cada caixa?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "18"
+            },
+            {
+              "id": "b",
+              "label": "16"
+            },
+            {
+              "id": "c",
+              "label": "17"
+            },
+            {
+              "id": "d",
+              "label": "19"
+            },
+            {
+              "id": "e",
+              "label": "24"
+            }
+          ],
+          "why": "Divida 144 em 8 partes iguais: 144 ÷ 8 = 18."
+        }
+      ]
+    },
+    {
+      "id": "mat-1-03",
+      "topic": 0,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Uma escola reservou 6 ônibus com 42 lugares cada. Se 237 estudantes viajarão, quantos lugares ficarão livres?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "15"
+            },
+            {
+              "id": "b",
+              "label": "12"
+            },
+            {
+              "id": "c",
+              "label": "9"
+            },
+            {
+              "id": "d",
+              "label": "21"
+            },
+            {
+              "id": "e",
+              "label": "25"
+            }
+          ],
+          "why": "6 × 42 = 252 lugares. Então 252 − 237 = 15."
+        }
+      ]
+    },
+    {
+      "id": "mat-1-04",
+      "topic": 0,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Quantos cadernos restaram para a próxima turma?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "16"
+            },
+            {
+              "id": "b",
+              "label": "12"
+            },
+            {
+              "id": "c",
+              "label": "14"
+            },
+            {
+              "id": "d",
+              "label": "18"
+            },
+            {
+              "id": "e",
+              "label": "20"
+            }
+          ],
+          "why": "Chegaram 9 × 12 = 108 cadernos. Foram usados 4 × 23 = 92. Restaram 108 − 92 = 16."
+        }
+      ],
+      "passage": "Para uma oficina, chegaram 9 pacotes com 12 cadernos em cada pacote. Quatro turmas usaram 23 cadernos cada. Os cadernos restantes ficaram para a próxima turma."
+    },
+    {
+      "id": "mat-1-05",
+      "topic": 0,
+      "difficulty": "medium",
+      "type": "boolean",
+      "prompt": "Julgue as afirmações sobre a feira.",
+      "items": [
+        {
+          "id": "1",
+          "label": "A banca começou com 96 frutas.",
+          "answer": "V",
+          "why": "8 × 12 = 96."
+        },
+        {
+          "id": "2",
+          "label": "Depois da venda, sobraram 68 frutas.",
+          "answer": "F",
+          "why": "96 − 38 = 58."
+        },
+        {
+          "id": "3",
+          "label": "Cada caixa tinha 12 frutas.",
+          "answer": "V",
+          "why": "A ficha informa 12 frutas por caixa."
+        },
+        {
+          "id": "4",
+          "label": "Podem-se montar 9 sacolas completas de 6 frutas com as sobras.",
+          "answer": "V",
+          "why": "58 ÷ 6 dá 9 e sobram 4."
+        },
+        {
+          "id": "5",
+          "label": "Se forem montadas 9 sacolas, sobram 6 frutas.",
+          "answer": "F",
+          "why": "58 − 54 = 4."
+        }
+      ],
+      "passage": "Uma banca recebeu 8 caixas com 12 frutas cada e vendeu 38 frutas. O feirante quer colocar o que sobrou em sacolas com 6 frutas."
+    },
+    {
+      "id": "mat-1-06",
+      "topic": 0,
+      "difficulty": "medium",
+      "type": "fill",
+      "prompt": "Resolva cada problema. Digite apenas o número.",
+      "items": [
+        {
+          "id": "1",
+          "label": "Uma turma arrecadou 168 itens pela manhã e 157 à tarde. Total:",
+          "answer": "325",
+          "why": "168 + 157 = 325."
+        },
+        {
+          "id": "2",
+          "label": "De 420 ingressos, 286 já foram vendidos. Ainda disponíveis:",
+          "answer": "134",
+          "why": "420 − 286 = 134."
+        },
+        {
+          "id": "3",
+          "label": "Em 14 prateleiras há 16 livros em cada uma. Total de livros:",
+          "answer": "224",
+          "why": "14 × 16 = 224."
+        },
+        {
+          "id": "4",
+          "label": "Uma equipe separou 216 peças em 9 grupos iguais. Peças por grupo:",
+          "answer": "24",
+          "why": "216 ÷ 9 = 24."
+        },
+        {
+          "id": "5",
+          "label": "De 90 fichas, 4 equipes usaram 17 cada. Fichas que sobraram:",
+          "answer": "22",
+          "why": "90 − 4 × 17 = 22."
+        }
+      ]
+    },
+    {
+      "id": "mat-1-07",
+      "topic": 0,
+      "difficulty": "medium",
+      "type": "match",
+      "prompt": "Associe cada situação à quantidade pedida.",
+      "items": [
+        {
+          "id": "1",
+          "label": "45 cadeiras ficaram na sala e chegaram mais 37. Total de cadeiras.",
+          "answer": "1",
+          "why": "45 + 37 = 82."
+        },
+        {
+          "id": "2",
+          "label": "Havia 135 convites e 48 foram entregues. Convites restantes.",
+          "answer": "2",
+          "why": "135 − 48 = 87."
+        },
+        {
+          "id": "3",
+          "label": "7 bandejas com 13 pães cada. Total de pães.",
+          "answer": "3",
+          "why": "7 × 13 = 91."
+        },
+        {
+          "id": "4",
+          "label": "120 fichas divididas em 5 partes iguais. Fichas por parte.",
+          "answer": "4",
+          "why": "120 ÷ 5 = 24."
+        },
+        {
+          "id": "5",
+          "label": "72 lápis em caixas de 9. Número de caixas.",
+          "answer": "5",
+          "why": "72 ÷ 9 = 8."
+        }
+      ],
+      "options": [
+        {
+          "id": "1",
+          "label": "82"
+        },
+        {
+          "id": "2",
+          "label": "87"
+        },
+        {
+          "id": "3",
+          "label": "91"
+        },
+        {
+          "id": "4",
+          "label": "24"
+        },
+        {
+          "id": "5",
+          "label": "8"
+        }
+      ]
+    },
+    {
+      "id": "mat-1-08",
+      "topic": 0,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Para uma competição, a escola tem 18 caixas com 24 garrafas de água em cada. Cada participante receberá 2 garrafas e 20 garrafas serão reservadas para a equipe. Quantos participantes podem ser atendidos?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "206"
+            },
+            {
+              "id": "b",
+              "label": "196"
+            },
+            {
+              "id": "c",
+              "label": "210"
+            },
+            {
+              "id": "d",
+              "label": "216"
+            },
+            {
+              "id": "e",
+              "label": "212"
+            }
+          ],
+          "why": "(18 × 24 − 20) ÷ 2 = (432 − 20) ÷ 2 = 206."
+        }
+      ]
+    },
+    {
+      "id": "mat-1-09",
+      "topic": 0,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "A escola precisa transportar 286 estudantes. Já tem 4 vans de 16 lugares. Se todos os outros forem de ônibus de 48 lugares, qual é o menor número de ônibus necessário?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "5"
+            },
+            {
+              "id": "b",
+              "label": "4"
+            },
+            {
+              "id": "c",
+              "label": "6"
+            },
+            {
+              "id": "d",
+              "label": "7"
+            },
+            {
+              "id": "e",
+              "label": "8"
+            }
+          ],
+          "why": "286 − 64 = 222. Quatro ônibus levam 192, e cinco levam 240. Portanto, são necessários 5."
+        }
+      ]
+    },
+    {
+      "id": "mat-2-01",
+      "topic": 1,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Qual é o valor de 5² + √49?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "32"
+            },
+            {
+              "id": "b",
+              "label": "12"
+            },
+            {
+              "id": "c",
+              "label": "17"
+            },
+            {
+              "id": "d",
+              "label": "30"
+            },
+            {
+              "id": "e",
+              "label": "74"
+            }
+          ],
+          "why": "5² = 25 e √49 = 7. Portanto, 25 + 7 = 32."
+        }
+      ]
+    },
+    {
+      "id": "mat-2-02",
+      "topic": 1,
+      "difficulty": "easy",
+      "type": "boolean",
+      "prompt": "Verifique os valores das expressões.",
+      "items": [
+        {
+          "id": "1",
+          "label": "3² + 1 = 10.",
+          "answer": "V",
+          "why": "3² = 9 e 9 + 1 = 10."
+        },
+        {
+          "id": "2",
+          "label": "√36 × 2 = 18.",
+          "answer": "F",
+          "why": "√36 = 6 e 6 × 2 = 12."
+        },
+        {
+          "id": "3",
+          "label": "12 ÷ 3 + 2² = 8.",
+          "answer": "V",
+          "why": "4 + 4 = 8."
+        },
+        {
+          "id": "4",
+          "label": "2 + 3 × 4 = 20.",
+          "answer": "F",
+          "why": "Primeiro multiplique: 2 + 12 = 14."
+        },
+        {
+          "id": "5",
+          "label": "(10 − 6)² = 16.",
+          "answer": "V",
+          "why": "Faça o parêntese primeiro: 4² = 16."
+        }
+      ]
+    },
+    {
+      "id": "mat-2-03",
+      "topic": 1,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Qual é o valor de 4² + 30 ÷ √25 − 3 × 2?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "16"
+            },
+            {
+              "id": "b",
+              "label": "10"
+            },
+            {
+              "id": "c",
+              "label": "18"
+            },
+            {
+              "id": "d",
+              "label": "22"
+            },
+            {
+              "id": "e",
+              "label": "26"
+            }
+          ],
+          "why": "4² = 16, √25 = 5, 30 ÷ 5 = 6 e 3 × 2 = 6. Fica 16 + 6 − 6 = 16."
+        }
+      ]
+    },
+    {
+      "id": "mat-2-04",
+      "topic": 1,
+      "difficulty": "medium",
+      "type": "fill",
+      "prompt": "Calcule cada expressão usando a ordem das operações.",
+      "items": [
+        {
+          "id": "1",
+          "label": "(6 + 2)² ÷ 8",
+          "answer": "8",
+          "why": "8² ÷ 8 = 64 ÷ 8 = 8."
+        },
+        {
+          "id": "2",
+          "label": "√81 + 4 × 3",
+          "answer": "21",
+          "why": "9 + 12 = 21."
+        },
+        {
+          "id": "3",
+          "label": "3³ − √64 + 2",
+          "answer": "21",
+          "why": "27 − 8 + 2 = 21."
+        },
+        {
+          "id": "4",
+          "label": "18 ÷ 3 × 2 + 5",
+          "answer": "17",
+          "why": "Faça divisão e multiplicação da esquerda para a direita: 6 × 2 + 5 = 17."
+        },
+        {
+          "id": "5",
+          "label": "5² − (7 + 3) + √16",
+          "answer": "19",
+          "why": "25 − 10 + 4 = 19."
+        }
+      ]
+    },
+    {
+      "id": "mat-2-05",
+      "topic": 1,
+      "difficulty": "medium",
+      "type": "match",
+      "prompt": "Associe cada expressão ao seu resultado.",
+      "items": [
+        {
+          "id": "1",
+          "label": "2³ + 9",
+          "answer": "1",
+          "why": "8 + 9 = 17."
+        },
+        {
+          "id": "2",
+          "label": "√100 − 3",
+          "answer": "2",
+          "why": "10 − 3 = 7."
+        },
+        {
+          "id": "3",
+          "label": "(5 + 1)² ÷ 4",
+          "answer": "3",
+          "why": "36 ÷ 4 = 9."
+        },
+        {
+          "id": "4",
+          "label": "4² − 2 × 3",
+          "answer": "4",
+          "why": "16 − 6 = 10."
+        },
+        {
+          "id": "5",
+          "label": "√49 + 4 × 2",
+          "answer": "5",
+          "why": "7 + 8 = 15."
+        }
+      ],
+      "options": [
+        {
+          "id": "1",
+          "label": "17"
+        },
+        {
+          "id": "2",
+          "label": "7"
+        },
+        {
+          "id": "3",
+          "label": "9"
+        },
+        {
+          "id": "4",
+          "label": "10"
+        },
+        {
+          "id": "5",
+          "label": "15"
+        }
+      ]
+    },
+    {
+      "id": "mat-2-06",
+      "topic": 1,
+      "difficulty": "medium",
+      "type": "crossword",
+      "prompt": "Complete a cruzadinha com os nomes matemáticos.",
+      "items": [
+        {
+          "id": "1",
+          "label": "O número 2 indica este elemento em 7².",
+          "answer": "EXPOENTE",
+          "why": "O expoente informa quantas vezes a base aparece como fator.",
+          "cells": [
+            "1,6",
+            "2,6",
+            "3,6",
+            "4,6",
+            "5,6",
+            "6,6",
+            "7,6",
+            "8,6"
+          ]
+        },
+        {
+          "id": "2",
+          "label": "O número 7 desempenha este papel em 7².",
+          "answer": "BASE",
+          "why": "A base é o número elevado ao expoente.",
+          "cells": [
+            "1,0",
+            "1,1",
+            "1,2",
+            "1,3"
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Em √49, 49 recebe este nome.",
+          "answer": "RADICANDO",
+          "why": "Radicando é o número dentro do radical.",
+          "cells": [
+            "6,0",
+            "6,1",
+            "6,2",
+            "6,3",
+            "6,4",
+            "6,5",
+            "6,6",
+            "6,7",
+            "6,8"
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Na operação 18 ÷ 3, a operação é uma…",
+          "answer": "DIVISÃO",
+          "why": "O símbolo ÷ indica divisão.",
+          "cells": [
+            "0,8",
+            "1,8",
+            "2,8",
+            "3,8",
+            "4,8",
+            "5,8",
+            "6,8"
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Em 14 + 9, 14 e 9 recebem este mesmo nome (no singular).",
+          "answer": "PARCELA",
+          "why": "Cada número somado é uma parcela.",
+          "cells": [
+            "0,1",
+            "1,1",
+            "2,1",
+            "3,1",
+            "4,1",
+            "5,1",
+            "6,1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mat-2-07",
+      "topic": 1,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Calcule [(3² + √81) × 2 − 12 ÷ 3] ÷ 4.",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "8"
+            },
+            {
+              "id": "b",
+              "label": "6"
+            },
+            {
+              "id": "c",
+              "label": "7"
+            },
+            {
+              "id": "d",
+              "label": "9"
+            },
+            {
+              "id": "e",
+              "label": "12"
+            }
+          ],
+          "why": "Dentro dos colchetes ficam (9 + 9) × 2 − 4 = 32. Então 32 ÷ 4 = 8."
+        }
+      ]
+    },
+    {
+      "id": "mat-2-08",
+      "topic": 1,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Qual é o valor de 2³ × (√64 − 5) + [36 ÷ (2 + 4)]²?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "60"
+            },
+            {
+              "id": "b",
+              "label": "30"
+            },
+            {
+              "id": "c",
+              "label": "42"
+            },
+            {
+              "id": "d",
+              "label": "54"
+            },
+            {
+              "id": "e",
+              "label": "72"
+            }
+          ],
+          "why": "2³ = 8 e √64 − 5 = 3, formando 24. O segundo termo é (36 ÷ 6)² = 36. Some 24 + 36."
+        }
+      ]
+    },
+    {
+      "id": "mat-3-01",
+      "topic": 2,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Que porcentagem é equivalente a 3/4?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "75%"
+            },
+            {
+              "id": "b",
+              "label": "25%"
+            },
+            {
+              "id": "c",
+              "label": "34%"
+            },
+            {
+              "id": "d",
+              "label": "60%"
+            },
+            {
+              "id": "e",
+              "label": "80%"
+            }
+          ],
+          "why": "Multiplique numerador e denominador por 25: 3/4 = 75/100 = 75%."
+        }
+      ]
+    },
+    {
+      "id": "mat-3-02",
+      "topic": 2,
+      "difficulty": "easy",
+      "type": "match",
+      "prompt": "Associe cada fração à porcentagem equivalente.",
+      "items": [
+        {
+          "id": "1",
+          "label": "1/2",
+          "answer": "1",
+          "why": "1/2 = 50/100."
+        },
+        {
+          "id": "2",
+          "label": "1/4",
+          "answer": "2",
+          "why": "1/4 = 25/100."
+        },
+        {
+          "id": "3",
+          "label": "3/5",
+          "answer": "3",
+          "why": "3/5 = 60/100."
+        },
+        {
+          "id": "4",
+          "label": "7/10",
+          "answer": "4",
+          "why": "7/10 = 70/100."
+        },
+        {
+          "id": "5",
+          "label": "1/5",
+          "answer": "5",
+          "why": "1/5 = 20/100."
+        }
+      ],
+      "options": [
+        {
+          "id": "1",
+          "label": "50%"
+        },
+        {
+          "id": "2",
+          "label": "25%"
+        },
+        {
+          "id": "3",
+          "label": "60%"
+        },
+        {
+          "id": "4",
+          "label": "70%"
+        },
+        {
+          "id": "5",
+          "label": "20%"
+        }
+      ]
+    },
+    {
+      "id": "mat-3-03",
+      "topic": 2,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Que porcentagem dos inscritos escolheu a oficina de desenho?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "35%"
+            },
+            {
+              "id": "b",
+              "label": "14%"
+            },
+            {
+              "id": "c",
+              "label": "25%"
+            },
+            {
+              "id": "d",
+              "label": "40%"
+            },
+            {
+              "id": "e",
+              "label": "65%"
+            }
+          ],
+          "why": "14 ÷ 40 = 0,35. Logo, 14/40 = 35/100 = 35%."
+        }
+      ],
+      "passage": "Em uma atividade da escola, 40 estudantes se inscreveram. Cada estudante pôde escolher apenas uma oficina. Desse grupo, 14 escolheram desenho."
+    },
+    {
+      "id": "mat-3-04",
+      "topic": 2,
+      "difficulty": "medium",
+      "type": "boolean",
+      "prompt": "Decida se cada equivalência está correta.",
+      "items": [
+        {
+          "id": "1",
+          "label": "2/5 = 40%.",
+          "answer": "V",
+          "why": "2 × 20 = 40 e 5 × 20 = 100."
+        },
+        {
+          "id": "2",
+          "label": "3/10 = 13%.",
+          "answer": "F",
+          "why": "3/10 = 30/100 = 30%."
+        },
+        {
+          "id": "3",
+          "label": "3/20 = 15%.",
+          "answer": "V",
+          "why": "3 × 5 = 15 e 20 × 5 = 100."
+        },
+        {
+          "id": "4",
+          "label": "25% = 1/5.",
+          "answer": "F",
+          "why": "25/100 = 1/4."
+        },
+        {
+          "id": "5",
+          "label": "8/25 = 32%.",
+          "answer": "V",
+          "why": "8 × 4 = 32 e 25 × 4 = 100."
+        }
+      ]
+    },
+    {
+      "id": "mat-3-05",
+      "topic": 2,
+      "difficulty": "medium",
+      "type": "fill",
+      "prompt": "Resolva os problemas. Onde aparecer “porcentagem”, digite o valor sem o símbolo %.",
+      "items": [
+        {
+          "id": "1",
+          "label": "Numa turma de 32 estudantes, 1/4 faltou. Número de faltas:",
+          "answer": "8",
+          "why": "32 ÷ 4 = 8."
+        },
+        {
+          "id": "2",
+          "label": "Em 60 questões, Ana acertou 3/5. Número de acertos:",
+          "answer": "36",
+          "why": "60 ÷ 5 × 3 = 36."
+        },
+        {
+          "id": "3",
+          "label": "Em 200 peças, 18 apresentaram defeito. Porcentagem com defeito:",
+          "answer": "9",
+          "why": "18/200 = 9/100, ou 9%."
+        },
+        {
+          "id": "4",
+          "label": "O grupo percorreu 3/8 de uma trilha. Porcentagem percorrida:",
+          "answer": "37,5",
+          "why": "3 ÷ 8 = 0,375, ou 37,5%."
+        },
+        {
+          "id": "5",
+          "label": "25% de 48 mudas já foram plantadas. Mudas plantadas:",
+          "answer": "12",
+          "why": "25% equivale a 1/4. Então 48 ÷ 4 = 12."
+        }
+      ]
+    },
+    {
+      "id": "mat-3-06",
+      "topic": 2,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Em um livro de 160 páginas, Marco leu 45% do total. Quantas páginas faltam?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "88"
+            },
+            {
+              "id": "b",
+              "label": "72"
+            },
+            {
+              "id": "c",
+              "label": "80"
+            },
+            {
+              "id": "d",
+              "label": "92"
+            },
+            {
+              "id": "e",
+              "label": "115"
+            }
+          ],
+          "why": "45% de 160 é 72. Faltam 160 − 72 = 88 páginas."
+        }
+      ]
+    },
+    {
+      "id": "mat-3-07",
+      "topic": 2,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Do total de figurinhas, 3/8 são de animais e 25% são de esportes. As demais são de lugares. Qual porcentagem é de lugares?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "37,5%"
+            },
+            {
+              "id": "b",
+              "label": "25%"
+            },
+            {
+              "id": "c",
+              "label": "40%"
+            },
+            {
+              "id": "d",
+              "label": "50%"
+            },
+            {
+              "id": "e",
+              "label": "62,5%"
+            }
+          ],
+          "why": "3/8 = 37,5%. Subtraia 37,5% e 25% de 100%: sobram 37,5%."
+        }
+      ]
+    },
+    {
+      "id": "mat-3-08",
+      "topic": 2,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Uma loja vendeu 30% das 240 camisetas pela manhã. À tarde vendeu 1/4 das que restavam. Quantas camisetas ficaram na loja?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "126"
+            },
+            {
+              "id": "b",
+              "label": "108"
+            },
+            {
+              "id": "c",
+              "label": "114"
+            },
+            {
+              "id": "d",
+              "label": "132"
+            },
+            {
+              "id": "e",
+              "label": "168"
+            }
+          ],
+          "why": "De manhã vendeu 72 e restaram 168. À tarde vendeu 168 ÷ 4 = 42. Restaram 126."
+        }
+      ]
+    },
+    {
+      "id": "mat-4-01",
+      "topic": 3,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Qual é o resultado de 2/7 + 3/7?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "5/7"
+            },
+            {
+              "id": "b",
+              "label": "5/14"
+            },
+            {
+              "id": "c",
+              "label": "6/7"
+            },
+            {
+              "id": "d",
+              "label": "6/14"
+            },
+            {
+              "id": "e",
+              "label": "1/7"
+            }
+          ],
+          "why": "Some os numeradores e mantenha o denominador: (2 + 3)/7 = 5/7."
+        }
+      ]
+    },
+    {
+      "id": "mat-4-02",
+      "topic": 3,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Uma garrafa continha 1,5 L de água. Depois de retirar 0,35 L, quanto restou?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "1,15 L"
+            },
+            {
+              "id": "b",
+              "label": "1,05 L"
+            },
+            {
+              "id": "c",
+              "label": "1,25 L"
+            },
+            {
+              "id": "d",
+              "label": "1,35 L"
+            },
+            {
+              "id": "e",
+              "label": "1,85 L"
+            }
+          ],
+          "why": "Alinhe as vírgulas: 1,50 − 0,35 = 1,15 L."
+        }
+      ]
+    },
+    {
+      "id": "mat-4-03",
+      "topic": 3,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Quanto de água correspondeu a cada regador?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "0,625 L"
+            },
+            {
+              "id": "b",
+              "label": "0,5 L"
+            },
+            {
+              "id": "c",
+              "label": "0,75 L"
+            },
+            {
+              "id": "d",
+              "label": "1,25 L"
+            },
+            {
+              "id": "e",
+              "label": "0,525 L"
+            }
+          ],
+          "why": "1,5 + 1 = 2,5 L. Divida por 4: 2,5 ÷ 4 = 0,625 L."
+        }
+      ],
+      "passage": "Para regar a horta, a turma juntou 1,5 L de água de uma garrafa e 1 L de outra. Toda a água foi repartida igualmente em quatro regadores."
+    },
+    {
+      "id": "mat-4-04",
+      "topic": 3,
+      "difficulty": "medium",
+      "type": "fill",
+      "prompt": "Calcule. Você pode usar fração ou decimal exato.",
+      "items": [
+        {
+          "id": "1",
+          "label": "1/2 + 1/4",
+          "answer": "3/4",
+          "why": "1/2 = 2/4. Então 2/4 + 1/4 = 3/4."
+        },
+        {
+          "id": "2",
+          "label": "3/5 − 1/10",
+          "answer": "1/2",
+          "why": "3/5 = 6/10. Então 6/10 − 1/10 = 5/10 = 1/2."
+        },
+        {
+          "id": "3",
+          "label": "3/4 × 2/3",
+          "answer": "1/2",
+          "why": "Multiplique numeradores e denominadores: 6/12 = 1/2."
+        },
+        {
+          "id": "4",
+          "label": "0,48 ÷ 0,6",
+          "answer": "0,8",
+          "why": "Multiplique ambos por 10: 4,8 ÷ 6 = 0,8."
+        },
+        {
+          "id": "5",
+          "label": "0,25 + 1/8",
+          "answer": "3/8",
+          "why": "0,25 = 1/4 = 2/8. Logo, o resultado é 3/8."
+        }
+      ]
+    },
+    {
+      "id": "mat-4-05",
+      "topic": 3,
+      "difficulty": "medium",
+      "type": "match",
+      "prompt": "Associe cada operação à sua forma decimal.",
+      "items": [
+        {
+          "id": "1",
+          "label": "1/4 + 1/2",
+          "answer": "1",
+          "why": "1/4 + 2/4 = 3/4 = 0,75."
+        },
+        {
+          "id": "2",
+          "label": "1,8 ÷ 3",
+          "answer": "2",
+          "why": "18 décimos divididos por 3 são 6 décimos."
+        },
+        {
+          "id": "3",
+          "label": "0,8 × 0,5",
+          "answer": "3",
+          "why": "Multiplicar por 0,5 equivale a tomar a metade de 0,8."
+        },
+        {
+          "id": "4",
+          "label": "3/2 − 1/4",
+          "answer": "4",
+          "why": "6/4 − 1/4 = 5/4 = 1,25."
+        },
+        {
+          "id": "5",
+          "label": "2,75 − 0,6",
+          "answer": "5",
+          "why": "2,75 − 0,60 = 2,15."
+        }
+      ],
+      "options": [
+        {
+          "id": "1",
+          "label": "0,75"
+        },
+        {
+          "id": "2",
+          "label": "0,6"
+        },
+        {
+          "id": "3",
+          "label": "0,4"
+        },
+        {
+          "id": "4",
+          "label": "1,25"
+        },
+        {
+          "id": "5",
+          "label": "2,15"
+        }
+      ]
+    },
+    {
+      "id": "mat-4-06",
+      "topic": 3,
+      "difficulty": "medium",
+      "type": "boolean",
+      "prompt": "Julgue o resultado de cada operação.",
+      "items": [
+        {
+          "id": "1",
+          "label": "1/3 + 1/6 = 1/2.",
+          "answer": "V",
+          "why": "2/6 + 1/6 = 3/6 = 1/2."
+        },
+        {
+          "id": "2",
+          "label": "1,2 × 0,5 = 6.",
+          "answer": "F",
+          "why": "A metade de 1,2 é 0,6."
+        },
+        {
+          "id": "3",
+          "label": "4/5 − 1/5 = 3/5.",
+          "answer": "V",
+          "why": "Os denominadores são iguais. Subtraia os numeradores."
+        },
+        {
+          "id": "4",
+          "label": "2,4 ÷ 0,4 = 0,6.",
+          "answer": "F",
+          "why": "24 ÷ 4 = 6."
+        },
+        {
+          "id": "5",
+          "label": "1/2 ÷ 1/4 = 2.",
+          "answer": "V",
+          "why": "Duas porções de 1/4 cabem em 1/2."
+        }
+      ]
+    },
+    {
+      "id": "mat-4-07",
+      "topic": 3,
+      "difficulty": "medium",
+      "type": "crossword",
+      "prompt": "Complete a cruzadinha sobre frações e decimais.",
+      "items": [
+        {
+          "id": "1",
+          "label": "O número acima do traço numa fração.",
+          "answer": "NUMERADOR",
+          "why": "O numerador indica quantas partes são consideradas.",
+          "cells": [
+            "3,10",
+            "4,10",
+            "5,10",
+            "6,10",
+            "7,10",
+            "8,10",
+            "9,10",
+            "10,10",
+            "11,10"
+          ]
+        },
+        {
+          "id": "2",
+          "label": "O número abaixo do traço numa fração.",
+          "answer": "DENOMINADOR",
+          "why": "O denominador indica em quantas partes iguais o inteiro foi dividido.",
+          "cells": [
+            "11,0",
+            "11,1",
+            "11,2",
+            "11,3",
+            "11,4",
+            "11,5",
+            "11,6",
+            "11,7",
+            "11,8",
+            "11,9",
+            "11,10"
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Símbolo que separa a parte inteira da parte decimal na notação brasileira.",
+          "answer": "VÍRGULA",
+          "why": "Em 2,75, o separador decimal é uma vírgula.",
+          "cells": [
+            "4,6",
+            "4,7",
+            "4,8",
+            "4,9",
+            "4,10",
+            "4,11",
+            "4,12"
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Cada parte de uma unidade dividida em dez partes iguais.",
+          "answer": "DÉCIMO",
+          "why": "1/10 é um décimo.",
+          "cells": [
+            "1,7",
+            "2,7",
+            "3,7",
+            "4,7",
+            "5,7",
+            "6,7"
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Nome da operação indicada pelo símbolo +.",
+          "answer": "ADIÇÃO",
+          "why": "O sinal + indica adição.",
+          "cells": [
+            "0,12",
+            "1,12",
+            "2,12",
+            "3,12",
+            "4,12",
+            "5,12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mat-4-08",
+      "topic": 3,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Uma receita usa 3/4 de xícara de farinha por porção. Para 2,5 porções, quanta farinha é necessária?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "1,875 xícara"
+            },
+            {
+              "id": "b",
+              "label": "1,25 xícara"
+            },
+            {
+              "id": "c",
+              "label": "1,5 xícara"
+            },
+            {
+              "id": "d",
+              "label": "1,75 xícara"
+            },
+            {
+              "id": "e",
+              "label": "2,125 xícaras"
+            }
+          ],
+          "why": "2,5 × 3/4 = 5/2 × 3/4 = 15/8 = 1,875."
+        }
+      ]
+    },
+    {
+      "id": "mat-4-09",
+      "topic": 3,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Uma fita de 2,4 m será cortada em três pedaços de 3/8 m cada e em um quarto pedaço de 0,45 m. Qual será o comprimento da sobra?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "0,825 m"
+            },
+            {
+              "id": "b",
+              "label": "0,715 m"
+            },
+            {
+              "id": "c",
+              "label": "0,875 m"
+            },
+            {
+              "id": "d",
+              "label": "1,05 m"
+            },
+            {
+              "id": "e",
+              "label": "1,125 m"
+            }
+          ],
+          "why": "Cada pedaço de 3/8 m mede 0,375 m. A sobra é 2,4 − 3 × 0,375 − 0,45 = 0,825 m."
+        }
+      ]
+    },
+    {
+      "id": "mat-5-01",
+      "topic": 4,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Na figura, o ângulo reto foi dividido em duas partes. Quanto mede x?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "55°"
+            },
+            {
+              "id": "b",
+              "label": "35°"
+            },
+            {
+              "id": "c",
+              "label": "45°"
+            },
+            {
+              "id": "d",
+              "label": "65°"
+            },
+            {
+              "id": "e",
+              "label": "145°"
+            }
+          ],
+          "why": "O marcador indica 90°. Logo x = 90° − 35° = 55°."
+        }
+      ],
+      "diagram": {
+        "kind": "right",
+        "rays": [
+          0,
+          35,
+          90
+        ],
+        "labels": [
+          "35°",
+          "x"
+        ],
+        "alt": "Três semirretas com mesma origem. As duas externas formam um ângulo reto, dividido em 35 graus e x."
+      }
+    },
+    {
+      "id": "mat-5-02",
+      "topic": 4,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Quanto mede o ângulo x na figura?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "120°"
+            },
+            {
+              "id": "b",
+              "label": "50°"
+            },
+            {
+              "id": "c",
+              "label": "60°"
+            },
+            {
+              "id": "d",
+              "label": "110°"
+            },
+            {
+              "id": "e",
+              "label": "130°"
+            }
+          ],
+          "why": "Na linha reta, os dois ângulos adjacentes somam 180°. Então 180° − 60° = 120°."
+        }
+      ],
+      "diagram": {
+        "kind": "flat",
+        "rays": [
+          0,
+          60,
+          180
+        ],
+        "labels": [
+          "60°",
+          "x"
+        ],
+        "alt": "Uma semirreta divide um ângulo raso em dois ângulos adjacentes, de 60 graus e x."
+      }
+    },
+    {
+      "id": "mat-5-03",
+      "topic": 4,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Leia a escala do transferidor a partir do 0° na semirreta horizontal à direita. Qual é a medida do ângulo?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "130°"
+            },
+            {
+              "id": "b",
+              "label": "40°"
+            },
+            {
+              "id": "c",
+              "label": "50°"
+            },
+            {
+              "id": "d",
+              "label": "120°"
+            },
+            {
+              "id": "e",
+              "label": "140°"
+            }
+          ],
+          "why": "A semirreta inclinada aponta para 130° na escala que começa no zero da direita."
+        }
+      ],
+      "diagram": {
+        "kind": "protractor",
+        "rays": [
+          0,
+          130
+        ],
+        "labels": [],
+        "alt": "Transferidor com uma semirreta no zero à direita. A outra cruza a escala ascendente três divisões de dez graus após a marca de 100 graus."
+      }
+    },
+    {
+      "id": "mat-5-04",
+      "topic": 4,
+      "difficulty": "medium",
+      "type": "boolean",
+      "prompt": "Julgue as afirmações sobre a figura.",
+      "items": [
+        {
+          "id": "1",
+          "label": "O ângulo completo indicado pelo quadradinho mede 90°.",
+          "answer": "V",
+          "why": "O quadradinho representa um ângulo reto."
+        },
+        {
+          "id": "2",
+          "label": "O ângulo x mede 50°.",
+          "answer": "F",
+          "why": "90° − 30° = 60°."
+        },
+        {
+          "id": "3",
+          "label": "Os ângulos de 30° e x são adjacentes.",
+          "answer": "V",
+          "why": "Eles têm o mesmo vértice e uma semirreta comum e não se sobrepõem."
+        },
+        {
+          "id": "4",
+          "label": "O ângulo x é agudo.",
+          "answer": "V",
+          "why": "60° é menor que 90° e maior que 0°."
+        },
+        {
+          "id": "5",
+          "label": "A soma de 30° com x é 180°.",
+          "answer": "F",
+          "why": "As duas partes juntas formam o ângulo reto de 90°."
+        }
+      ],
+      "diagram": {
+        "kind": "right",
+        "rays": [
+          0,
+          30,
+          90
+        ],
+        "labels": [
+          "30°",
+          "x"
+        ],
+        "alt": "Duas semirretas externas formam um ângulo reto. Uma semirreta interna o divide em 30 graus e x."
+      }
+    },
+    {
+      "id": "mat-5-05",
+      "topic": 4,
+      "difficulty": "medium",
+      "type": "match",
+      "prompt": "Associe cada relação à medida pedida.",
+      "items": [
+        {
+          "id": "1",
+          "label": "Complemento de 24° (complete 90°).",
+          "answer": "1",
+          "why": "90° − 24° = 66°."
+        },
+        {
+          "id": "2",
+          "label": "Suplemento de 103° (complete 180°).",
+          "answer": "2",
+          "why": "180° − 103° = 77°."
+        },
+        {
+          "id": "3",
+          "label": "Metade de 90°.",
+          "answer": "3",
+          "why": "90° ÷ 2 = 45°."
+        },
+        {
+          "id": "4",
+          "label": "Um quarto de uma volta completa.",
+          "answer": "4",
+          "why": "360° ÷ 4 = 90°."
+        },
+        {
+          "id": "5",
+          "label": "Ângulo interno que falta no triângulo com ângulos de 55° e 70°.",
+          "answer": "5",
+          "why": "180° − 55° − 70° = 55°."
+        }
+      ],
+      "options": [
+        {
+          "id": "1",
+          "label": "66°"
+        },
+        {
+          "id": "2",
+          "label": "77°"
+        },
+        {
+          "id": "3",
+          "label": "45°"
+        },
+        {
+          "id": "4",
+          "label": "90°"
+        },
+        {
+          "id": "5",
+          "label": "55°"
+        }
+      ]
+    },
+    {
+      "id": "mat-5-06",
+      "topic": 4,
+      "difficulty": "medium",
+      "type": "crossword",
+      "prompt": "Preencha a cruzadinha com os nomes associados aos ângulos.",
+      "items": [
+        {
+          "id": "1",
+          "label": "Ângulo maior que 0° e menor que 90°.",
+          "answer": "AGUDO",
+          "why": "Ângulos como 30° e 60° são agudos.",
+          "cells": [
+            "1,6",
+            "1,7",
+            "1,8",
+            "1,9",
+            "1,10"
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Ângulo exatamente igual a 90°.",
+          "answer": "RETO",
+          "why": "O canto de um quadrado é um exemplo.",
+          "cells": [
+            "3,8",
+            "3,9",
+            "3,10",
+            "3,11"
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Ângulo maior que 90° e menor que 180°.",
+          "answer": "OBTUSO",
+          "why": "120° é um exemplo de ângulo obtuso.",
+          "cells": [
+            "1,10",
+            "2,10",
+            "3,10",
+            "4,10",
+            "5,10",
+            "6,10"
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Ângulo exatamente igual a 180°.",
+          "answer": "RASO",
+          "why": "Suas duas semirretas são opostas.",
+          "cells": [
+            "0,6",
+            "1,6",
+            "2,6",
+            "3,6"
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Instrumento para medir ângulos em graus.",
+          "answer": "TRANSFERIDOR",
+          "why": "O transferidor tem uma escala angular.",
+          "cells": [
+            "6,0",
+            "6,1",
+            "6,2",
+            "6,3",
+            "6,4",
+            "6,5",
+            "6,6",
+            "6,7",
+            "6,8",
+            "6,9",
+            "6,10",
+            "6,11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mat-5-07",
+      "topic": 4,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Três ângulos em torno do mesmo ponto medem 120°, 150° e x. Quanto mede x?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "90°"
+            },
+            {
+              "id": "b",
+              "label": "60°"
+            },
+            {
+              "id": "c",
+              "label": "70°"
+            },
+            {
+              "id": "d",
+              "label": "120°"
+            },
+            {
+              "id": "e",
+              "label": "150°"
+            }
+          ],
+          "why": "Uma volta completa mede 360°. Então x = 360° − 120° − 150° = 90°."
+        }
+      ],
+      "diagram": {
+        "kind": "full",
+        "rays": [
+          0,
+          120,
+          270,
+          360
+        ],
+        "labels": [
+          "120°",
+          "150°",
+          "x"
+        ],
+        "alt": "Três setores completam uma volta ao redor do mesmo vértice. Suas medidas são 120 graus, 150 graus e x."
+      }
+    },
+    {
+      "id": "mat-5-08",
+      "topic": 4,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Sobre uma linha reta foram marcados três ângulos adjacentes. Os dois menores medem x cada e o terceiro mede 80°. Quanto mede cada um dos ângulos iguais?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "50°"
+            },
+            {
+              "id": "b",
+              "label": "40°"
+            },
+            {
+              "id": "c",
+              "label": "60°"
+            },
+            {
+              "id": "d",
+              "label": "80°"
+            },
+            {
+              "id": "e",
+              "label": "100°"
+            }
+          ],
+          "why": "Os dois ângulos iguais somam 180° − 80° = 100°. Divida por 2: 50°."
+        }
+      ],
+      "diagram": {
+        "kind": "flat",
+        "rays": [
+          0,
+          50,
+          100,
+          180
+        ],
+        "labels": [
+          "x",
+          "x",
+          "80°"
+        ],
+        "alt": "Sobre uma linha reta, três ângulos consecutivos medem x, x e 80 graus."
+      }
+    },
+    {
+      "id": "mat-6-01",
+      "topic": 5,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Uma peça mede 2,4 m. Qual é o comprimento em centímetros?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "240 cm"
+            },
+            {
+              "id": "b",
+              "label": "24 cm"
+            },
+            {
+              "id": "c",
+              "label": "204 cm"
+            },
+            {
+              "id": "d",
+              "label": "2 400 cm"
+            },
+            {
+              "id": "e",
+              "label": "0,024 cm"
+            }
+          ],
+          "why": "Cada metro tem 100 cm. Multiplique 2,4 por 100."
+        }
+      ]
+    },
+    {
+      "id": "mat-6-02",
+      "topic": 5,
+      "difficulty": "easy",
+      "type": "fill",
+      "prompt": "Converta as medidas. Digite o número na unidade pedida.",
+      "items": [
+        {
+          "id": "1",
+          "label": "4 m em cm",
+          "answer": "400",
+          "why": "4 × 100 = 400 cm."
+        },
+        {
+          "id": "2",
+          "label": "7 cm em mm",
+          "answer": "70",
+          "why": "7 × 10 = 70 mm."
+        },
+        {
+          "id": "3",
+          "label": "2 km em m",
+          "answer": "2000",
+          "why": "2 × 1 000 = 2 000 m."
+        },
+        {
+          "id": "4",
+          "label": "300 cm em m",
+          "answer": "3",
+          "why": "300 ÷ 100 = 3 m."
+        },
+        {
+          "id": "5",
+          "label": "4500 m em km",
+          "answer": "4,5",
+          "why": "4 500 ÷ 1 000 = 4,5 km."
+        }
+      ]
+    },
+    {
+      "id": "mat-6-03",
+      "topic": 5,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Que distância o grupo percorreu ao todo, em quilômetros?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "2,25 km"
+            },
+            {
+              "id": "b",
+              "label": "1,95 km"
+            },
+            {
+              "id": "c",
+              "label": "2,05 km"
+            },
+            {
+              "id": "d",
+              "label": "2,15 km"
+            },
+            {
+              "id": "e",
+              "label": "2,55 km"
+            }
+          ],
+          "why": "450 m = 0,45 km e 600 m = 0,6 km. O total é 1,2 + 0,45 + 0,6 = 2,25 km."
+        }
+      ],
+      "passage": "Na trilha, o grupo andou 1,2 km da entrada ao lago, 450 m do lago ao mirante e mais 600 m do mirante até a área de descanso."
+    },
+    {
+      "id": "mat-6-04",
+      "topic": 5,
+      "difficulty": "medium",
+      "type": "match",
+      "prompt": "Associe cada medida à conversão correspondente.",
+      "items": [
+        {
+          "id": "1",
+          "label": "0,75 m",
+          "answer": "1",
+          "why": "0,75 × 100 = 75 cm."
+        },
+        {
+          "id": "2",
+          "label": "1,25 km",
+          "answer": "2",
+          "why": "1,25 × 1 000 = 1 250 m."
+        },
+        {
+          "id": "3",
+          "label": "38 mm",
+          "answer": "3",
+          "why": "38 ÷ 10 = 3,8 cm."
+        },
+        {
+          "id": "4",
+          "label": "540 cm",
+          "answer": "4",
+          "why": "540 ÷ 100 = 5,4 m."
+        },
+        {
+          "id": "5",
+          "label": "0,08 m",
+          "answer": "5",
+          "why": "0,08 × 1 000 = 80 mm."
+        }
+      ],
+      "options": [
+        {
+          "id": "1",
+          "label": "75 cm"
+        },
+        {
+          "id": "2",
+          "label": "1 250 m"
+        },
+        {
+          "id": "3",
+          "label": "3,8 cm"
+        },
+        {
+          "id": "4",
+          "label": "5,4 m"
+        },
+        {
+          "id": "5",
+          "label": "80 mm"
+        }
+      ]
+    },
+    {
+      "id": "mat-6-05",
+      "topic": 5,
+      "difficulty": "medium",
+      "type": "boolean",
+      "prompt": "Julgue cada conversão de comprimento.",
+      "items": [
+        {
+          "id": "1",
+          "label": "1,3 m = 130 cm.",
+          "answer": "V",
+          "why": "1,3 × 100 = 130 cm."
+        },
+        {
+          "id": "2",
+          "label": "0,45 km = 45 m.",
+          "answer": "F",
+          "why": "0,45 × 1 000 = 450 m."
+        },
+        {
+          "id": "3",
+          "label": "2,05 cm = 20,5 mm.",
+          "answer": "V",
+          "why": "2,05 × 10 = 20,5 mm."
+        },
+        {
+          "id": "4",
+          "label": "60 mm = 0,6 cm.",
+          "answer": "F",
+          "why": "60 ÷ 10 = 6 cm."
+        },
+        {
+          "id": "5",
+          "label": "8 400 m = 8,4 km.",
+          "answer": "V",
+          "why": "8 400 ÷ 1 000 = 8,4 km."
+        }
+      ]
+    },
+    {
+      "id": "mat-6-06",
+      "topic": 5,
+      "difficulty": "medium",
+      "type": "crossword",
+      "prompt": "Complete a cruzadinha com os nomes das unidades de comprimento.",
+      "items": [
+        {
+          "id": "1",
+          "label": "Unidade de comprimento representada por m, no singular.",
+          "answer": "METRO",
+          "why": "O símbolo do metro é m.",
+          "cells": [
+            "1,7",
+            "1,8",
+            "1,9",
+            "1,10",
+            "1,11"
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Unidade de comprimento representada por km, no singular.",
+          "answer": "QUILÔMETRO",
+          "why": "Um quilômetro tem 1 000 metros.",
+          "cells": [
+            "16,1",
+            "16,2",
+            "16,3",
+            "16,4",
+            "16,5",
+            "16,6",
+            "16,7",
+            "16,8",
+            "16,9",
+            "16,10"
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Unidade de comprimento representada por cm, no singular.",
+          "answer": "CENTÍMETRO",
+          "why": "Um centímetro equivale a 1/100 do metro.",
+          "cells": [
+            "7,5",
+            "8,5",
+            "9,5",
+            "10,5",
+            "11,5",
+            "12,5",
+            "13,5",
+            "14,5",
+            "15,5",
+            "16,5"
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Unidade de comprimento representada por mm, no singular.",
+          "answer": "MILÍMETRO",
+          "why": "Um milímetro equivale a 1/1 000 do metro.",
+          "cells": [
+            "8,0",
+            "8,1",
+            "8,2",
+            "8,3",
+            "8,4",
+            "8,5",
+            "8,6",
+            "8,7",
+            "8,8"
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Unidade de comprimento representada por dm, no singular.",
+          "answer": "DECÍMETRO",
+          "why": "Um decímetro equivale a 1/10 do metro.",
+          "cells": [
+            "0,8",
+            "1,8",
+            "2,8",
+            "3,8",
+            "4,8",
+            "5,8",
+            "6,8",
+            "7,8",
+            "8,8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mat-6-07",
+      "topic": 5,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Uma barra de 5,2 m será cortada em 8 pedaços de 48 cm. Desconsidere a perda do corte. Qual é o comprimento da sobra, em centímetros?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "136 cm"
+            },
+            {
+              "id": "b",
+              "label": "112 cm"
+            },
+            {
+              "id": "c",
+              "label": "128 cm"
+            },
+            {
+              "id": "d",
+              "label": "144 cm"
+            },
+            {
+              "id": "e",
+              "label": "184 cm"
+            }
+          ],
+          "why": "5,2 m = 520 cm. O corte usa 8 × 48 = 384 cm. Sobram 520 − 384 = 136 cm."
+        }
+      ]
+    },
+    {
+      "id": "mat-6-08",
+      "topic": 5,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Um percurso tem 1,75 km. Um estudante já andou 620 m e depois mais 48 000 cm. Quanto ainda falta, em metros?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "650 m"
+            },
+            {
+              "id": "b",
+              "label": "530 m"
+            },
+            {
+              "id": "c",
+              "label": "670 m"
+            },
+            {
+              "id": "d",
+              "label": "1 082 m"
+            },
+            {
+              "id": "e",
+              "label": "1 130 m"
+            }
+          ],
+          "why": "1,75 km = 1 750 m e 48 000 cm = 480 m. Falta 1 750 − 620 − 480 = 650 m."
+        }
+      ]
+    }
+  ]
+}
