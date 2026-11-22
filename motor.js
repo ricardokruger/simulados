@@ -40,16 +40,22 @@ const Simulado = (() => {
       (lastSeen.get(right.id) ?? Infinity) - (lastSeen.get(left.id) ?? Infinity)
     );
     const n = candidates.length;
-    const full = (1 << (bank.topics.length + formats.length + 2)) - 1;
+    const skillMask = bank.requiredSkill ? 1 << (bank.topics.length + formats.length + 2) : 0;
+    const full = ((1 << (bank.topics.length + formats.length + 2)) - 1) | skillMask;
     const topicMask = (1 << bank.topics.length) - 1;
-    const masks = candidates.map(q => traits(q, bank.topics.length));
+    const required = topicMask | skillMask;
+    const masks = candidates.map(q => traits(q, bank.topics.length) |
+      (q.skill === bank.requiredSkill ? skillMask : 0));
     const difficulty = candidates.map(q => levels.indexOf(q.difficulty));
     const remainingTraits = Array(n + 1).fill(0);
     const remainingLevels = Array.from({ length: n + 1 }, () => [...ZERO]);
+    const remainingTraitsByLevel = Array.from({ length: n + 1 }, () => [...ZERO]);
     for (let i = n - 1; i >= 0; i--) {
       remainingTraits[i] = remainingTraits[i + 1] | masks[i];
       remainingLevels[i] = [...remainingLevels[i + 1]];
       remainingLevels[i][difficulty[i]]++;
+      remainingTraitsByLevel[i] = [...remainingTraitsByLevel[i + 1]];
+      remainingTraitsByLevel[i][difficulty[i]] |= masks[i];
     }
 
     function pick(required, excludePrevious) {
@@ -65,9 +71,19 @@ const Simulado = (() => {
             slots.some((needed, level) => needed > remainingLevels[start][level])) {
           return false;
         }
+        const available = remainingTraitsByLevel[start].map((mask, level) => slots[level] ? mask : 0);
+        const missing = required & ~found;
+        if (((available[0] | available[1] | available[2]) & missing) !== missing) return false;
+        // If a level has one slot left, its last question must cover traits unique to that level.
+        const lastSlotNeeds = [
+          missing & available[0] & ~(available[1] | available[2]),
+          missing & available[1] & ~(available[0] | available[2]),
+          missing & available[2] & ~(available[0] | available[1]),
+        ];
         for (let i = start; i <= n - (10 - count); i++) {
           const level = difficulty[i];
-          if (slots[level] === 0) continue;
+          if (slots[level] === 0 ||
+              (slots[level] === 1 && (masks[i] & lastSlotNeeds[level]) !== lastSlotNeeds[level])) continue;
           slots[level]--;
           picked.push(candidates[i]);
           if (search(i + 1, count + 1, found | masks[i])) return true;
@@ -82,8 +98,11 @@ const Simulado = (() => {
     if (n < 10 || (remainingTraits[0] & topicMask) !== topicMask) {
       throw new Error("O banco precisa de pelo menos 10 questões e deve cobrir todos os tópicos cadastrados.");
     }
-    const varied = pick(full, true) ?? pick(topicMask, true);
-    const chosen = varied ?? pick(full, false) ?? pick(topicMask, false);
+    if (skillMask && !(remainingTraits[0] & skillMask)) {
+      throw new Error("O banco não inclui a habilidade obrigatória desta avaliação.");
+    }
+    const varied = pick(full, true) ?? pick(required, true);
+    const chosen = varied ?? pick(full, false) ?? pick(required, false);
     if (!chosen) throw new Error("O banco não tem questões suficientes por nível para montar a prova.");
 
     return {

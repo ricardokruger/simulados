@@ -4,6 +4,7 @@ const Temas = (() => {
   const options = [
     { id: "pixel", label: "Pixel art" },
     { id: "classico", label: "Clássico" },
+    { id: "voxel", label: "Mundo em blocos" },
   ];
   const storageKey = "mapa-de-estudos:tema";
 

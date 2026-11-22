@@ -1,0 +1,11 @@
+{
+  "images": [
+    {
+      "id": "leao-e-rato-v1",
+      "src": "./midias/portugues-2026/leao-e-rato-v1.webp",
+      "questionIds": ["lp26-1-05", "lp26-1-10"],
+      "description": "Ilustração original em 3D. Um leão está preso sob uma rede e um rato morde uma das cordas numa clareira.",
+      "alt": "Na clareira, um camundongo põe os dentes numa corda da rede que cobre o leão."
+    }
+  ]
+}

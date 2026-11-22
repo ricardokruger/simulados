@@ -134,15 +134,48 @@ function migrateDraftNumbers(attempt) {
   save();
 }
 
-function renderQuestion() {
+function questionTrail(position, previous, total) {
+  const stage = earnedAchievements().avatar.index;
+  const traveler = make("span", { className: "trail-traveler" }, avatarSprite(stage));
+  traveler.setAttribute("aria-hidden", "true");
+  const point = index => ((index + 0.5) * 100 / total) + "%";
+  traveler.style.setProperty("--trail-at", point(position));
+
+  const theme = document.documentElement.dataset.theme;
+  if (Number.isInteger(previous) && previous !== position &&
+      (theme === "pixel" || theme === "voxel")) {
+    const strides = Math.min(7, Math.abs(position - previous) + 2);
+    if (theme === "pixel") {
+      traveler.append(make("span", { className: "trail-gait" },
+        make("span", { className: "trail-torso" }, avatarSprite(stage)),
+        make("span", { className: "trail-leg trail-leg-left" }, avatarSprite(stage)),
+        make("span", { className: "trail-leg trail-leg-right" }, avatarSprite(stage))));
+    }
+    traveler.classList.add("is-walking");
+    traveler.style.setProperty("--trail-from", point(previous));
+    traveler.style.setProperty("--trail-strides", String(strides));
+    traveler.style.setProperty("--trail-duration", (strides * 150) + "ms");
+    traveler.style.setProperty("--trail-facing", position < previous ? "-1" : "1");
+    traveler.addEventListener("animationend", event => {
+      if (event.target === traveler && event.animationName === "trail-traverse") {
+        traveler.classList.remove("is-walking");
+      }
+    });
+  }
+  return traveler;
+}
+
+function renderQuestion(previousPosition) {
   const attempt = session.active;
   if (!attempt) return renderDashboard();
   const question = attempt.questions[attempt.position];
   const answer = attempt.answers[question.id] ??= {};
   function go(position) {
+    const origin = attempt.position;
+    if (position === origin) return;
     attempt.position = position;
     save();
-    renderQuestion();
+    renderQuestion(origin);
   }
 
   const progress = make("progress", { max: 10 });
@@ -151,6 +184,8 @@ function renderQuestion() {
   count.setAttribute("aria-live", "polite");
   const nav = make("nav", { className: "question-nav" });
   nav.setAttribute("aria-label", "Ir para questão");
+  nav.style.setProperty("--trail-count", String(attempt.questions.length));
+  nav.append(questionTrail(attempt.position, previousPosition, attempt.questions.length));
   const steps = attempt.questions.map((q, index) => {
     const step = button(String(index + 1), () => go(index));
     step.className = "step";
@@ -179,7 +214,7 @@ function renderQuestion() {
   const card = make("section", { className: "section question-card" },
     text("p", (attempt.topics ?? bank.topics)[question.topic], "kicker"),
     text("h2", studyText(question.prompt), "question-heading"),
-    question.passage ? text("p", studyText(question.passage), "passage") : null,
+    questionPassage(question),
     ...questionMedia(question),
     questionExample(question),
     renderAnswer(question, answer, () => {
@@ -196,6 +231,10 @@ function renderQuestion() {
   refreshProgress();
 }
 
+function itemLabel(index, label) {
+  return (index + 1) + ") " + studyText(label);
+}
+
 function renderAnswer(q, answers, commit) {
   const form = make("div", { className: "question-form" });
   if (q.type === "crossword") return crossword(q, answers, commit, form);
@@ -210,7 +249,6 @@ function renderAnswer(q, answers, commit) {
   }
   q.items.forEach((item, i) => {
     const value = answers[item.id] ?? "";
-    const number = (i + 1) + ". ";
     function update(chosen) {
       answers[item.id] = chosen;
       if (q.type === "match") updateSelects();
@@ -220,7 +258,7 @@ function renderAnswer(q, answers, commit) {
     if (q.type === "choice" || q.type === "boolean") {
       const options = item.options ?? booleanOptions;
       const group = q.type === "boolean"
-        ? make("fieldset", { className: "boolean" }, text("legend", number + studyText(item.label)))
+        ? make("fieldset", { className: "boolean" }, text("legend", itemLabel(i, item.label)))
         : form;
       for (const option of options) {
         const radio = make("input", { type: "radio", name: q.id + "-" + item.id,
@@ -265,7 +303,7 @@ function renderAnswer(q, answers, commit) {
         });
       }
     }
-    form.append(make("label", { className: "short-answer" }, text("span", number + studyText(item.label)), field, hint));
+    form.append(make("label", { className: "short-answer" }, text("span", itemLabel(i, item.label)), field, hint));
   });
   updateSelects();
   return form;
@@ -283,7 +321,7 @@ function crossword(q, answers, commit, form) {
       cells.get(cell).push(item);
     }
     const axis = item.cells[0].split(",")[0] === item.cells[1].split(",")[0] ? "Horizontal" : "Vertical";
-    clues.append(button((index + 1) + ". " + axis + " · " + item.label, () => {
+    clues.append(button(itemLabel(index, axis + " · " + item.label), () => {
       direction = item;
       const first = item.cells.find(cell => !answers[cell]) ?? item.cells[0];
       fields.get(first).focus();
@@ -502,17 +540,20 @@ function renderReview(attempt, celebrate = false) {
     const section = make("section", { className: "section" },
       text("p", "Questão " + (index + 1) + " · " + points.format(result.units / 5) + " de 1 ponto", "kicker"),
       text("h2", studyText(q.prompt)),
-      q.passage ? text("p", studyText(q.passage), "passage") : null,
+      questionPassage(q),
       ...questionMedia(q, true),
       questionExample(q));
     const parts = make("ol", { className: "review-list" });
+    parts.setAttribute("role", "list");
     for (const [itemIndex, part] of result.parts.entries()) {
       const legacyFill = q.type === "fill" && attempt.numberNotation !== "pt-BR" &&
         Simulado.isNumeric(q.items[itemIndex]?.answer);
       const given = legacyFill ? Simulado.brazilianAnswer(Simulado.legacyDecimal(part.given)) :
         studyText(part.given);
       const entry = make("li", { className: "review-item" },
-        part.label ? text("b", studyText(part.label)) : null,
+        part.label ? text("b", result.parts.length > 1
+          ? itemLabel(itemIndex, part.label)
+          : studyText(part.label)) : null,
         text("b", part.correct ? "Correto" : "Incorreto", part.correct ? "correct" : "incorrect"),
         text("div", "Sua resposta: " + given),
         text("div", "Gabarito: " + studyText(part.expected)),
@@ -623,6 +664,20 @@ function drawDiagram(diagram) {
   ctx.fillStyle = "#135c48";
   ctx.fill();
   return canvas;
+}
+
+function questionPassage(question) {
+  if (!question.passage) return null;
+  const source = question.passageSource;
+  if (!source) return text("p", studyText(question.passage), "passage");
+
+  const [title, ...paragraphs] = question.passage.split("\n\n");
+  return make("figure", { className: "passage reading-passage" },
+    text("p", title, "reading-title"),
+    paragraphs.map(paragraph => text("p", studyText(paragraph), "reading-lines")),
+    make("figcaption", {}, make("a", {
+      href: source.url, textContent: source.label, target: "_blank", rel: "noopener noreferrer",
+    })));
 }
 
 function questionMedia(question, reviewing = false) {

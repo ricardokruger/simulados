@@ -1,0 +1,2307 @@
+{
+  "id": "portugues-6-ano-somativa-2026",
+  "version": 1,
+  "topics": [
+    "Leitura e interpretação de fábulas",
+    "Tempos e modos verbais",
+    "Sentidos dos pretéritos",
+    "Sujeito, predicado e pontuação",
+    "Frase, oração e período"
+  ],
+  "questions": [
+    {
+      "id": "lp26-1-01",
+      "topic": 0,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Leia a fábula. Que promessa faz a história avançar?",
+      "example": "Se uma coruja promete voltar com ajuda, observe no final se suas ações cumprem a promessa.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o2",
+          "why": "O rato pede para ser solto e diz que poderá ajudar o leão um dia. Mais tarde, ele cumpre a promessa.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "O leão promete ensinar o rato a rugir."
+            },
+            {
+              "id": "o2",
+              "label": "O rato promete ajudar o leão algum dia."
+            },
+            {
+              "id": "o3",
+              "label": "O leão promete levar o rato pela mata."
+            },
+            {
+              "id": "o4",
+              "label": "O rato promete evitar a clareira para sempre."
+            },
+            {
+              "id": "o5",
+              "label": "O rato promete afastar os caçadores."
+            }
+          ]
+        }
+      ],
+      "passage": "O leão e o rato\n\nUm leão dormia à sombra de uma árvore.\nUm rato atravessou a clareira e pisou sem querer na pata do leão.\nO leão acordou de repente e prendeu o visitante entre as garras.\n— Solte-me, por favor. Um dia ainda poderei ajudá-lo — pediu o rato.\nO leão achou graça na ideia, mas abriu a pata e o deixou ir.\n\nDias depois, o leão caiu em uma rede armada por caçadores.\nEle puxava as cordas, mas os nós resistiam.\nO rato ouviu o rugido e correu para a clareira.\nCom os dentes, roeu uma corda, depois outra.\nQuando a rede se abriu, o leão pôde sair.\n— Eu pensava que só os fortes podiam ajudar — disse o leão.\nO rato sorriu e os dois seguiram pela mata.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · versão histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/O_Le%C3%A3o_e_o_Rato"
+      }
+    },
+    {
+      "id": "lp26-1-02",
+      "topic": 0,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Qual avaliação da atitude do leão se apoia em duas pistas da fábula?",
+      "example": "Para sustentar que uma gata mudou de ideia, compare o que ela disse no início com o que fez no desfecho.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o3",
+          "why": "O riso indica que o leão duvida da promessa. A última fala mostra que o resgate mudou essa visão.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "Ele sempre confiou na ajuda do rato, pois pediu que o rato ficasse por perto."
+            },
+            {
+              "id": "o2",
+              "label": "Ele é vingativo, pois pune o rato no fim da narrativa."
+            },
+            {
+              "id": "o3",
+              "label": "Ele inicialmente subestima o rato e depois revê sua opinião. Ele ri da promessa e, no fim, admite o que pensava sobre a força."
+            },
+            {
+              "id": "o4",
+              "label": "Ele planeja testar o rato, pois prepara a rede e espera pelo resgate."
+            },
+            {
+              "id": "o5",
+              "label": "Ele desconfia de todos, pois recusa ajuda mesmo quando a rede se abre."
+            }
+          ]
+        }
+      ],
+      "passage": "O leão e o rato\n\nUm leão dormia à sombra de uma árvore.\nUm rato atravessou a clareira e pisou sem querer na pata do leão.\nO leão acordou de repente e prendeu o visitante entre as garras.\n— Solte-me, por favor. Um dia ainda poderei ajudá-lo — pediu o rato.\nO leão achou graça na ideia, mas abriu a pata e o deixou ir.\n\nDias depois, o leão caiu em uma rede armada por caçadores.\nEle puxava as cordas, mas os nós resistiam.\nO rato ouviu o rugido e correu para a clareira.\nCom os dentes, roeu uma corda, depois outra.\nQuando a rede se abriu, o leão pôde sair.\n— Eu pensava que só os fortes podiam ajudar — disse o leão.\nO rato sorriu e os dois seguiram pela mata.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · versão histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/O_Le%C3%A3o_e_o_Rato"
+      }
+    },
+    {
+      "id": "lp26-1-03",
+      "topic": 0,
+      "difficulty": "medium",
+      "type": "boolean",
+      "prompt": "Julgue as afirmações sobre o gênero e o enredo.",
+      "example": "Numa fábula, uma formiga pode falar como uma pessoa. Esse traço aproxima o animal de comportamentos humanos.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "O diálogo entre os animais é uma característica comum das fábulas.",
+          "answer": "V",
+          "why": "Os dois animais falam e expressam ideias como pessoas."
+        },
+        {
+          "id": "i2",
+          "label": "A armadilha transforma o leão em personagem que precisa de ajuda.",
+          "answer": "V",
+          "why": "Até o encontro com a rede, era o rato quem estava em perigo."
+        },
+        {
+          "id": "i3",
+          "label": "A ação do rato contradiz a crença de que só os fortes ajudam.",
+          "answer": "V",
+          "why": "Um animal pequeno liberta o leão usando os dentes."
+        },
+        {
+          "id": "i4",
+          "label": "O narrador é o próprio rato contando seu resgate em primeira pessoa.",
+          "answer": "F",
+          "why": "O narrador se refere ao rato e ao leão em terceira pessoa."
+        },
+        {
+          "id": "i5",
+          "label": "O leão abre a rede com as próprias garras.",
+          "answer": "F",
+          "why": "O rato corta as cordas com os dentes."
+        }
+      ],
+      "passage": "O leão e o rato\n\nUm leão dormia à sombra de uma árvore.\nUm rato atravessou a clareira e pisou sem querer na pata do leão.\nO leão acordou de repente e prendeu o visitante entre as garras.\n— Solte-me, por favor. Um dia ainda poderei ajudá-lo — pediu o rato.\nO leão achou graça na ideia, mas abriu a pata e o deixou ir.\n\nDias depois, o leão caiu em uma rede armada por caçadores.\nEle puxava as cordas, mas os nós resistiam.\nO rato ouviu o rugido e correu para a clareira.\nCom os dentes, roeu uma corda, depois outra.\nQuando a rede se abriu, o leão pôde sair.\n— Eu pensava que só os fortes podiam ajudar — disse o leão.\nO rato sorriu e os dois seguiram pela mata.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · versão histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/O_Le%C3%A3o_e_o_Rato"
+      }
+    },
+    {
+      "id": "lp26-1-04",
+      "topic": 0,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Qual releitura ajuda a descobrir se a raposa realmente achava as uvas verdes?",
+      "example": "Para investigar se uma personagem está sendo sincera, compare o que ela desejava antes com o que declarou depois de uma dificuldade.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o4",
+          "why": "Antes dos saltos, a raposa imagina uvas doces. Depois, diz que devem estar verdes. O contraste sustenta a leitura de que ela cria uma desculpa.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "Releia apenas a fala final, pois ela prova a cor das uvas."
+            },
+            {
+              "id": "o2",
+              "label": "Conte os personagens para descobrir quem viu a cor correta."
+            },
+            {
+              "id": "o3",
+              "label": "Releia só o título e descubra se ele informa a opinião da raposa."
+            },
+            {
+              "id": "o4",
+              "label": "Compare como a raposa imaginava o sabor antes dos saltos com o que ela diz após fracassar."
+            },
+            {
+              "id": "o5",
+              "label": "Procure no texto uma descrição do canto do passarinho."
+            }
+          ]
+        }
+      ],
+      "passage": "A raposa e as uvas\n\nA raposa atravessava o campo com fome.\nPerto de um muro, avistou cachos de uvas pendurados numa parreira.\nAs uvas brilhavam ao sol, e a raposa imaginou seu gosto doce.\nEla tomou distância, correu e saltou.\nAs patas tocaram o muro, mas os cachos continuaram fora de alcance.\nA raposa ensaiou outro salto e caiu no mesmo lugar.\n\nUm passarinho pousou no muro e perguntou:\n— Você vai tentar de novo?\nA raposa olhou para cima uma última vez.\n— Para quê? Essas uvas devem estar verdes — respondeu.\nDepois seguiu pelo campo, com a barriga tão vazia quanto antes.\nDo alto do muro, o passarinho olhou os cachos e ficou calado.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · edição histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/A_Rapoza_e_as_Uvas"
+      }
+    },
+    {
+      "id": "lp26-1-05",
+      "topic": 0,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Observe a cena e releia a fábula. Que ação anterior ajuda a explicar por que o rato faz o que vemos na imagem?",
+      "example": "Numa história sobre uma coruja, a imagem de um galho quebrado combina com a passagem que narra a quebra do galho.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o5",
+          "why": "O rato havia prometido ajudar quando pediu para ser solto. Na imagem, ele cumpre a promessa.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "O leão adormeceu debaixo da árvore."
+            },
+            {
+              "id": "o2",
+              "label": "O leão puxava as cordas da rede."
+            },
+            {
+              "id": "o3",
+              "label": "Os caçadores deixaram a mata."
+            },
+            {
+              "id": "o4",
+              "label": "O rato atravessou a clareira sem olhar para as patas."
+            },
+            {
+              "id": "o5",
+              "label": "O leão abriu a pata e deixou o rato ir."
+            }
+          ]
+        }
+      ],
+      "passage": "O leão e o rato\n\nUm leão dormia à sombra de uma árvore.\nUm rato atravessou a clareira e pisou sem querer na pata do leão.\nO leão acordou de repente e prendeu o visitante entre as garras.\n— Solte-me, por favor. Um dia ainda poderei ajudá-lo — pediu o rato.\nO leão achou graça na ideia, mas abriu a pata e o deixou ir.\n\nDias depois, o leão caiu em uma rede armada por caçadores.\nEle puxava as cordas, mas os nós resistiam.\nO rato ouviu o rugido e correu para a clareira.\nCom os dentes, roeu uma corda, depois outra.\nQuando a rede se abriu, o leão pôde sair.\n— Eu pensava que só os fortes podiam ajudar — disse o leão.\nO rato sorriu e os dois seguiram pela mata.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · versão histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/O_Le%C3%A3o_e_o_Rato"
+      },
+      "image": {
+        "src": "./midias/portugues-2026/leao-e-rato-v1.webp",
+        "alt": "Na clareira, um camundongo põe os dentes numa corda da rede que cobre o leão."
+      }
+    },
+    {
+      "id": "lp26-1-06",
+      "topic": 0,
+      "difficulty": "medium",
+      "type": "match",
+      "prompt": "Associe cada pista da fábula à função que ela cumpre na história.",
+      "example": "Em uma fábula sobre um pássaro e uma tempestade, a chegada do vento pode iniciar o problema do enredo.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "A raposa atravessa o campo com fome.",
+          "answer": "o1",
+          "why": "A fome explica o interesse pelas uvas."
+        },
+        {
+          "id": "i2",
+          "label": "A raposa corre e salta pela primeira vez.",
+          "answer": "o2",
+          "why": "É o primeiro plano para alcançar o cacho."
+        },
+        {
+          "id": "i3",
+          "label": "O passarinho pergunta se ela tentará de novo.",
+          "answer": "o3",
+          "why": "A pergunta leva a raposa a dizer por que desistiu."
+        },
+        {
+          "id": "i4",
+          "label": "A raposa afirma que as uvas devem estar verdes.",
+          "answer": "o4",
+          "why": "Ela usa o suposto estado das uvas como motivo para desistir."
+        },
+        {
+          "id": "i5",
+          "label": "A raposa termina a história com a barriga vazia.",
+          "answer": "o5",
+          "why": "Ela segue sentindo a fome do início."
+        }
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "label": "Apresenta o desejo que move a personagem."
+        },
+        {
+          "id": "o2",
+          "label": "Marca a primeira tentativa de alcançar o objetivo."
+        },
+        {
+          "id": "o3",
+          "label": "Introduz uma pergunta que exige uma reação."
+        },
+        {
+          "id": "o4",
+          "label": "Mostra a justificativa usada para desistir."
+        },
+        {
+          "id": "o5",
+          "label": "Confirma que o problema inicial continua."
+        }
+      ],
+      "passage": "A raposa e as uvas\n\nA raposa atravessava o campo com fome.\nPerto de um muro, avistou cachos de uvas pendurados numa parreira.\nAs uvas brilhavam ao sol, e a raposa imaginou seu gosto doce.\nEla tomou distância, correu e saltou.\nAs patas tocaram o muro, mas os cachos continuaram fora de alcance.\nA raposa ensaiou outro salto e caiu no mesmo lugar.\n\nUm passarinho pousou no muro e perguntou:\n— Você vai tentar de novo?\nA raposa olhou para cima uma última vez.\n— Para quê? Essas uvas devem estar verdes — respondeu.\nDepois seguiu pelo campo, com a barriga tão vazia quanto antes.\nDo alto do muro, o passarinho olhou os cachos e ficou calado.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · edição histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/A_Rapoza_e_as_Uvas"
+      }
+    },
+    {
+      "id": "lp26-1-07",
+      "topic": 0,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Qual comentário avalia a decisão da raposa usando uma evidência do texto?",
+      "example": "Um comentário como «O cão se precipitou porque saiu antes de ouvir o aviso» avalia a decisão com base numa ação narrada.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o4",
+          "why": "O texto mostra que a raposa desejava as uvas antes dos saltos. A justificativa aparece depois da frustração.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "Ela foi paciente, pois ficou sob a parreira até as uvas caírem."
+            },
+            {
+              "id": "o2",
+              "label": "Ela fez bem em dividir as uvas, pois o passarinho também estava com fome."
+            },
+            {
+              "id": "o3",
+              "label": "Ela foi injustiçada, pois o passarinho derrubou os cachos de propósito."
+            },
+            {
+              "id": "o4",
+              "label": "Ela parece proteger o orgulho: só desvaloriza as uvas depois de tentar e falhar."
+            },
+            {
+              "id": "o5",
+              "label": "Ela agiu com cuidado, pois testou o sabor das uvas antes de decidir."
+            }
+          ]
+        }
+      ],
+      "passage": "A raposa e as uvas\n\nA raposa atravessava o campo com fome.\nPerto de um muro, avistou cachos de uvas pendurados numa parreira.\nAs uvas brilhavam ao sol, e a raposa imaginou seu gosto doce.\nEla tomou distância, correu e saltou.\nAs patas tocaram o muro, mas os cachos continuaram fora de alcance.\nA raposa ensaiou outro salto e caiu no mesmo lugar.\n\nUm passarinho pousou no muro e perguntou:\n— Você vai tentar de novo?\nA raposa olhou para cima uma última vez.\n— Para quê? Essas uvas devem estar verdes — respondeu.\nDepois seguiu pelo campo, com a barriga tão vazia quanto antes.\nDo alto do muro, o passarinho olhou os cachos e ficou calado.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · edição histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/A_Rapoza_e_as_Uvas"
+      }
+    },
+    {
+      "id": "lp26-1-08",
+      "topic": 0,
+      "difficulty": "medium",
+      "type": "fill",
+      "prompt": "Volte à fábula e complete com uma palavra exata do texto em cada item.",
+      "example": "Se o texto diz «O cão dormia junto ao portão», o lugar pode ser localizado relendo a primeira frase. A palavra pedida é «portão».",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Animal que faz uma promessa ao leão: ___.",
+          "answer": "rato",
+          "why": "O rato promete que poderá ajudar o leão."
+        },
+        {
+          "id": "i2",
+          "label": "Armadilha em que o leão caiu: ___.",
+          "answer": "rede",
+          "why": "A rede foi armada por caçadores."
+        },
+        {
+          "id": "i3",
+          "label": "Partes que resistiam quando o leão puxava as cordas: ___.",
+          "answer": "nós",
+          "why": "O texto diz que os nós resistiam."
+        },
+        {
+          "id": "i4",
+          "label": "Som que chamou a atenção do rato: ___.",
+          "answer": "rugido",
+          "why": "O rato ouviu o rugido do leão."
+        },
+        {
+          "id": "i5",
+          "label": "Parte do corpo usada pelo rato para cortar as cordas: ___.",
+          "answer": "dentes",
+          "why": "O rato usou os dentes para roer as cordas."
+        }
+      ],
+      "passage": "O leão e o rato\n\nUm leão dormia à sombra de uma árvore.\nUm rato atravessou a clareira e pisou sem querer na pata do leão.\nO leão acordou de repente e prendeu o visitante entre as garras.\n— Solte-me, por favor. Um dia ainda poderei ajudá-lo — pediu o rato.\nO leão achou graça na ideia, mas abriu a pata e o deixou ir.\n\nDias depois, o leão caiu em uma rede armada por caçadores.\nEle puxava as cordas, mas os nós resistiam.\nO rato ouviu o rugido e correu para a clareira.\nCom os dentes, roeu uma corda, depois outra.\nQuando a rede se abriu, o leão pôde sair.\n— Eu pensava que só os fortes podiam ajudar — disse o leão.\nO rato sorriu e os dois seguiram pela mata.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · versão histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/O_Le%C3%A3o_e_o_Rato"
+      }
+    },
+    {
+      "id": "lp26-1-09",
+      "topic": 0,
+      "difficulty": "medium",
+      "type": "boolean",
+      "prompt": "Indique se a fábula dá evidências para cada interpretação.",
+      "example": "Se um sapo evita uma poça após um susto, há evidência de cautela. Só essa pista não comprova que ele tem medo de qualquer água.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "A fome ajuda a explicar por que a raposa se interessa pelas uvas.",
+          "answer": "V",
+          "why": "A primeira linha apresenta a fome, e a raposa imagina o sabor das uvas."
+        },
+        {
+          "id": "i2",
+          "label": "A raposa tinha certeza de que as uvas estavam verdes porque as provou.",
+          "answer": "F",
+          "why": "Ela não alcança as uvas e diz apenas que devem estar verdes."
+        },
+        {
+          "id": "i3",
+          "label": "O passarinho observa a cena e faz uma pergunta, sem resolver o problema.",
+          "answer": "V",
+          "why": "Ele pergunta se ela tentará de novo e permanece calado no fim."
+        },
+        {
+          "id": "i4",
+          "label": "O desfecho mostra que a justificativa não resolveu a fome da raposa.",
+          "answer": "V",
+          "why": "Ela vai embora com a barriga vazia."
+        },
+        {
+          "id": "i5",
+          "label": "O título permite saber, antes da leitura, quantos saltos a raposa dará.",
+          "answer": "F",
+          "why": "O título indica os elementos centrais, sem revelar as ações."
+        }
+      ],
+      "passage": "A raposa e as uvas\n\nA raposa atravessava o campo com fome.\nPerto de um muro, avistou cachos de uvas pendurados numa parreira.\nAs uvas brilhavam ao sol, e a raposa imaginou seu gosto doce.\nEla tomou distância, correu e saltou.\nAs patas tocaram o muro, mas os cachos continuaram fora de alcance.\nA raposa ensaiou outro salto e caiu no mesmo lugar.\n\nUm passarinho pousou no muro e perguntou:\n— Você vai tentar de novo?\nA raposa olhou para cima uma última vez.\n— Para quê? Essas uvas devem estar verdes — respondeu.\nDepois seguiu pelo campo, com a barriga tão vazia quanto antes.\nDo alto do muro, o passarinho olhou os cachos e ficou calado.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · edição histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/A_Rapoza_e_as_Uvas"
+      }
+    },
+    {
+      "id": "lp26-1-10",
+      "topic": 0,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Que ensinamento é mais bem apoiado pela cena e pelo desfecho da fábula?",
+      "example": "Se um personagem divide sua água e mais tarde recebe ajuda de quem a compartilhou, o desfecho sustenta uma lição sobre solidariedade.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o3",
+          "why": "O rato liberta um animal muito maior. O enredo valoriza a contribuição de quem foi subestimado.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "Sempre devemos resolver dificuldades sem companhia."
+            },
+            {
+              "id": "o2",
+              "label": "Quem ajuda precisa exigir pagamento na mesma hora."
+            },
+            {
+              "id": "o3",
+              "label": "Mesmo quem parece pequeno pode fazer uma grande diferença."
+            },
+            {
+              "id": "o4",
+              "label": "Ser forte é a única maneira de vencer um obstáculo."
+            },
+            {
+              "id": "o5",
+              "label": "Prometer ajuda já basta para resolver qualquer problema."
+            }
+          ]
+        }
+      ],
+      "passage": "O leão e o rato\n\nUm leão dormia à sombra de uma árvore.\nUm rato atravessou a clareira e pisou sem querer na pata do leão.\nO leão acordou de repente e prendeu o visitante entre as garras.\n— Solte-me, por favor. Um dia ainda poderei ajudá-lo — pediu o rato.\nO leão achou graça na ideia, mas abriu a pata e o deixou ir.\n\nDias depois, o leão caiu em uma rede armada por caçadores.\nEle puxava as cordas, mas os nós resistiam.\nO rato ouviu o rugido e correu para a clareira.\nCom os dentes, roeu uma corda, depois outra.\nQuando a rede se abriu, o leão pôde sair.\n— Eu pensava que só os fortes podiam ajudar — disse o leão.\nO rato sorriu e os dois seguiram pela mata.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · versão histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/O_Le%C3%A3o_e_o_Rato"
+      },
+      "image": {
+        "src": "./midias/portugues-2026/leao-e-rato-v1.webp",
+        "alt": "Na clareira, um camundongo põe os dentes numa corda da rede que cobre o leão."
+      }
+    },
+    {
+      "id": "lp26-2-01",
+      "topic": 1,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Num cartaz de biblioteca, lê-se «Devolva o livro no prazo». Que efeito o verbo produz?",
+      "example": "Em «Feche o portão», a forma do verbo orienta o leitor a agir.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o3",
+          "why": "«Devolva» dirige um pedido ou instrução ao leitor e funciona no imperativo nesse contexto.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "Relata uma devolução passada."
+            },
+            {
+              "id": "o2",
+              "label": "Apresenta uma dúvida sobre o prazo."
+            },
+            {
+              "id": "o3",
+              "label": "Expressa uma orientação direta ao leitor."
+            },
+            {
+              "id": "o4",
+              "label": "Descreve uma ação habitual da biblioteca."
+            },
+            {
+              "id": "o5",
+              "label": "Anuncia que todos já devolveram os livros."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lp26-2-02",
+      "topic": 1,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Em «Os novos livros ampliaram o acervo», qual reescrita transforma o verbo em um substantivo da mesma família e preserva a ideia central?",
+      "example": "Em «A turma decidiu a data», o verbo pode virar «decisão» em «A decisão da turma foi sobre a data».",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o2",
+          "why": "«Ampliação» dá nome à ação de ampliar. A frase mantém a relação entre os novos livros e o acervo.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "Os novos livros ampliaram o acervo."
+            },
+            {
+              "id": "o2",
+              "label": "A ampliação do acervo ocorreu com a chegada dos novos livros."
+            },
+            {
+              "id": "o3",
+              "label": "Os livros vão ampliar o acervo."
+            },
+            {
+              "id": "o4",
+              "label": "Talvez os livros ampliem o acervo."
+            },
+            {
+              "id": "o5",
+              "label": "A biblioteca participa de um programa literário."
+            }
+          ]
+        }
+      ],
+      "passage": "Biblioteca do Aventureiro recebe novos livros infantis\n\nA Biblioteca Pública João Paulo II recebeu aproximadamente 600 livros infantis.\nA unidade funciona no CEU Aventureiro, em Joinville.\nA novidade amplia as opções de leitura para crianças de até sete anos.\nO acervo da biblioteca ultrapassa 8.000 livros.\n\nA seleção inclui poemas, histórias em quadrinhos e peças de teatro.\nHá também narrativas que usam imagens para contar histórias.\nAlgumas obras apresentam perspectivas afrocentradas.\nOutras tratam de temas como ciência, natureza e geografia.\n\nA biblioteca faz cerca de 150 atendimentos por mês.\nOs exemplares chegaram pelo PNLD Literário.\nO programa distribui livros para ampliar o acesso à leitura.\nCom a chegada do material, o público infantil ganhou mais opções para explorar.",
+      "passageSource": {
+        "label": "Adaptação didática · Prefeitura de Joinville · 23 de setembro de 2026",
+        "url": "https://www.joinville.sc.gov.br/noticias/novos-livros-ampliam-acervo-infantil-da-biblioteca-do-ceu-aventureiro/"
+      }
+    },
+    {
+      "id": "lp26-2-03",
+      "topic": 1,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Qual reescrita usa o presente histórico para narrar a chegada dos livros em setembro de 2026?",
+      "example": "«Em 1969, o ser humano pisa na Lua.» A data situa o evento no passado, embora «pisa» esteja no presente.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o2",
+          "why": "A data situa o fato no passado e «divulga» narra a ação com uma forma de presente.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "A biblioteca recebe os visitantes todas as semanas."
+            },
+            {
+              "id": "o2",
+              "label": "Em 23 de setembro de 2026, a Prefeitura divulga a chegada dos livros à biblioteca."
+            },
+            {
+              "id": "o3",
+              "label": "Amanhã a biblioteca recebe outra turma."
+            },
+            {
+              "id": "o4",
+              "label": "A biblioteca recebia livros naquele mês."
+            },
+            {
+              "id": "o5",
+              "label": "Espero que a biblioteca receba outros livros."
+            }
+          ]
+        }
+      ],
+      "passage": "Biblioteca do Aventureiro recebe novos livros infantis\n\nA Biblioteca Pública João Paulo II recebeu aproximadamente 600 livros infantis.\nA unidade funciona no CEU Aventureiro, em Joinville.\nA novidade amplia as opções de leitura para crianças de até sete anos.\nO acervo da biblioteca ultrapassa 8.000 livros.\n\nA seleção inclui poemas, histórias em quadrinhos e peças de teatro.\nHá também narrativas que usam imagens para contar histórias.\nAlgumas obras apresentam perspectivas afrocentradas.\nOutras tratam de temas como ciência, natureza e geografia.\n\nA biblioteca faz cerca de 150 atendimentos por mês.\nOs exemplares chegaram pelo PNLD Literário.\nO programa distribui livros para ampliar o acesso à leitura.\nCom a chegada do material, o público infantil ganhou mais opções para explorar.",
+      "passageSource": {
+        "label": "Adaptação didática · Prefeitura de Joinville · 23 de setembro de 2026",
+        "url": "https://www.joinville.sc.gov.br/noticias/novos-livros-ampliam-acervo-infantil-da-biblioteca-do-ceu-aventureiro/"
+      }
+    },
+    {
+      "id": "lp26-2-04",
+      "topic": 1,
+      "difficulty": "medium",
+      "type": "boolean",
+      "prompt": "Julgue os efeitos de sentido dos verbos nos diferentes gêneros.",
+      "example": "Em «Talvez a feira abra cedo», o subjuntivo combina com a ideia de possibilidade.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Em «A biblioteca atende crianças», o indicativo apresenta o atendimento como fato.",
+          "answer": "V",
+          "why": "«Atende» está no presente do indicativo e informa uma atividade."
+        },
+        {
+          "id": "i2",
+          "label": "Em «Pegue seu exemplar», o imperativo orienta quem lê o aviso.",
+          "answer": "V",
+          "why": "O verbo apresenta uma ação pedida ao leitor."
+        },
+        {
+          "id": "i3",
+          "label": "Em «Espero que o rato volte», «volte» apresenta uma ação já concluída.",
+          "answer": "F",
+          "why": "O subjuntivo apresenta o retorno como desejado."
+        },
+        {
+          "id": "i4",
+          "label": "Em «Ontem, na cena final, o rato rompe a rede», «rompe» pode dar vivacidade a um fato passado.",
+          "answer": "V",
+          "why": "O marcador «ontem» situa o acontecimento e o verbo no presente aproxima a cena do leitor."
+        },
+        {
+          "id": "i5",
+          "label": "Em «A raposa saltou», «saltou» está no presente do indicativo.",
+          "answer": "F",
+          "why": "«Saltou» está no pretérito perfeito do indicativo."
+        }
+      ]
+    },
+    {
+      "id": "lp26-2-05",
+      "topic": 1,
+      "difficulty": "easy",
+      "type": "fill",
+      "prompt": "Transforme o verbo entre parênteses em um substantivo da mesma família. Escreva uma palavra em cada campo.",
+      "example": "«A turma escolheu o livro» vira «A escolha da turma foi pelo livro». «Escolha» dá nome à ação de escolher.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "A ___ do livro será na sexta-feira. (devolver)",
+          "answer": "devolução",
+          "why": "«Devolução» nomeia a ação de devolver."
+        },
+        {
+          "id": "i2",
+          "label": "A ___ do espaço trouxe mais leitores. (ampliar)",
+          "answer": "ampliação",
+          "why": "«Ampliação» nomeia a ação de ampliar."
+        },
+        {
+          "id": "i3",
+          "label": "A ___ da peça foi marcada para sábado. (apresentar)",
+          "answer": "apresentação",
+          "why": "«Apresentação» nomeia a ação de apresentar."
+        },
+        {
+          "id": "i4",
+          "label": "A ___ do material foi autorizada. (distribuir)",
+          "answer": "distribuição",
+          "why": "«Distribuição» nomeia a ação de distribuir."
+        },
+        {
+          "id": "i5",
+          "label": "A ___ do acervo terminou esta manhã. (organizar)",
+          "answer": "organização",
+          "why": "«Organização» nomeia a ação de organizar."
+        }
+      ]
+    },
+    {
+      "id": "lp26-2-06",
+      "topic": 1,
+      "difficulty": "medium",
+      "type": "match",
+      "prompt": "Associe cada ocorrência do verbo à sua função no contexto.",
+      "example": "«Todo sábado, ela ensaia» usa o presente do indicativo para indicar hábito.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Todo dia, o leão descansa à sombra.",
+          "answer": "o1",
+          "why": "«Descansa» indica rotina."
+        },
+        {
+          "id": "i2",
+          "label": "Em 1500, a frota chega à costa, diz a linha do tempo.",
+          "answer": "o2",
+          "why": "«Chega» está no presente, com referência a uma data passada."
+        },
+        {
+          "id": "i3",
+          "label": "Ontem, a raposa saltou perto do muro.",
+          "answer": "o3",
+          "why": "«Saltou» apresenta a ação passada como concluída."
+        },
+        {
+          "id": "i4",
+          "label": "Espero que o rato encontre a saída.",
+          "answer": "o4",
+          "why": "«Encontre» expressa o que se espera que aconteça."
+        },
+        {
+          "id": "i5",
+          "label": "Observe a imagem e responda à pergunta.",
+          "answer": "o5",
+          "why": "As formas orientam as ações do leitor."
+        }
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "label": "Presente do indicativo com valor de hábito."
+        },
+        {
+          "id": "o2",
+          "label": "Presente histórico."
+        },
+        {
+          "id": "o3",
+          "label": "Pretérito perfeito do indicativo."
+        },
+        {
+          "id": "o4",
+          "label": "Subjuntivo com valor de desejo."
+        },
+        {
+          "id": "o5",
+          "label": "Imperativo com valor de instrução."
+        }
+      ]
+    },
+    {
+      "id": "lp26-2-07",
+      "topic": 1,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Qual fala mantém a ajuda como possibilidade e emprega o subjuntivo?",
+      "example": "Em «Talvez o portão esteja aberto», «esteja» deixa a situação em aberto.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o3",
+          "why": "«Consiga», combinado com «talvez», apresenta a ajuda como possibilidade.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "Eu ajudei você."
+            },
+            {
+              "id": "o2",
+              "label": "Eu ajudo quem precisa."
+            },
+            {
+              "id": "o3",
+              "label": "Talvez eu consiga ajudar você."
+            },
+            {
+              "id": "o4",
+              "label": "Ajude-me com esta corda."
+            },
+            {
+              "id": "o5",
+              "label": "Eu já tinha ajudado outro leão."
+            }
+          ]
+        }
+      ],
+      "passage": "O leão e o rato\n\nUm leão dormia à sombra de uma árvore.\nUm rato atravessou a clareira e pisou sem querer na pata do leão.\nO leão acordou de repente e prendeu o visitante entre as garras.\n— Solte-me, por favor. Um dia ainda poderei ajudá-lo — pediu o rato.\nO leão achou graça na ideia, mas abriu a pata e o deixou ir.\n\nDias depois, o leão caiu em uma rede armada por caçadores.\nEle puxava as cordas, mas os nós resistiam.\nO rato ouviu o rugido e correu para a clareira.\nCom os dentes, roeu uma corda, depois outra.\nQuando a rede se abriu, o leão pôde sair.\n— Eu pensava que só os fortes podiam ajudar — disse o leão.\nO rato sorriu e os dois seguiram pela mata.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · versão histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/O_Le%C3%A3o_e_o_Rato"
+      }
+    },
+    {
+      "id": "lp26-2-08",
+      "topic": 1,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Qual frase distingue pelo contexto o infinitivo usado como substantivo?",
+      "example": "Em «O cantar dos pássaros me acordou», o artigo acompanha o infinitivo, que nomeia a ação.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o4",
+          "why": "Em «O ler em voz alta», o artigo «o» introduz o infinitivo usado com valor de substantivo.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "As crianças vão ler de manhã."
+            },
+            {
+              "id": "o2",
+              "label": "A professora pediu para ler a primeira página."
+            },
+            {
+              "id": "o3",
+              "label": "Leremos a fábula amanhã."
+            },
+            {
+              "id": "o4",
+              "label": "O ler em voz alta ajudou a turma a perceber o ritmo."
+            },
+            {
+              "id": "o5",
+              "label": "Cada pessoa pode ler no próprio ritmo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lp26-2-09",
+      "topic": 1,
+      "difficulty": "medium",
+      "type": "fill",
+      "prompt": "Conjugue cada verbo na forma pedida e escreva apenas o verbo.",
+      "example": "Em «Espero que ela ___ cedo (chegar, presente do subjuntivo)», escreva «chegue».",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Todo dia, a bibliotecária ___ livros. (separar, presente do indicativo)",
+          "answer": "separa",
+          "why": "Com sujeito no singular, a forma é «separa»."
+        },
+        {
+          "id": "i2",
+          "label": "Ontem, as crianças ___ a biblioteca. (visitar, pretérito perfeito do indicativo)",
+          "answer": "visitaram",
+          "why": "«Visitaram» marca uma visita passada concluída."
+        },
+        {
+          "id": "i3",
+          "label": "Espero que elas ___ cedo. (voltar, presente do subjuntivo)",
+          "answer": "voltem",
+          "why": "«Voltem» expressa o retorno esperado."
+        },
+        {
+          "id": "i4",
+          "label": "___ o livro com cuidado, por favor. (manusear, imperativo afirmativo para você)",
+          "answer": "manuseie",
+          "why": "«Manuseie» orienta diretamente o leitor tratado por «você»."
+        },
+        {
+          "id": "i5",
+          "label": "Em 2026, a biblioteca ___ seu acervo infantil, registra a linha do tempo. (ampliar, presente histórico)",
+          "answer": "amplia",
+          "why": "«Amplia» está no presente, enquanto a data remete ao fato narrado na linha do tempo."
+        }
+      ]
+    },
+    {
+      "id": "lp26-2-10",
+      "topic": 1,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "A frase «O rato roeu as cordas» está na narração. Qual opção transforma o relato em uma instrução dirigida ao rato?",
+      "example": "«A menina abriu o livro» narra um evento. «Abra o livro, menina» dirige uma instrução à personagem.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o3",
+          "why": "«Rato» chama o interlocutor e «roa» funciona como imperativo afirmativo para «você» nesse contexto.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "Talvez o rato roa as cordas."
+            },
+            {
+              "id": "o2",
+              "label": "O rato roía as cordas."
+            },
+            {
+              "id": "o3",
+              "label": "Rato, roa as cordas."
+            },
+            {
+              "id": "o4",
+              "label": "O rato há de roer as cordas."
+            },
+            {
+              "id": "o5",
+              "label": "O rato tinha roído as cordas."
+            }
+          ]
+        }
+      ],
+      "passage": "O leão e o rato\n\nUm leão dormia à sombra de uma árvore.\nUm rato atravessou a clareira e pisou sem querer na pata do leão.\nO leão acordou de repente e prendeu o visitante entre as garras.\n— Solte-me, por favor. Um dia ainda poderei ajudá-lo — pediu o rato.\nO leão achou graça na ideia, mas abriu a pata e o deixou ir.\n\nDias depois, o leão caiu em uma rede armada por caçadores.\nEle puxava as cordas, mas os nós resistiam.\nO rato ouviu o rugido e correu para a clareira.\nCom os dentes, roeu uma corda, depois outra.\nQuando a rede se abriu, o leão pôde sair.\n— Eu pensava que só os fortes podiam ajudar — disse o leão.\nO rato sorriu e os dois seguiram pela mata.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · versão histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/O_Le%C3%A3o_e_o_Rato"
+      }
+    },
+    {
+      "id": "lp26-3-01",
+      "topic": 2,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Que verbo apresenta como concluído o primeiro salto da raposa?",
+      "example": "Em «O cão corria quando tropeçou», «tropeçou» marca o acontecimento pontual.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o3",
+          "why": "«Saltou» está no pretérito perfeito e apresenta a ação específica pedida. «Perguntou» também é perfeito, mas indica outra ação.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "atravessava"
+            },
+            {
+              "id": "o2",
+              "label": "brilhavam"
+            },
+            {
+              "id": "o3",
+              "label": "saltou"
+            },
+            {
+              "id": "o4",
+              "label": "continuaram"
+            },
+            {
+              "id": "o5",
+              "label": "perguntou"
+            }
+          ]
+        }
+      ],
+      "passage": "A raposa e as uvas\n\nA raposa atravessava o campo com fome.\nPerto de um muro, avistou cachos de uvas pendurados numa parreira.\nAs uvas brilhavam ao sol, e a raposa imaginou seu gosto doce.\nEla tomou distância, correu e saltou.\nAs patas tocaram o muro, mas os cachos continuaram fora de alcance.\nA raposa ensaiou outro salto e caiu no mesmo lugar.\n\nUm passarinho pousou no muro e perguntou:\n— Você vai tentar de novo?\nA raposa olhou para cima uma última vez.\n— Para quê? Essas uvas devem estar verdes — respondeu.\nDepois seguiu pelo campo, com a barriga tão vazia quanto antes.\nDo alto do muro, o passarinho olhou os cachos e ficou calado.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · edição histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/A_Rapoza_e_as_Uvas"
+      }
+    },
+    {
+      "id": "lp26-3-02",
+      "topic": 2,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Que papel têm «puxava» e «resistiam» antes de o rato aparecer?",
+      "example": "Em «Chovia quando o ônibus chegou», «chovia» compõe o cenário da chegada.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o2",
+          "why": "O pretérito imperfeito descreve a situação em andamento. A chegada do rato é um novo acontecimento no enredo.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "Indicam instruções dadas aos caçadores."
+            },
+            {
+              "id": "o2",
+              "label": "Mostram ações ou situações em curso enquanto o leão ainda estava preso."
+            },
+            {
+              "id": "o3",
+              "label": "Apresentam acontecimentos futuros em relação ao resgate."
+            },
+            {
+              "id": "o4",
+              "label": "Indicam desejos ainda não realizados pelo rato."
+            },
+            {
+              "id": "o5",
+              "label": "Mostram dois fatos ocorridos depois de a rede se abrir."
+            }
+          ]
+        }
+      ],
+      "passage": "O leão e o rato\n\nUm leão dormia à sombra de uma árvore.\nUm rato atravessou a clareira e pisou sem querer na pata do leão.\nO leão acordou de repente e prendeu o visitante entre as garras.\n— Solte-me, por favor. Um dia ainda poderei ajudá-lo — pediu o rato.\nO leão achou graça na ideia, mas abriu a pata e o deixou ir.\n\nDias depois, o leão caiu em uma rede armada por caçadores.\nEle puxava as cordas, mas os nós resistiam.\nO rato ouviu o rugido e correu para a clareira.\nCom os dentes, roeu uma corda, depois outra.\nQuando a rede se abriu, o leão pôde sair.\n— Eu pensava que só os fortes podiam ajudar — disse o leão.\nO rato sorriu e os dois seguiram pela mata.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · versão histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/O_Le%C3%A3o_e_o_Rato"
+      }
+    },
+    {
+      "id": "lp26-3-03",
+      "topic": 2,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "O que muda entre «Quando o rato chegou, o leão caiu na rede» e «Quando o rato chegou, o leão já havia caído na rede»?",
+      "example": "«Quando a aula começou, eu já tinha aberto o caderno» situa a abertura antes do início da aula.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o4",
+          "why": "«Já havia caído» é uma forma composta do pretérito mais-que-perfeito do indicativo. Ela situa a queda antes da chegada.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "Na segunda, a queda ainda é uma possibilidade."
+            },
+            {
+              "id": "o2",
+              "label": "Na segunda, a chegada passa a ser uma ação habitual."
+            },
+            {
+              "id": "o3",
+              "label": "Na segunda, a queda acontece depois que o rato chega."
+            },
+            {
+              "id": "o4",
+              "label": "Na segunda, a queda é anterior à chegada do rato."
+            },
+            {
+              "id": "o5",
+              "label": "Na segunda, o rato dá ao leão uma ordem."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lp26-3-04",
+      "topic": 2,
+      "difficulty": "medium",
+      "type": "boolean",
+      "prompt": "Julgue as afirmações sobre o sentido dos verbos no passado.",
+      "example": "Em «Na infância, Lia desenhava todas as tardes», o pretérito imperfeito mostra repetição no passado.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Em «A raposa atravessava o campo», «atravessava» mostra um deslocamento em curso.",
+          "answer": "V",
+          "why": "O imperfeito abre o cenário em que a raposa vê as uvas."
+        },
+        {
+          "id": "i2",
+          "label": "Em «O passarinho pousou», «pousou» apresenta um acontecimento pontual.",
+          "answer": "V",
+          "why": "O perfeito mostra o pouso como evento concluído."
+        },
+        {
+          "id": "i3",
+          "label": "Em «Ela já havia tentado quando o passarinho falou», a tentativa vem depois da fala.",
+          "answer": "F",
+          "why": "O mais-que-perfeito marca a tentativa como anterior à fala."
+        },
+        {
+          "id": "i4",
+          "label": "Em «Os nós resistiam», o verbo dá uma ordem para os nós.",
+          "answer": "F",
+          "why": "«Resistiam» descreve uma situação passada."
+        },
+        {
+          "id": "i5",
+          "label": "Em «Todo dia, o rato passava por ali», «passava» pode indicar hábito no passado.",
+          "answer": "V",
+          "why": "A expressão «todo dia» reforça a repetição junto do imperfeito."
+        }
+      ]
+    },
+    {
+      "id": "lp26-3-05",
+      "topic": 2,
+      "difficulty": "medium",
+      "type": "fill",
+      "prompt": "Escolha, entre as duas formas dadas, a que produz o sentido indicado. Digite apenas a forma escolhida.",
+      "example": "Para indicar hábito em «Naquele tempo, Bia ___ todo sábado», entre «viajava» e «viajou», escolhemos «viajava».",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Às terças, o grupo ___ na biblioteca. (hábito: se reunia / se reuniu)",
+          "answer": "se reunia",
+          "why": "O imperfeito com «às terças» marca repetição."
+        },
+        {
+          "id": "i2",
+          "label": "Num único salto, o sapo ___ na pedra. (ação concluída: pousava / pousou)",
+          "answer": "pousou",
+          "why": "O perfeito marca o salto como acontecimento concluído."
+        },
+        {
+          "id": "i3",
+          "label": "Enquanto o vento ___, o rato buscou abrigo. (fundo em curso: soprava / soprou)",
+          "answer": "soprava",
+          "why": "«Soprava» apresenta a situação em andamento."
+        },
+        {
+          "id": "i4",
+          "label": "Quando o leão acordou, o rato já ___. (ação anterior a outra: tinha chegado / chegava)",
+          "answer": "tinha chegado",
+          "why": "A forma composta localiza a chegada antes do despertar."
+        },
+        {
+          "id": "i5",
+          "label": "No fim da cena, o nó finalmente ___. (desfecho pontual: cedia / cedeu)",
+          "answer": "cedeu",
+          "why": "O perfeito destaca o momento em que o nó se soltou."
+        }
+      ]
+    },
+    {
+      "id": "lp26-3-06",
+      "topic": 2,
+      "difficulty": "medium",
+      "type": "match",
+      "prompt": "Associe cada trecho ao papel da forma verbal destacada entre aspas.",
+      "example": "Em «A porta ESTALOU», o pretérito perfeito faz avançar a sequência de acontecimentos.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Toda segunda, a turma «lia» uma fábula.",
+          "answer": "o1",
+          "why": "O marcador semanal mostra repetição."
+        },
+        {
+          "id": "i2",
+          "label": "A sala «era» ampla e silenciosa.",
+          "answer": "o2",
+          "why": "«Era» apresenta uma característica do ambiente."
+        },
+        {
+          "id": "i3",
+          "label": "A menina «lia» quando a luz se apagou.",
+          "answer": "o3",
+          "why": "O imperfeito mostra a leitura em curso no momento em que a luz se apagou."
+        },
+        {
+          "id": "i4",
+          "label": "A bibliotecária «fechou» o portão às seis.",
+          "answer": "o4",
+          "why": "«Fechou» apresenta a ação como concluída."
+        },
+        {
+          "id": "i5",
+          "label": "A turma já «saíra» quando o autor chegou.",
+          "answer": "o5",
+          "why": "«Saíra» equivale a «já tinha saído» nessa frase."
+        }
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "label": "Hábito no passado."
+        },
+        {
+          "id": "o2",
+          "label": "Descrição do cenário no passado."
+        },
+        {
+          "id": "o3",
+          "label": "Ação em curso interrompida por outra."
+        },
+        {
+          "id": "o4",
+          "label": "Evento passado visto como concluído."
+        },
+        {
+          "id": "o5",
+          "label": "Evento ocorrido antes de outro fato passado."
+        }
+      ]
+    },
+    {
+      "id": "lp26-3-07",
+      "topic": 2,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "A notícia diz que a biblioteca «recebeu» livros. Que sentido essa forma verbal produz?",
+      "example": "Em «A escola instalou uma rampa», «instalou» relata um fato passado apresentado como concluído.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o1",
+          "why": "«Recebeu» está no pretérito perfeito do indicativo. O verbo relata o recebimento como um fato ocorrido.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "A chegada dos livros é apresentada como um fato passado concluído."
+            },
+            {
+              "id": "o2",
+              "label": "A chegada dos livros acontece a cada semana."
+            },
+            {
+              "id": "o3",
+              "label": "A chegada dos livros é um desejo da Prefeitura."
+            },
+            {
+              "id": "o4",
+              "label": "O leitor recebe uma ordem para buscar livros."
+            },
+            {
+              "id": "o5",
+              "label": "A data da chegada ficará para o futuro."
+            }
+          ]
+        }
+      ],
+      "passage": "Biblioteca do Aventureiro recebe novos livros infantis\n\nA Biblioteca Pública João Paulo II recebeu aproximadamente 600 livros infantis.\nA unidade funciona no CEU Aventureiro, em Joinville.\nA novidade amplia as opções de leitura para crianças de até sete anos.\nO acervo da biblioteca ultrapassa 8.000 livros.\n\nA seleção inclui poemas, histórias em quadrinhos e peças de teatro.\nHá também narrativas que usam imagens para contar histórias.\nAlgumas obras apresentam perspectivas afrocentradas.\nOutras tratam de temas como ciência, natureza e geografia.\n\nA biblioteca faz cerca de 150 atendimentos por mês.\nOs exemplares chegaram pelo PNLD Literário.\nO programa distribui livros para ampliar o acesso à leitura.\nCom a chegada do material, o público infantil ganhou mais opções para explorar.",
+      "passageSource": {
+        "label": "Adaptação didática · Prefeitura de Joinville · 23 de setembro de 2026",
+        "url": "https://www.joinville.sc.gov.br/noticias/novos-livros-ampliam-acervo-infantil-da-biblioteca-do-ceu-aventureiro/"
+      }
+    },
+    {
+      "id": "lp26-3-08",
+      "topic": 2,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Qual reescrita mantém claramente os livros como fato anterior à divulgação e usa o mais-que-perfeito na forma simples?",
+      "example": "«Joana terminara o desenho quando o sinal tocou». «Terminara» tem o mesmo sentido temporal de «já tinha terminado».",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o4",
+          "why": "«Recebera» é a forma simples do pretérito mais-que-perfeito. «Já» e «quando» ajudam a perceber a ordem dos acontecimentos.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "A Prefeitura divulgou a notícia quando a biblioteca recebia os livros."
+            },
+            {
+              "id": "o2",
+              "label": "A biblioteca recebeu os livros depois do anúncio da Prefeitura."
+            },
+            {
+              "id": "o3",
+              "label": "A Prefeitura divulgou a notícia antes de a biblioteca receber os livros."
+            },
+            {
+              "id": "o4",
+              "label": "A biblioteca já recebera os livros quando a Prefeitura divulgou a notícia."
+            },
+            {
+              "id": "o5",
+              "label": "A biblioteca recebe novos livros quando a Prefeitura divulga notícias."
+            }
+          ]
+        }
+      ],
+      "passage": "Biblioteca do Aventureiro recebe novos livros infantis\n\nA Biblioteca Pública João Paulo II recebeu aproximadamente 600 livros infantis.\nA unidade funciona no CEU Aventureiro, em Joinville.\nA novidade amplia as opções de leitura para crianças de até sete anos.\nO acervo da biblioteca ultrapassa 8.000 livros.\n\nA seleção inclui poemas, histórias em quadrinhos e peças de teatro.\nHá também narrativas que usam imagens para contar histórias.\nAlgumas obras apresentam perspectivas afrocentradas.\nOutras tratam de temas como ciência, natureza e geografia.\n\nA biblioteca faz cerca de 150 atendimentos por mês.\nOs exemplares chegaram pelo PNLD Literário.\nO programa distribui livros para ampliar o acesso à leitura.\nCom a chegada do material, o público infantil ganhou mais opções para explorar.",
+      "passageSource": {
+        "label": "Adaptação didática · Prefeitura de Joinville · 23 de setembro de 2026",
+        "url": "https://www.joinville.sc.gov.br/noticias/novos-livros-ampliam-acervo-infantil-da-biblioteca-do-ceu-aventureiro/"
+      }
+    },
+    {
+      "id": "lp26-3-09",
+      "topic": 2,
+      "difficulty": "medium",
+      "type": "crossword",
+      "prompt": "Complete a cruzadinha dos pretéritos. Use letras sem acentos.",
+      "example": "Se uma pista pede o contrário de «futuro» na localização temporal de um fato atual, «presente» é uma resposta possível conforme a definição e o tamanho da grade.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Tempo geral em que se situam os acontecimentos de ontem.",
+          "answer": "PASSADO",
+          "why": "O passado reúne fatos anteriores ao momento da fala.",
+          "cells": [
+            "9,0",
+            "9,1",
+            "9,2",
+            "9,3",
+            "9,4",
+            "9,5",
+            "9,6"
+          ]
+        },
+        {
+          "id": "i2",
+          "label": "Pretérito que apresenta «abriu» como ação concluída.",
+          "answer": "PERFEITO",
+          "why": "«Abriu» está no pretérito perfeito do indicativo.",
+          "cells": [
+            "9,0",
+            "10,0",
+            "11,0",
+            "12,0",
+            "13,0",
+            "14,0",
+            "15,0",
+            "16,0"
+          ]
+        },
+        {
+          "id": "i3",
+          "label": "Tipo de trecho que apresenta o cenário, como «O corredor era escuro».",
+          "answer": "DESCRICAO",
+          "why": "A descrição apresenta características do ambiente.",
+          "cells": [
+            "7,2",
+            "8,2",
+            "9,2",
+            "10,2",
+            "11,2",
+            "12,2",
+            "13,2",
+            "14,2",
+            "15,2"
+          ]
+        },
+        {
+          "id": "i4",
+          "label": "Na frase «já tinha saído quando o sinal tocou», a saída é ___ ao toque.",
+          "answer": "ANTERIOR",
+          "why": "A saída acontece primeiro.",
+          "cells": [
+            "9,4",
+            "10,4",
+            "11,4",
+            "12,4",
+            "13,4",
+            "14,4",
+            "15,4",
+            "16,4"
+          ]
+        },
+        {
+          "id": "i5",
+          "label": "Pretérito de «brincava» em «Toda tarde ele brincava».",
+          "answer": "IMPERFEITO",
+          "why": "O imperfeito pode indicar hábito no passado.",
+          "cells": [
+            "0,6",
+            "1,6",
+            "2,6",
+            "3,6",
+            "4,6",
+            "5,6",
+            "6,6",
+            "7,6",
+            "8,6",
+            "9,6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lp26-3-10",
+      "topic": 2,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Que efeito se perde ao trocar «Todas as tardes, o rato passava pela clareira» por «Ontem, o rato passou pela clareira»?",
+      "example": "«João pedalava aos domingos» faz pensar numa rotina. «João pedalou ontem» destaca uma ocasião.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o3",
+          "why": "A primeira frase combina frequência e pretérito imperfeito. A segunda apresenta uma ocorrência delimitada.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "O lugar em que o fato ocorre."
+            },
+            {
+              "id": "o2",
+              "label": "A identificação de quem praticou a ação."
+            },
+            {
+              "id": "o3",
+              "label": "A ideia de que a passagem se repetia no passado."
+            },
+            {
+              "id": "o4",
+              "label": "A noção de que o fato está no passado."
+            },
+            {
+              "id": "o5",
+              "label": "A certeza de que há uma ação na frase."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lp26-4-01",
+      "topic": 3,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Em «Os novos livros ampliam o acervo», qual é o sujeito completo?",
+      "example": "Em «A pequena praça recebeu visitantes», o sujeito completo é «A pequena praça».",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o1",
+          "why": "«Os novos livros» é o termo sobre o qual se declara que ampliam o acervo.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "Os novos livros"
+            },
+            {
+              "id": "o2",
+              "label": "livros"
+            },
+            {
+              "id": "o3",
+              "label": "ampliam"
+            },
+            {
+              "id": "o4",
+              "label": "o acervo"
+            },
+            {
+              "id": "o5",
+              "label": "os novos livros ampliam"
+            }
+          ]
+        }
+      ],
+      "passage": "Biblioteca do Aventureiro recebe novos livros infantis\n\nA Biblioteca Pública João Paulo II recebeu aproximadamente 600 livros infantis.\nA unidade funciona no CEU Aventureiro, em Joinville.\nA novidade amplia as opções de leitura para crianças de até sete anos.\nO acervo da biblioteca ultrapassa 8.000 livros.\n\nA seleção inclui poemas, histórias em quadrinhos e peças de teatro.\nHá também narrativas que usam imagens para contar histórias.\nAlgumas obras apresentam perspectivas afrocentradas.\nOutras tratam de temas como ciência, natureza e geografia.\n\nA biblioteca faz cerca de 150 atendimentos por mês.\nOs exemplares chegaram pelo PNLD Literário.\nO programa distribui livros para ampliar o acesso à leitura.\nCom a chegada do material, o público infantil ganhou mais opções para explorar.",
+      "passageSource": {
+        "label": "Adaptação didática · Prefeitura de Joinville · 23 de setembro de 2026",
+        "url": "https://www.joinville.sc.gov.br/noticias/novos-livros-ampliam-acervo-infantil-da-biblioteca-do-ceu-aventureiro/"
+      }
+    },
+    {
+      "id": "lp26-4-02",
+      "topic": 3,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Em «O rato ouviu o rugido», qual trecho é o predicado?",
+      "example": "Em «A tartaruga atravessou a estrada», «atravessou a estrada» é o que se declara sobre o sujeito.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o5",
+          "why": "O predicado inclui o verbo «ouviu» e a informação que o completa, «o rugido».",
+          "options": [
+            {
+              "id": "o1",
+              "label": "O rato"
+            },
+            {
+              "id": "o2",
+              "label": "rato"
+            },
+            {
+              "id": "o3",
+              "label": "ouviu"
+            },
+            {
+              "id": "o4",
+              "label": "o rugido"
+            },
+            {
+              "id": "o5",
+              "label": "ouviu o rugido"
+            }
+          ]
+        }
+      ],
+      "passage": "O leão e o rato\n\nUm leão dormia à sombra de uma árvore.\nUm rato atravessou a clareira e pisou sem querer na pata do leão.\nO leão acordou de repente e prendeu o visitante entre as garras.\n— Solte-me, por favor. Um dia ainda poderei ajudá-lo — pediu o rato.\nO leão achou graça na ideia, mas abriu a pata e o deixou ir.\n\nDias depois, o leão caiu em uma rede armada por caçadores.\nEle puxava as cordas, mas os nós resistiam.\nO rato ouviu o rugido e correu para a clareira.\nCom os dentes, roeu uma corda, depois outra.\nQuando a rede se abriu, o leão pôde sair.\n— Eu pensava que só os fortes podiam ajudar — disse o leão.\nO rato sorriu e os dois seguiram pela mata.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · versão histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/O_Le%C3%A3o_e_o_Rato"
+      }
+    },
+    {
+      "id": "lp26-4-03",
+      "topic": 3,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Qual frase usa a vírgula corretamente para isolar o chamamento?",
+      "example": "Em «Pedro, abra a janela», a vírgula separa o vocativo «Pedro» do pedido.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o4",
+          "why": "«Alunos» é um vocativo nessa frase. A vírgula o separa da instrução «leiam a fábula».",
+          "options": [
+            {
+              "id": "o1",
+              "label": "A turma, leu a fábula."
+            },
+            {
+              "id": "o2",
+              "label": "Alunos leiam, a fábula."
+            },
+            {
+              "id": "o3",
+              "label": "A turma leu, a fábula."
+            },
+            {
+              "id": "o4",
+              "label": "Alunos, leiam a fábula."
+            },
+            {
+              "id": "o5",
+              "label": "A, turma leu a fábula."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lp26-4-04",
+      "topic": 3,
+      "difficulty": "medium",
+      "type": "boolean",
+      "prompt": "Julgue as afirmações sobre sujeito, predicado e vírgula.",
+      "example": "Em «As equipes voltaram cedo», «As equipes» é o sujeito e «voltaram cedo» é o predicado.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Em «O leão dormia», o sujeito é «O leão».",
+          "answer": "V",
+          "why": "«O leão» é de quem se fala."
+        },
+        {
+          "id": "i2",
+          "label": "Em «A raposa saltou sobre o muro», «saltou sobre o muro» é o predicado.",
+          "answer": "V",
+          "why": "É o que se declara a respeito da raposa."
+        },
+        {
+          "id": "i3",
+          "label": "Em «Os cachos brilhavam», deve haver uma vírgula entre «cachos» e «brilhavam».",
+          "answer": "F",
+          "why": "Nessa construção, a vírgula separaria indevidamente o sujeito do predicado."
+        },
+        {
+          "id": "i4",
+          "label": "Em «Amigos, observem os cachos», «Amigos» funciona como chamamento.",
+          "answer": "V",
+          "why": "O termo é um vocativo separado por vírgula."
+        },
+        {
+          "id": "i5",
+          "label": "Em «Chegaram novos livros», «novos livros» é o sujeito.",
+          "answer": "V",
+          "why": "O sujeito pode vir após o verbo e concorda com «chegaram»."
+        }
+      ]
+    },
+    {
+      "id": "lp26-4-05",
+      "topic": 3,
+      "difficulty": "medium",
+      "type": "fill",
+      "prompt": "Copie somente o sujeito completo de cada oração, sem pontuação.",
+      "example": "Em «As duas corujas chegaram cedo», copie «As duas corujas». O artigo e o numeral fazem parte do sujeito.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "O pequeno rato roeu a corda.",
+          "answer": "O pequeno rato",
+          "why": "O artigo e o adjetivo acompanham «rato»."
+        },
+        {
+          "id": "i2",
+          "label": "A biblioteca do bairro recebeu livros.",
+          "answer": "A biblioteca do bairro",
+          "why": "«Do bairro» identifica a biblioteca e faz parte do sujeito."
+        },
+        {
+          "id": "i3",
+          "label": "Chegaram os novos exemplares.",
+          "answer": "os novos exemplares",
+          "why": "O sujeito vem depois do verbo."
+        },
+        {
+          "id": "i4",
+          "label": "A raposa e o passarinho olharam as uvas.",
+          "answer": "A raposa e o passarinho",
+          "why": "Os dois seres compõem o sujeito."
+        },
+        {
+          "id": "i5",
+          "label": "Minha turma preferiu a fábula.",
+          "answer": "Minha turma",
+          "why": "«Minha» acompanha o núcleo «turma»."
+        }
+      ]
+    },
+    {
+      "id": "lp26-4-06",
+      "topic": 3,
+      "difficulty": "medium",
+      "type": "match",
+      "prompt": "Associe cada trecho entre aspas à função que ele cumpre na frase.",
+      "example": "Em «Pessoal, a sessão começou», «Pessoal» é um chamamento isolado por vírgula.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "«A rede» prendia o leão.",
+          "answer": "o1",
+          "why": "A rede é o termo sobre o qual se faz uma declaração."
+        },
+        {
+          "id": "i2",
+          "label": "Apareceu «o pequeno rato».",
+          "answer": "o2",
+          "why": "O rato é quem apareceu, e o sujeito vem depois do verbo."
+        },
+        {
+          "id": "i3",
+          "label": "O leão «rugiu bem alto».",
+          "answer": "o3",
+          "why": "O trecho contém tudo o que se declara do sujeito."
+        },
+        {
+          "id": "i4",
+          "label": "«Rato», ajude-me!",
+          "answer": "o4",
+          "why": "A fala chama o rato diretamente."
+        },
+        {
+          "id": "i5",
+          "label": "«Naquela manhã», a raposa saiu cedo.",
+          "answer": "o5",
+          "why": "A expressão informa quando a raposa saiu."
+        }
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "label": "Sujeito antes do verbo."
+        },
+        {
+          "id": "o2",
+          "label": "Sujeito depois do verbo."
+        },
+        {
+          "id": "o3",
+          "label": "Predicado inteiro."
+        },
+        {
+          "id": "o4",
+          "label": "Chamamento ao interlocutor."
+        },
+        {
+          "id": "o5",
+          "label": "Expressão que indica o momento."
+        }
+      ]
+    },
+    {
+      "id": "lp26-4-07",
+      "topic": 3,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Em «Caíram no chão as duas cordas da rede», qual análise está correta?",
+      "example": "Em «Chegaram cedo os convidados», «os convidados» é o sujeito mesmo depois do verbo.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o2",
+          "why": "O verbo «caíram» concorda com «as duas cordas da rede». A ordem invertida, por si só, dispensa vírgula.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "«No chão» é o sujeito, pois indica o local da queda."
+            },
+            {
+              "id": "o2",
+              "label": "«As duas cordas da rede» é o sujeito e concorda com «caíram»."
+            },
+            {
+              "id": "o3",
+              "label": "«As duas cordas da rede» é o predicado porque vem no fim."
+            },
+            {
+              "id": "o4",
+              "label": "«As duas» é o sujeito completo."
+            },
+            {
+              "id": "o5",
+              "label": "A oração precisa de vírgula antes de «as duas cordas da rede»."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lp26-4-08",
+      "topic": 3,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Qual frase pontua corretamente uma lista e mantém sujeito e predicado ligados?",
+      "example": "Em «O estojo guarda lápis, borracha e régua», as vírgulas separam itens da lista.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o3",
+          "why": "A vírgula separa «poemas» de «quadrinhos». O verbo fica ligado ao seu complemento e ao sujeito.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "A seleção, reúne poemas quadrinhos e peças."
+            },
+            {
+              "id": "o2",
+              "label": "A seleção reúne, poemas, quadrinhos e peças."
+            },
+            {
+              "id": "o3",
+              "label": "A seleção reúne poemas, quadrinhos e peças."
+            },
+            {
+              "id": "o4",
+              "label": "A seleção reúne poemas quadrinhos, e peças."
+            },
+            {
+              "id": "o5",
+              "label": "A seleção reúne, poemas quadrinhos e peças."
+            }
+          ]
+        }
+      ],
+      "passage": "Biblioteca do Aventureiro recebe novos livros infantis\n\nA Biblioteca Pública João Paulo II recebeu aproximadamente 600 livros infantis.\nA unidade funciona no CEU Aventureiro, em Joinville.\nA novidade amplia as opções de leitura para crianças de até sete anos.\nO acervo da biblioteca ultrapassa 8.000 livros.\n\nA seleção inclui poemas, histórias em quadrinhos e peças de teatro.\nHá também narrativas que usam imagens para contar histórias.\nAlgumas obras apresentam perspectivas afrocentradas.\nOutras tratam de temas como ciência, natureza e geografia.\n\nA biblioteca faz cerca de 150 atendimentos por mês.\nOs exemplares chegaram pelo PNLD Literário.\nO programa distribui livros para ampliar o acesso à leitura.\nCom a chegada do material, o público infantil ganhou mais opções para explorar.",
+      "passageSource": {
+        "label": "Adaptação didática · Prefeitura de Joinville · 23 de setembro de 2026",
+        "url": "https://www.joinville.sc.gov.br/noticias/novos-livros-ampliam-acervo-infantil-da-biblioteca-do-ceu-aventureiro/"
+      }
+    },
+    {
+      "id": "lp26-4-09",
+      "topic": 3,
+      "difficulty": "medium",
+      "type": "fill",
+      "prompt": "Reescreva cada trecho com a vírgula necessária. Os trechos já vêm sem ponto final. Nas respostas, mantenha esse formato.",
+      "example": "Em «Lia feche a porta», use «Lia, feche a porta». Lia é a pessoa chamada.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Rato ajude-me",
+          "answer": "Rato, ajude-me",
+          "why": "A vírgula separa o chamamento inicial."
+        },
+        {
+          "id": "i2",
+          "label": "Não corra leão",
+          "answer": "Não corra, leão",
+          "why": "A vírgula vem antes do chamamento final."
+        },
+        {
+          "id": "i3",
+          "label": "Li poemas contos e peças",
+          "answer": "Li poemas, contos e peças",
+          "why": "A vírgula separa os itens «poemas» e «contos»."
+        },
+        {
+          "id": "i4",
+          "label": "Amigos venham ver",
+          "answer": "Amigos, venham ver",
+          "why": "O vocativo «Amigos» é separado do pedido."
+        },
+        {
+          "id": "i5",
+          "label": "Solte a corda rato",
+          "answer": "Solte a corda, rato",
+          "why": "«Rato» chama o interlocutor no fim da frase."
+        }
+      ]
+    },
+    {
+      "id": "lp26-4-10",
+      "topic": 3,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Qual é o núcleo, isto é, a palavra principal do sujeito em «Os pequenos nós da rede resistiam»?",
+      "example": "Em «As novas capas dos livros rasgaram», «capas» é a palavra principal do sujeito.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o2",
+          "why": "«Nós» é o substantivo que nomeia o que resistia. «Pequenos» e «da rede» acrescentam informações.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "pequenos"
+            },
+            {
+              "id": "o2",
+              "label": "nós"
+            },
+            {
+              "id": "o3",
+              "label": "rede"
+            },
+            {
+              "id": "o4",
+              "label": "resistiam"
+            },
+            {
+              "id": "o5",
+              "label": "Os"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lp26-5-01",
+      "topic": 4,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Qual opção é uma frase sem verbo?",
+      "example": "«Que frio!» comunica uma ideia com pontuação expressiva e nenhum verbo.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o2",
+          "why": "«Cuidado com a rede!» tem sentido no contexto e não contém verbo.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "O leão rugiu!"
+            },
+            {
+              "id": "o2",
+              "label": "Cuidado com a rede!"
+            },
+            {
+              "id": "o3",
+              "label": "O rato chegou cedo."
+            },
+            {
+              "id": "o4",
+              "label": "Abra a porta."
+            },
+            {
+              "id": "o5",
+              "label": "Talvez ele volte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lp26-5-02",
+      "topic": 4,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Qual opção é um período simples?",
+      "example": "«A turma entrou em silêncio.» Tem uma só oração, organizada em torno de «entrou».",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o3",
+          "why": "Há apenas uma oração, organizada em torno de «saltou».",
+          "options": [
+            {
+              "id": "o1",
+              "label": "Silêncio na clareira!"
+            },
+            {
+              "id": "o2",
+              "label": "O rato correu e o leão seguiu."
+            },
+            {
+              "id": "o3",
+              "label": "A raposa saltou perto do muro."
+            },
+            {
+              "id": "o4",
+              "label": "O leão rugiu, mas ninguém ouviu."
+            },
+            {
+              "id": "o5",
+              "label": "A raposa correu quando viu as uvas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lp26-5-03",
+      "topic": 4,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Quantas orações há em «O rato ouviu o rugido, correu para a clareira e roeu as cordas»?",
+      "example": "Em «O vento soprou e a porta bateu», há duas orações, com «soprou» e «bateu».",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o4",
+          "why": "Os três verbos organizam três orações: «ouviu», «correu» e «roeu».",
+          "options": [
+            {
+              "id": "o1",
+              "label": "Nenhuma"
+            },
+            {
+              "id": "o2",
+              "label": "Uma"
+            },
+            {
+              "id": "o3",
+              "label": "Duas"
+            },
+            {
+              "id": "o4",
+              "label": "Três"
+            },
+            {
+              "id": "o5",
+              "label": "Quatro"
+            }
+          ]
+        }
+      ],
+      "passage": "O leão e o rato\n\nUm leão dormia à sombra de uma árvore.\nUm rato atravessou a clareira e pisou sem querer na pata do leão.\nO leão acordou de repente e prendeu o visitante entre as garras.\n— Solte-me, por favor. Um dia ainda poderei ajudá-lo — pediu o rato.\nO leão achou graça na ideia, mas abriu a pata e o deixou ir.\n\nDias depois, o leão caiu em uma rede armada por caçadores.\nEle puxava as cordas, mas os nós resistiam.\nO rato ouviu o rugido e correu para a clareira.\nCom os dentes, roeu uma corda, depois outra.\nQuando a rede se abriu, o leão pôde sair.\n— Eu pensava que só os fortes podiam ajudar — disse o leão.\nO rato sorriu e os dois seguiram pela mata.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · versão histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/O_Le%C3%A3o_e_o_Rato"
+      }
+    },
+    {
+      "id": "lp26-5-04",
+      "topic": 4,
+      "difficulty": "medium",
+      "type": "boolean",
+      "prompt": "Julgue as afirmações sobre frases, orações e períodos.",
+      "example": "«Que susto!» é uma frase sem verbo. «A porta abriu» é uma frase com uma oração.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "«Que surpresa!» tem sentido mesmo sem verbo.",
+          "answer": "V",
+          "why": "É uma frase nominal de valor exclamativo."
+        },
+        {
+          "id": "i2",
+          "label": "«A raposa saltou» contém uma oração.",
+          "answer": "V",
+          "why": "«Saltou» é a forma verbal que organiza a oração."
+        },
+        {
+          "id": "i3",
+          "label": "«O rato vai roer a corda» tem duas orações.",
+          "answer": "F",
+          "why": "«Vai roer» é uma locução verbal e funciona como uma unidade nessa oração."
+        },
+        {
+          "id": "i4",
+          "label": "«O rato roeu a corda e o leão saiu» é um período composto.",
+          "answer": "V",
+          "why": "Há duas orações organizadas pelos verbos «roeu» e «saiu»."
+        },
+        {
+          "id": "i5",
+          "label": "«O muro era alto, mas a raposa insistiu» tem uma só oração.",
+          "answer": "F",
+          "why": "Há duas orações, em torno de «era» e «insistiu»."
+        }
+      ]
+    },
+    {
+      "id": "lp26-5-05",
+      "topic": 4,
+      "difficulty": "medium",
+      "type": "fill",
+      "prompt": "Classifique cada trecho. Digite uma destas expressões em cada campo: frase nominal, período simples ou período composto.",
+      "example": "«Que vento!» é frase nominal. «O vento soprou» é período simples. «O vento soprou e a janela bateu» é período composto.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Boa leitura!",
+          "answer": "frase nominal",
+          "why": "A frase comunica um desejo sem verbo."
+        },
+        {
+          "id": "i2",
+          "label": "A biblioteca recebeu novos títulos.",
+          "answer": "período simples",
+          "why": "Há uma oração com «recebeu».",
+          "accepted": [
+            [
+              "periodo simples"
+            ]
+          ]
+        },
+        {
+          "id": "i3",
+          "label": "As crianças vão ler poemas.",
+          "answer": "período simples",
+          "why": "«Vão ler» é uma locução verbal e forma uma oração.",
+          "accepted": [
+            [
+              "periodo simples"
+            ]
+          ]
+        },
+        {
+          "id": "i4",
+          "label": "Os livros chegaram e a equipe organizou a estante.",
+          "answer": "período composto",
+          "why": "«Chegaram» e «organizou» organizam duas orações.",
+          "accepted": [
+            [
+              "periodo composto"
+            ]
+          ]
+        },
+        {
+          "id": "i5",
+          "label": "A turma aplaudiu porque gostou da peça.",
+          "answer": "período composto",
+          "why": "«Aplaudiu» e «gostou» organizam duas orações.",
+          "accepted": [
+            [
+              "periodo composto"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lp26-5-06",
+      "topic": 4,
+      "difficulty": "medium",
+      "type": "match",
+      "prompt": "Associe cada frase à descrição de sua estrutura.",
+      "example": "Em «As corujas levantaram voo», o verbo simples é «levantaram». A frase contém uma oração.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Uma bela manhã!",
+          "answer": "o1",
+          "why": "A frase tem sentido sem verbo."
+        },
+        {
+          "id": "i2",
+          "label": "O rato sumiu.",
+          "answer": "o2",
+          "why": "«Sumiu» organiza a única oração."
+        },
+        {
+          "id": "i3",
+          "label": "O rato pode ajudar.",
+          "answer": "o3",
+          "why": "«Pode ajudar» funciona como uma unidade verbal."
+        },
+        {
+          "id": "i4",
+          "label": "O leão rugiu, mas a rede resistiu.",
+          "answer": "o4",
+          "why": "«Mas» liga as orações de «rugiu» e «resistiu»."
+        },
+        {
+          "id": "i5",
+          "label": "A raposa correu, saltou e caiu.",
+          "answer": "o5",
+          "why": "«Correu», «saltou» e «caiu» organizam três orações."
+        }
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "label": "Frase sem verbo."
+        },
+        {
+          "id": "o2",
+          "label": "Uma oração com verbo simples."
+        },
+        {
+          "id": "o3",
+          "label": "Uma oração com locução verbal."
+        },
+        {
+          "id": "o4",
+          "label": "Duas orações ligadas por «mas»."
+        },
+        {
+          "id": "o5",
+          "label": "Três orações."
+        }
+      ]
+    },
+    {
+      "id": "lp26-5-07",
+      "topic": 4,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Qual alternativa marca corretamente a divisão das orações do período «Quando a rede se abriu, o leão pôde sair»? A barra indica a divisão.",
+      "example": "«Quando a chuva parou | o jogo voltou» tem uma oração com «parou» e outra com «voltou».",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o4",
+          "why": "A primeira oração estabelece o momento. Na segunda, «pôde sair» se mantém na mesma oração.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "Quando a rede | se abriu, o leão pôde sair"
+            },
+            {
+              "id": "o2",
+              "label": "Quando a rede se abriu, o leão pôde | sair"
+            },
+            {
+              "id": "o3",
+              "label": "Quando | a rede se abriu, o leão pôde sair"
+            },
+            {
+              "id": "o4",
+              "label": "Quando a rede se abriu | o leão pôde sair"
+            },
+            {
+              "id": "o5",
+              "label": "Quando a rede se abriu, o leão | pôde | sair"
+            }
+          ]
+        }
+      ],
+      "passage": "O leão e o rato\n\nUm leão dormia à sombra de uma árvore.\nUm rato atravessou a clareira e pisou sem querer na pata do leão.\nO leão acordou de repente e prendeu o visitante entre as garras.\n— Solte-me, por favor. Um dia ainda poderei ajudá-lo — pediu o rato.\nO leão achou graça na ideia, mas abriu a pata e o deixou ir.\n\nDias depois, o leão caiu em uma rede armada por caçadores.\nEle puxava as cordas, mas os nós resistiam.\nO rato ouviu o rugido e correu para a clareira.\nCom os dentes, roeu uma corda, depois outra.\nQuando a rede se abriu, o leão pôde sair.\n— Eu pensava que só os fortes podiam ajudar — disse o leão.\nO rato sorriu e os dois seguiram pela mata.",
+      "passageSource": {
+        "label": "Reconto didático de fábula atribuída a Esopo · versão histórica na Wikisource",
+        "url": "https://pt.wikisource.org/wiki/Fabulas_de_Esopo/O_Le%C3%A3o_e_o_Rato"
+      }
+    },
+    {
+      "id": "lp26-5-08",
+      "topic": 4,
+      "difficulty": "medium",
+      "type": "crossword",
+      "prompt": "Complete a cruzadinha da estrutura da oração. Use letras sem acentos.",
+      "example": "Se a pista pede o nome de quem realiza a ação em «A menina abriu a janela», a palavra é «sujeito».",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Unidade que contém uma ou mais orações e termina com pontuação final.",
+          "answer": "PERIODO",
+          "why": "Um período pode ser simples ou composto.",
+          "cells": [
+            "4,0",
+            "4,1",
+            "4,2",
+            "4,3",
+            "4,4",
+            "4,5",
+            "4,6"
+          ]
+        },
+        {
+          "id": "i2",
+          "label": "Aquilo que se declara sobre o sujeito.",
+          "answer": "PREDICADO",
+          "why": "Em «A menina sorriu», o predicado é «sorriu».",
+          "cells": [
+            "4,0",
+            "5,0",
+            "6,0",
+            "7,0",
+            "8,0",
+            "9,0",
+            "10,0",
+            "11,0",
+            "12,0"
+          ]
+        },
+        {
+          "id": "i3",
+          "label": "Enunciado que faz sentido no contexto, com ou sem verbo.",
+          "answer": "FRASE",
+          "why": "«Bom dia!» é uma frase sem verbo.",
+          "cells": [
+            "3,2",
+            "4,2",
+            "5,2",
+            "6,2",
+            "7,2"
+          ]
+        },
+        {
+          "id": "i4",
+          "label": "Tipo de período com mais de uma oração.",
+          "answer": "COMPOSTO",
+          "why": "«João saiu e Lia ficou» é um período composto.",
+          "cells": [
+            "3,4",
+            "4,4",
+            "5,4",
+            "6,4",
+            "7,4",
+            "8,4",
+            "9,4",
+            "10,4"
+          ]
+        },
+        {
+          "id": "i5",
+          "label": "Palavra que pode indicar ação, estado ou fenômeno.",
+          "answer": "VERBO",
+          "why": "«Leu», «estava» e «choveu» são verbos.",
+          "cells": [
+            "0,6",
+            "1,6",
+            "2,6",
+            "3,6",
+            "4,6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lp26-5-09",
+      "topic": 4,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Qual reescrita conserva a ideia de ampliação, traz só uma oração e tem uma locução verbal?",
+      "example": "«O grupo estava lendo poemas» tem uma oração porque «estava lendo» forma uma locução verbal.",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o2",
+          "why": "«Está ampliando» reúne auxiliar e verbo principal na mesma oração. «Amplia» também forma uma oração, mas sem locução.",
+          "options": [
+            {
+              "id": "o1",
+              "label": "A biblioteca amplia o acervo."
+            },
+            {
+              "id": "o2",
+              "label": "A biblioteca está ampliando o acervo."
+            },
+            {
+              "id": "o3",
+              "label": "A biblioteca recebeu livros e ampliou o acervo."
+            },
+            {
+              "id": "o4",
+              "label": "Uma ampliação no acervo infantil!"
+            },
+            {
+              "id": "o5",
+              "label": "A biblioteca recebeu livros porque ampliou o acervo."
+            }
+          ]
+        }
+      ],
+      "passage": "Biblioteca do Aventureiro recebe novos livros infantis\n\nA Biblioteca Pública João Paulo II recebeu aproximadamente 600 livros infantis.\nA unidade funciona no CEU Aventureiro, em Joinville.\nA novidade amplia as opções de leitura para crianças de até sete anos.\nO acervo da biblioteca ultrapassa 8.000 livros.\n\nA seleção inclui poemas, histórias em quadrinhos e peças de teatro.\nHá também narrativas que usam imagens para contar histórias.\nAlgumas obras apresentam perspectivas afrocentradas.\nOutras tratam de temas como ciência, natureza e geografia.\n\nA biblioteca faz cerca de 150 atendimentos por mês.\nOs exemplares chegaram pelo PNLD Literário.\nO programa distribui livros para ampliar o acesso à leitura.\nCom a chegada do material, o público infantil ganhou mais opções para explorar.",
+      "passageSource": {
+        "label": "Adaptação didática · Prefeitura de Joinville · 23 de setembro de 2026",
+        "url": "https://www.joinville.sc.gov.br/noticias/novos-livros-ampliam-acervo-infantil-da-biblioteca-do-ceu-aventureiro/"
+      }
+    },
+    {
+      "id": "lp26-5-10",
+      "topic": 4,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Que diferença existe entre «Novos livros na estante!» e «Os novos livros chegaram à estante»?",
+      "example": "«Que festa!» tem sentido sem verbo. «A festa começou» é uma oração porque contém o verbo «começou».",
+      "items": [
+        {
+          "id": "i1",
+          "label": "",
+          "answer": "o4",
+          "why": "A primeira comunica uma ideia sem verbo. A segunda tem uma oração, organizada em torno de «chegaram».",
+          "options": [
+            {
+              "id": "o1",
+              "label": "As duas têm uma oração cada uma."
+            },
+            {
+              "id": "o2",
+              "label": "A primeira tem uma oração e a segunda tem duas."
+            },
+            {
+              "id": "o3",
+              "label": "A primeira tem verbo e a segunda não tem."
+            },
+            {
+              "id": "o4",
+              "label": "A primeira é frase nominal e a segunda é período simples."
+            },
+            {
+              "id": "o5",
+              "label": "As duas são frases nominais."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

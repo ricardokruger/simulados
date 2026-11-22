@@ -20,6 +20,18 @@
         "Medidas de ângulos",
         "Unidades de comprimento"
       ]
+    },
+    {
+      "id": "portugues-6-ano-somativa-2026",
+      "subjectId": "portugues",
+      "subject": "Língua Portuguesa",
+      "title": "Avaliação Somativa",
+      "grade": "6º ano",
+      "period": "2026",
+      "examDate": "2026-11-23",
+      "addedAt": "2026-11-22",
+      "bankPath": "./bancos/portugues-6-ano-somativa-2026.json",
+      "scratchpad": false
     }
   ]
 }

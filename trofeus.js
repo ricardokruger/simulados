@@ -4,7 +4,48 @@ function earnedAchievements() {
   return Conquistas.calculate(Catalogo.attempts(catalog, readSession));
 }
 
-function sprite(sheet, sourceWidth, sourceHeight, left, top, width, height, alternate) {
+// Silhuetas próprias em uma grade de 7 por 7.
+const voxelMarks = [
+  [".....##", ".....#+", "...####", "...#+++", ".######", ".#+++++", "#######"],
+  ["...#...", "..###..", ".####+.", "...#+..", "...#+..", "...#+..", "..###.."],
+  ["..##...", ".####..", "##..#+.", "....#+.", "....#+.", ".#..#+.", ".####+."],
+  ["...#...", "..#+#..", ".#+++#.", "#++#++#", ".#+++#.", "..#+#..", "...#..."],
+  [".......", ".....+#", "....+#.", "#..+#..", ".#+#...", "..#....", "......."],
+  [".......", ".....##", ".....#+", "..##.#+", "..#+.#+", "###+.#+", "#######"],
+  ["..####.", ".#++++#", "####+##", "#+++###", "######.", "#++++#.", "######."],
+  [".......", "#..#..#", "#..#..#", "+++++++", "#..#..#", "#..#..#", "......."],
+  ["...#...", "..#+#..", ".#+#.#.", "#.###.#", ".#.#.#.", "..#+#..", "...#..."],
+  [".#...#.", "#######", "#+++++#", "#.#.#.#", "#...#.#", "#.....#", "#######"],
+];
+
+function voxelBadge(index) {
+  const block = make("span", { className: "voxel-badge" });
+  block.setAttribute("data-badge", String(index));
+  const mark = make("span", { className: "voxel-mark" });
+  const pixels = [];
+  voxelMarks[index].forEach((row, y) => {
+    [...row].forEach((pixel, x) => {
+      if (pixel !== ".") pixels.push(x + "em " + y + "em var(--mark-" + (pixel === "+" ? "light" : "ink") + ")");
+    });
+  });
+  mark.style.boxShadow = pixels.join(", ");
+  block.append(mark);
+  return block;
+}
+
+function voxelAvatar(stage) {
+  const figure = make("span", { className: "voxel-avatar" });
+  figure.setAttribute("data-stage", String(stage));
+  for (const part of ["pack", "leg-left", "leg-right", "arm-left", "arm-right", "coat", "head", "hair"]) {
+    figure.append(make("span", { className: "voxel-part voxel-" + part }));
+  }
+  for (const gear of ["map", "compass", "flag", "tools"].slice(0, stage)) {
+    figure.append(make("span", { className: "voxel-part voxel-" + gear }));
+  }
+  return figure;
+}
+
+function sprite(sheet, sourceWidth, sourceHeight, left, top, width, height, alternate, voxel) {
   const frame = make("span", { className: "sprite-frame" });
   frame.style.setProperty("--sprite-ratio", width + " / " + height);
   frame.setAttribute("aria-hidden", "true");
@@ -13,17 +54,17 @@ function sprite(sheet, sourceWidth, sourceHeight, left, top, width, height, alte
   img.style.height = 100 * sourceHeight / height + "%";
   img.style.left = -100 * left / width + "%";
   img.style.top = -100 * top / height + "%";
-  frame.append(img, text("span", alternate, "classic-emblem"));
+  frame.append(img, text("span", alternate, "classic-emblem"), voxel);
   return frame;
 }
 
 function badgeSprite(index) {
   const row = index < 5 ? 24 : 398;
-  return sprite("emblemas", 1983, 793, [38, 427, 812, 1190, 1560][index % 5], row, 355, 310, ["↗", "★", "↶", "◇", "✓", "≡", "▤", "⋯", "⌖", "▦"][index]);
+  return sprite("emblemas", 1983, 793, [38, 427, 812, 1190, 1560][index % 5], row, 355, 310, ["↗", "★", "↶", "◇", "✓", "≡", "▤", "⋯", "⌖", "▦"][index], voxelBadge(index));
 }
 
 function avatarSprite(index) {
-  return sprite("cartografo", 1774, 887, [16, 364, 699, 1045, 1402][index], 97, 330, 647, String(index + 1));
+  return sprite("cartografo", 1774, 887, [16, 364, 699, 1045, 1402][index], 97, 330, 647, String(index + 1), voxelAvatar(index));
 }
 
 function avatarGoal(status, count) {
