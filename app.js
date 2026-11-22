@@ -14,6 +14,7 @@ let session;
 let inlineData;
 let catalog = [];
 let routeVersion = 0;
+let pendingCelebration;
 const sessions = new Map();
 const banks = new Map();
 
@@ -160,6 +161,7 @@ function renderQuestion() {
     text("h2", question.prompt, "question-heading"),
     question.passage ? text("p", question.passage, "passage") : null,
     ...questionMedia(question),
+    questionExample(question),
     renderAnswer(question, answer, () => {
       save();
       refreshProgress();
@@ -426,11 +428,12 @@ function confirmFinish(attempt) {
         try {
           history.replaceState(null, "", href);
         } catch {
+          pendingCelebration = href;
           location.replace(href);
           return;
         }
         document.title = "Revisão · " + entry.subject + " · Mapa de Estudos";
-        renderReview(finished);
+        renderReview(finished, true);
       } else {
         box.querySelector(".save-error").hidden = false;
       }
@@ -441,7 +444,8 @@ function confirmFinish(attempt) {
   box.showModal();
 }
 
-function renderReview(attempt) {
+function renderReview(attempt, celebrate = false) {
+  const { section: badges, event } = resultAchievements(attempt);
   const full = attempt.results.filter(result => result.units === 5).length;
   const partial = attempt.results.filter(result => result.units > 0 && result.units < 5).length;
   const body = make("div", {}, make("section", { className: "section result-title" },
@@ -451,13 +455,15 @@ function renderReview(attempt) {
         (10 - full - partial) + " sem acerto.", "muted")),
     make("div", {}, text("span", "Nota", "kicker"),
       text("div", points.format(attempt.units / 5) + " / 10", "grade"))));
+  if (badges) body.append(badges);
   attempt.questions.forEach((q, index) => {
     const result = attempt.results[index];
     const section = make("section", { className: "section" },
       text("p", "Questão " + (index + 1) + " · " + points.format(result.units / 5) + " de 1 ponto", "kicker"),
       text("h2", q.prompt),
       q.passage ? text("p", q.passage, "passage") : null,
-      ...questionMedia(q, true));
+      ...questionMedia(q, true),
+      questionExample(q));
     const parts = make("ol", { className: "review-list" });
     for (const part of result.parts) {
       const entry = make("li", { className: "review-item" },
@@ -470,6 +476,7 @@ function renderReview(attempt) {
     }
     const scratch = attempt.scratch[q.id];
     section.append(parts);
+    if (result.units < 5) section.append(reviewQuestionControl(attempt, q));
     if (scratch && (scratch.rows.length || Object.keys(scratch.cells).length)) {
       section.append(make("details", { className: "scratch", open: true },
         text("summary", "Seu rascunho"), scratchBoard(scratch, false)));
@@ -480,6 +487,39 @@ function renderReview(attempt) {
   body.append(make("div", { className: "toolbar" },
     link("Voltar ao mapa", "#/"), link("Fazer outra tentativa", quizPath(entry), "primary")));
   show(body);
+  if (celebrate) celebrateAchievements(event);
+}
+
+function reviewQuestionControl(attempt, question) {
+  const reviewed = button("Marcar questão revisada", () => {
+    const current = session.history.find(saved => saved.id === attempt.id);
+    if (!current || current.reviewedQuestions?.[question.id]) return;
+    const changed = { ...current, reviewedQuestions: {
+      ...current.reviewedQuestions, [question.id]: new Date().toISOString(),
+    } };
+    const next = { ...session, history: session.history.map(saved => saved.id === attempt.id ? changed : saved) };
+    if (save(next)) paint(true);
+  });
+  const status = text("span", "", "muted");
+  status.setAttribute("role", "status");
+  function paint(value) {
+    reviewed.hidden = value;
+    status.textContent = value ? "Questão marcada como revisada." : "";
+  }
+  paint(Boolean(attempt.reviewedQuestions?.[question.id]));
+  return make("div", { className: "review-action" }, reviewed, status);
+}
+
+function listeningQuestion(question) {
+  return ["ingles", "english"].includes(entry.subjectId) &&
+    (question.skill ?? (question.audio ? "listening" : question.type)) === "listening";
+}
+
+function questionExample(question) {
+  if (listeningQuestion(question)) return null;
+  const sample = question.example ?? banks.get(entry.id)?.questions.find(candidate => candidate.id === question.id)?.example;
+  return sample ? make("details", { className: "question-example" },
+    text("summary", "Ver exemplo resolvido"), text("p", sample)) : null;
 }
 
 function drawDiagram(diagram) {
@@ -590,6 +630,12 @@ async function followRoute(initial = false) {
     return;
   }
 
+  if (route.type === "achievements") {
+    document.title = "Conquistas · Mapa de Estudos";
+    renderAchievements();
+    return;
+  }
+
   const selected = catalog.find(item => item.id === route.entryId);
   if (!selected) {
     showRouteError("Avaliação indisponível", "Esta avaliação não está no catálogo.");
@@ -606,10 +652,16 @@ async function followRoute(initial = false) {
   }
 
   if (saved) {
+    if (saved.questions.some(question => !question.example)) {
+      await fetchBank(selected).catch(() => {});
+      if (visit !== routeVersion) return;
+    }
     entry = selected;
     session = selectedSession;
     document.title = "Revisão · " + entry.subject + " · Mapa de Estudos";
-    renderReview(saved);
+    const celebrate = pendingCelebration === location.hash;
+    pendingCelebration = undefined;
+    renderReview(saved, celebrate);
     return;
   }
 

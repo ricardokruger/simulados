@@ -73,6 +73,7 @@ function renderDashboard(focus = true) {
       make("div", {}, text("h1", "Escolha um simulado"),
         text("p", "Escolha uma avaliação e acompanhe sua evolução a cada tentativa.", "muted")),
       art("trilha", "trail-art")),
+    avatarPanel(earnedAchievements()),
     make("section", { className: "filter-section" },
       make("div", { className: "filter-bar" },
         make("label", { className: "filter" }, text("span", "Matéria"), subject),

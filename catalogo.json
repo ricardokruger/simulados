@@ -11,7 +11,15 @@
       "examDate": null,
       "addedAt": "2026-11-21",
       "bankPath": "./bancos/matematica.json",
-      "scratchpad": true
+      "scratchpad": true,
+      "legacyTopics": [
+        "Operações com números naturais",
+        "Expressões numéricas",
+        "Frações e porcentagens",
+        "Operações com números racionais",
+        "Medidas de ângulos",
+        "Unidades de comprimento"
+      ]
     }
   ]
 }

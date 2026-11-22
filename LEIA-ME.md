@@ -1,12 +1,18 @@
 # Mapa de Estudos
 
-Aplicativo estático com uma página inicial de avaliações, uma tela própria para cada simulado e uma tela de revisão. Matemática começa com 50 questões do 6º ano. Cada tentativa usa 10 questões e cobre os seis tópicos da avaliação. A grade de Matemática salva o rascunho por questão e por tentativa.
+Aplicativo estático com uma página inicial de avaliações, uma tela própria para cada simulado e uma tela de revisão. Matemática começa com 60 questões do 6º ano. Cada tentativa usa 10 questões e cobre os seis tópicos da avaliação. A grade de Matemática salva o rascunho por questão e por tentativa.
 
 ## Acompanhar as notas
 
 Os filtros da página inicial combinam matéria e data da prova escolar. Os limites de data são inclusivos. Uma avaliação com data desconhecida aparece quando o intervalo está vazio. O eixo horizontal do gráfico usa a data em que cada tentativa foi concluída. A tabela abaixo do gráfico apresenta os mesmos registros e dá acesso às revisões.
 
 O histórico é local. O Mapa mantém a chave do simulado de Matemática original. Substitua a versão antiga no mesmo endereço e use o mesmo navegador para reaproveitar tentativas e rascunhos. O navegador mantém armazenamentos diferentes entre endereços diferentes e pode tratar arquivos abertos diretamente como armazenamentos distintos.
+
+## Conquistas e exemplos
+
+O mapa mostra o avatar, o total de conquistas e o próximo equipamento. A galeria explica os critérios por avaliação, matéria, tópico e no geral. As conquistas são calculadas com o histórico concluído do navegador. No resultado, os novos marcos ficam visíveis e um pop-up comemora as novidades ao finalizar. A animação respeita a opção de reduzir movimento do sistema.
+
+As questões têm um campo `example` com um exemplo resolvido, exibido em um painel recolhível antes das respostas. Para listening em uma avaliação de Inglês, use `subjectId: "ingles"` e `skill: "listening"` e omita o exemplo. A versão atual de Matemática inclui 60 questões. Mantenha pelo menos dez questões diferentes em cada tópico para que o domínio possa ser conquistado.
 
 ## Cadastrar outra avaliação
 

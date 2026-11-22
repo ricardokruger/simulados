@@ -1,6 +1,6 @@
 {
   "id": "matematica-6-ano",
-  "version": 1,
+  "version": 2,
   "title": "Matemática",
   "topics": [
     "Operações com números naturais",
@@ -45,7 +45,8 @@
           ],
           "why": "145 + 87 = 232."
         }
-      ]
+      ],
+      "example": "Se chegam 36 livros de manhã e 25 à tarde, o total é 36 + 25 = 61 livros."
     },
     {
       "id": "mat-1-02",
@@ -81,7 +82,8 @@
           ],
           "why": "Divida 144 em 8 partes iguais: 144 ÷ 8 = 18."
         }
-      ]
+      ],
+      "example": "Se 96 livros são divididos igualmente entre 6 caixas, cada uma recebe 96 ÷ 6 = 16 livros."
     },
     {
       "id": "mat-1-03",
@@ -117,7 +119,8 @@
           ],
           "why": "6 × 42 = 252 lugares. Então 252 − 237 = 15."
         }
-      ]
+      ],
+      "example": "Quatro vans com 12 lugares têm 4 × 12 = 48 lugares. Com 41 passageiros, sobram 48 − 41 = 7 lugares."
     },
     {
       "id": "mat-1-04",
@@ -154,7 +157,8 @@
           "why": "Chegaram 9 × 12 = 108 cadernos. Foram usados 4 × 23 = 92. Restaram 108 − 92 = 16."
         }
       ],
-      "passage": "Para uma oficina, chegaram 9 pacotes com 12 cadernos em cada pacote. Quatro turmas usaram 23 cadernos cada. Os cadernos restantes ficaram para a próxima turma."
+      "passage": "Para uma oficina, chegaram 9 pacotes com 12 cadernos em cada pacote. Quatro turmas usaram 23 cadernos cada. Os cadernos restantes ficaram para a próxima turma.",
+      "example": "Uma turma abriu 3 pacotes de 9 folhas e usou 8. Restam 3 × 9 − 8 = 19 folhas."
     },
     {
       "id": "mat-1-05",
@@ -194,7 +198,8 @@
           "why": "58 − 54 = 4."
         }
       ],
-      "passage": "Uma banca recebeu 8 caixas com 12 frutas cada e vendeu 38 frutas. O feirante quer colocar o que sobrou em sacolas com 6 frutas."
+      "passage": "Uma banca recebeu 8 caixas com 12 frutas cada e vendeu 38 frutas. O feirante quer colocar o que sobrou em sacolas com 6 frutas.",
+      "example": "Uma barraca recebe duas caixas de 14 peras. A frase “Chegaram 28 peras” é verdadeira, pois 2 × 14 = 28."
     },
     {
       "id": "mat-1-06",
@@ -233,7 +238,8 @@
           "answer": "22",
           "why": "90 − 4 × 17 = 22."
         }
-      ]
+      ],
+      "example": "Se 4 grupos recebem 15 fichas cada, o total é 4 × 15 = 60 fichas. No campo, digite 60."
     },
     {
       "id": "mat-1-07",
@@ -294,7 +300,8 @@
           "id": "5",
           "label": "8"
         }
-      ]
+      ],
+      "example": "Para associar “3 sacolas com 16 laranjas” à quantidade total, calcule 3 × 16 e ligue ao número 48."
     },
     {
       "id": "mat-1-08",
@@ -330,7 +337,8 @@
           ],
           "why": "(18 × 24 − 20) ÷ 2 = (432 − 20) ÷ 2 = 206."
         }
-      ]
+      ],
+      "example": "Se há 36 garrafas, reservam-se 6 e cada aluno recebe 3, podem ser atendidos (36 − 6) ÷ 3 = 10 alunos."
     },
     {
       "id": "mat-1-09",
@@ -366,7 +374,8 @@
           ],
           "why": "286 − 64 = 222. Quatro ônibus levam 192, e cinco levam 240. Portanto, são necessários 5."
         }
-      ]
+      ],
+      "example": "Para levar 53 pessoas em veículos de 12 lugares, quatro veículos só levam 48 pessoas. É preciso um quinto veículo."
     },
     {
       "id": "mat-2-01",
@@ -402,7 +411,8 @@
           ],
           "why": "5² = 25 e √49 = 7. Portanto, 25 + 7 = 32."
         }
-      ]
+      ],
+      "example": "Em 2² + √36, calcule primeiro a potência e a raiz. Depois some 4 + 6 = 10."
     },
     {
       "id": "mat-2-02",
@@ -441,7 +451,8 @@
           "answer": "V",
           "why": "Faça o parêntese primeiro: 4² = 16."
         }
-      ]
+      ],
+      "example": "A afirmação “4² − 3 = 12” é falsa, pois 16 − 3 = 13."
     },
     {
       "id": "mat-2-03",
@@ -477,7 +488,8 @@
           ],
           "why": "4² = 16, √25 = 5, 30 ÷ 5 = 6 e 3 × 2 = 6. Fica 16 + 6 − 6 = 16."
         }
-      ]
+      ],
+      "example": "Em 3² + 18 ÷ √9 − 2 × 4, calcule potência e raiz, depois divisão e multiplicação. Fica 9 + 6 − 8 = 7."
     },
     {
       "id": "mat-2-04",
@@ -516,7 +528,8 @@
           "answer": "19",
           "why": "25 − 10 + 4 = 19."
         }
-      ]
+      ],
+      "example": "Em (3 + 2)² ÷ 5, comece pelo parêntese. Depois calcule 25 ÷ 5 = 5 e digite 5."
     },
     {
       "id": "mat-2-05",
@@ -577,7 +590,8 @@
           "id": "5",
           "label": "15"
         }
-      ]
+      ],
+      "example": "Para associar √16 + 2 ao resultado, calcule 4 + 2 e ligue ao número 6."
     },
     {
       "id": "mat-2-06",
@@ -661,7 +675,8 @@
             "6,1"
           ]
         }
-      ]
+      ],
+      "example": "Para a pista “resultado de uma multiplicação”, escreva PRODUTO na grade, uma letra por casa."
     },
     {
       "id": "mat-2-07",
@@ -697,7 +712,8 @@
           ],
           "why": "Dentro dos colchetes ficam (9 + 9) × 2 − 4 = 32. Então 32 ÷ 4 = 8."
         }
-      ]
+      ],
+      "example": "Em [(2² + √16) × 3 − 8 ÷ 2] ÷ 2, o colchete vale (4 + 4) × 3 − 4 = 20. O resultado é 20 ÷ 2 = 10."
     },
     {
       "id": "mat-2-08",
@@ -733,7 +749,8 @@
           ],
           "why": "2³ = 8 e √64 − 5 = 3, formando 24. O segundo termo é (36 ÷ 6)² = 36. Some 24 + 36."
         }
-      ]
+      ],
+      "example": "Em 2² × (√25 − 3) + [12 ÷ (1 + 3)]², calcule 4 × 2 + 3² = 8 + 9 = 17."
     },
     {
       "id": "mat-3-01",
@@ -769,7 +786,8 @@
           ],
           "why": "Multiplique numerador e denominador por 25: 3/4 = 75/100 = 75%."
         }
-      ]
+      ],
+      "example": "Para escrever 2/5 em porcentagem, multiplique numerador e denominador por 20. Assim, 2/5 = 40/100 = 40%."
     },
     {
       "id": "mat-3-02",
@@ -830,7 +848,8 @@
           "id": "5",
           "label": "20%"
         }
-      ]
+      ],
+      "example": "Para associar 3/8 à porcentagem, calcule 3 ÷ 8 = 0,375. A fração corresponde a 37,5%."
     },
     {
       "id": "mat-3-03",
@@ -867,7 +886,8 @@
           "why": "14 ÷ 40 = 0,35. Logo, 14/40 = 35/100 = 35%."
         }
       ],
-      "passage": "Em uma atividade da escola, 40 estudantes se inscreveram. Cada estudante pôde escolher apenas uma oficina. Desse grupo, 14 escolheram desenho."
+      "passage": "Em uma atividade da escola, 40 estudantes se inscreveram. Cada estudante pôde escolher apenas uma oficina. Desse grupo, 14 escolheram desenho.",
+      "example": "Se 6 de 24 inscritos escolheram pintura, a parte é 6/24 = 1/4. Isso corresponde a 25%."
     },
     {
       "id": "mat-3-04",
@@ -906,7 +926,8 @@
           "answer": "V",
           "why": "8 × 4 = 32 e 25 × 4 = 100."
         }
-      ]
+      ],
+      "example": "A equivalência “3/4 = 80%” é falsa, pois 3/4 = 75/100 = 75%."
     },
     {
       "id": "mat-3-05",
@@ -945,7 +966,8 @@
           "answer": "12",
           "why": "25% equivale a 1/4. Então 48 ÷ 4 = 12."
         }
-      ]
+      ],
+      "example": "Se 6 de 30 alunos trouxeram um livro, a porcentagem é 6 ÷ 30 = 0,20 = 20%. No campo de porcentagem, digite 20."
     },
     {
       "id": "mat-3-06",
@@ -981,7 +1003,8 @@
           ],
           "why": "45% de 160 é 72. Faltam 160 − 72 = 88 páginas."
         }
-      ]
+      ],
+      "example": "Se você leu 30% de um livro de 90 páginas, leu 27 páginas e ainda faltam 90 − 27 = 63 páginas."
     },
     {
       "id": "mat-3-07",
@@ -1017,7 +1040,8 @@
           ],
           "why": "3/8 = 37,5%. Subtraia 37,5% e 25% de 100%: sobram 37,5%."
         }
-      ]
+      ],
+      "example": "Se 1/2 dos adesivos é azul e 20% são verdes, a parte de outras cores é 100% − 50% − 20% = 30%."
     },
     {
       "id": "mat-3-08",
@@ -1053,7 +1077,8 @@
           ],
           "why": "De manhã vendeu 72 e restaram 168. À tarde vendeu 168 ÷ 4 = 42. Restaram 126."
         }
-      ]
+      ],
+      "example": "Uma loja tinha 100 bonés e vendeu 20%. Restaram 80. Se depois vendeu 1/2 dos que restavam, sobraram 40 bonés."
     },
     {
       "id": "mat-4-01",
@@ -1089,7 +1114,8 @@
           ],
           "why": "Some os numeradores e mantenha o denominador: (2 + 3)/7 = 5/7."
         }
-      ]
+      ],
+      "example": "Com denominadores iguais, some apenas os numeradores. Assim, 1/9 + 4/9 = 5/9."
     },
     {
       "id": "mat-4-02",
@@ -1125,7 +1151,8 @@
           ],
           "why": "Alinhe as vírgulas: 1,50 − 0,35 = 1,15 L."
         }
-      ]
+      ],
+      "example": "Se um recipiente tinha 1,80 L e você retirou 0,56 L, alinhe as vírgulas e calcule 1,80 − 0,56 = 1,24 L."
     },
     {
       "id": "mat-4-03",
@@ -1162,7 +1189,8 @@
           "why": "1,5 + 1 = 2,5 L. Divida por 4: 2,5 ÷ 4 = 0,625 L."
         }
       ],
-      "passage": "Para regar a horta, a turma juntou 1,5 L de água de uma garrafa e 1 L de outra. Toda a água foi repartida igualmente em quatro regadores."
+      "passage": "Para regar a horta, a turma juntou 1,5 L de água de uma garrafa e 1 L de outra. Toda a água foi repartida igualmente em quatro regadores.",
+      "example": "Ao dividir 7,5 L igualmente entre 3 garrafas, cada garrafa recebe 7,5 ÷ 3 = 2,5 L."
     },
     {
       "id": "mat-4-04",
@@ -1201,7 +1229,8 @@
           "answer": "3/8",
           "why": "0,25 = 1/4 = 2/8. Logo, o resultado é 3/8."
         }
-      ]
+      ],
+      "example": "Em 2/3 + 1/9, troque 2/3 por 6/9. Assim, 6/9 + 1/9 = 7/9. Você pode digitar 7/9."
     },
     {
       "id": "mat-4-05",
@@ -1262,7 +1291,8 @@
           "id": "5",
           "label": "2,15"
         }
-      ]
+      ],
+      "example": "Para associar 1/5 + 1/2 a um decimal, calcule 0,2 + 0,5 = 0,7."
     },
     {
       "id": "mat-4-06",
@@ -1301,7 +1331,8 @@
           "answer": "V",
           "why": "Duas porções de 1/4 cabem em 1/2."
         }
-      ]
+      ],
+      "example": "A afirmação “0,6 + 0,25 = 0,31” é falsa. Alinhe as vírgulas para obter 0,60 + 0,25 = 0,85."
     },
     {
       "id": "mat-4-07",
@@ -1389,7 +1420,8 @@
             "5,12"
           ]
         }
-      ]
+      ],
+      "example": "Para a pista “linha entre os dois números de uma fração”, escreva TRAÇO, uma letra por casa."
     },
     {
       "id": "mat-4-08",
@@ -1425,7 +1457,8 @@
           ],
           "why": "2,5 × 3/4 = 5/2 × 3/4 = 15/8 = 1,875."
         }
-      ]
+      ],
+      "example": "Se uma receita usa 1/2 xícara por porção, para 3,5 porções multiplique 0,5 × 3,5. São 1,75 xícara."
     },
     {
       "id": "mat-4-09",
@@ -1461,7 +1494,8 @@
           ],
           "why": "Cada pedaço de 3/8 m mede 0,375 m. A sobra é 2,4 − 3 × 0,375 − 0,45 = 0,825 m."
         }
-      ]
+      ],
+      "example": "De uma fita de 3 m, corte dois pedaços de 1/4 m e outro de 0,6 m. A sobra é 3 − 0,5 − 0,6 = 1,9 m."
     },
     {
       "id": "mat-5-01",
@@ -1510,7 +1544,8 @@
           "x"
         ],
         "alt": "Três semirretas com mesma origem. As duas externas formam um ângulo reto, dividido em 35 graus e x."
-      }
+      },
+      "example": "Se uma das partes de um ângulo reto mede 28°, a outra mede 90° − 28° = 62°."
     },
     {
       "id": "mat-5-02",
@@ -1559,7 +1594,8 @@
           "x"
         ],
         "alt": "Uma semirreta divide um ângulo raso em dois ângulos adjacentes, de 60 graus e x."
-      }
+      },
+      "example": "Se uma reta foi dividida em dois ângulos e um deles mede 112°, o outro mede 180° − 112° = 68°."
     },
     {
       "id": "mat-5-03",
@@ -1604,7 +1640,8 @@
         ],
         "labels": [],
         "alt": "Transferidor com uma semirreta no zero à direita. A outra cruza a escala ascendente três divisões de dez graus após a marca de 100 graus."
-      }
+      },
+      "example": "Com um lado no zero do transferidor, acompanhe a escala que começa nesse zero. Se o outro lado cruza a marca de 35°, a medida é 35°."
     },
     {
       "id": "mat-5-04",
@@ -1656,7 +1693,8 @@
           "x"
         ],
         "alt": "Duas semirretas externas formam um ângulo reto. Uma semirreta interna o divide em 30 graus e x."
-      }
+      },
+      "example": "Afirmar que um ângulo de 120° é agudo é falso. Um ângulo agudo mede menos de 90°."
     },
     {
       "id": "mat-5-05",
@@ -1717,7 +1755,8 @@
           "id": "5",
           "label": "55°"
         }
-      ]
+      ],
+      "example": "Para associar um ângulo de 73° ao seu suplemento, calcule 180° − 73° = 107°."
     },
     {
       "id": "mat-5-06",
@@ -1797,7 +1836,8 @@
             "6,11"
           ]
         }
-      ]
+      ],
+      "example": "Para a pista “ponto onde dois lados do ângulo se encontram”, escreva VÉRTICE, uma letra por casa."
     },
     {
       "id": "mat-5-07",
@@ -1848,7 +1888,8 @@
           "x"
         ],
         "alt": "Três setores completam uma volta ao redor do mesmo vértice. Suas medidas são 120 graus, 150 graus e x."
-      }
+      },
+      "example": "Se ao redor de um ponto dois ângulos medem 140° e 80°, o terceiro mede 360° − 140° − 80° = 140°."
     },
     {
       "id": "mat-5-08",
@@ -1899,7 +1940,8 @@
           "80°"
         ],
         "alt": "Sobre uma linha reta, três ângulos consecutivos medem x, x e 80 graus."
-      }
+      },
+      "example": "Se numa reta há um ângulo de 64° e dois iguais, os iguais somam 116°. Cada um mede 116° ÷ 2 = 58°."
     },
     {
       "id": "mat-6-01",
@@ -1935,7 +1977,8 @@
           ],
           "why": "Cada metro tem 100 cm. Multiplique 2,4 por 100."
         }
-      ]
+      ],
+      "example": "Como 1 m = 100 cm, 1,7 m equivale a 1,7 × 100 = 170 cm."
     },
     {
       "id": "mat-6-02",
@@ -1974,7 +2017,8 @@
           "answer": "4,5",
           "why": "4 500 ÷ 1 000 = 4,5 km."
         }
-      ]
+      ],
+      "example": "Para converter 2,5 km em metros, calcule 2,5 × 1 000 = 2 500 m. Se o campo pede só o número, digite 2500."
     },
     {
       "id": "mat-6-03",
@@ -2011,7 +2055,8 @@
           "why": "450 m = 0,45 km e 600 m = 0,6 km. O total é 1,2 + 0,45 + 0,6 = 2,25 km."
         }
       ],
-      "passage": "Na trilha, o grupo andou 1,2 km da entrada ao lago, 450 m do lago ao mirante e mais 600 m do mirante até a área de descanso."
+      "passage": "Na trilha, o grupo andou 1,2 km da entrada ao lago, 450 m do lago ao mirante e mais 600 m do mirante até a área de descanso.",
+      "example": "Para somar 800 m e 1,4 km em quilômetros, converta 800 m em 0,8 km. Depois some 0,8 + 1,4 = 2,2 km."
     },
     {
       "id": "mat-6-04",
@@ -2072,7 +2117,8 @@
           "id": "5",
           "label": "80 mm"
         }
-      ]
+      ],
+      "example": "Associe 3,2 m a 320 cm, pois 3,2 × 100 = 320."
     },
     {
       "id": "mat-6-05",
@@ -2111,7 +2157,8 @@
           "answer": "V",
           "why": "8 400 ÷ 1 000 = 8,4 km."
         }
-      ]
+      ],
+      "example": "A frase “0,7 km equivale a 70 m” é falsa. Como 1 km = 1 000 m, 0,7 km equivale a 700 m."
     },
     {
       "id": "mat-6-06",
@@ -2203,7 +2250,8 @@
             "8,8"
           ]
         }
-      ]
+      ],
+      "example": "Para a pista “extensão de um objeto de uma ponta à outra”, escreva COMPRIMENTO, uma letra por casa."
     },
     {
       "id": "mat-6-07",
@@ -2239,7 +2287,8 @@
           ],
           "why": "5,2 m = 520 cm. O corte usa 8 × 48 = 384 cm. Sobram 520 − 384 = 136 cm."
         }
-      ]
+      ],
+      "example": "Se uma fita mede 1,8 m e você tira três pedaços de 30 cm, comece convertendo para 180 cm. Sobram 180 − 3 × 30 = 90 cm."
     },
     {
       "id": "mat-6-08",
@@ -2275,7 +2324,378 @@
           ],
           "why": "1,75 km = 1 750 m e 48 000 cm = 480 m. Falta 1 750 − 620 − 480 = 650 m."
         }
-      ]
+      ],
+      "example": "De um caminho de 1,2 km, foram percorridos 350 m e mais 25 000 cm. Em metros, faltam 1 200 − 350 − 250 = 600 m."
+    },
+    {
+      "id": "mat-1-10",
+      "topic": 0,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Uma escola comprou 7 caixas de lápis, com 24 lápis em cada uma. Depois de distribuir 18 lápis para cada uma de 8 turmas, quantos sobraram?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "24"
+            },
+            {
+              "id": "b",
+              "label": "6"
+            },
+            {
+              "id": "c",
+              "label": "18"
+            },
+            {
+              "id": "d",
+              "label": "30"
+            },
+            {
+              "id": "e",
+              "label": "42"
+            }
+          ],
+          "why": "A escola comprou 7 × 24 = 168 lápis e distribuiu 8 × 18 = 144. Sobraram 168 − 144 = 24."
+        }
+      ],
+      "example": "Três caixas com 25 lápis somam 75. Se quatro grupos recebem 16 cada, sobram 75 − 4 × 16 = 11."
+    },
+    {
+      "id": "mat-2-09",
+      "topic": 1,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Quanto vale 3² + 24 ÷ (2 + 4) − √9?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "10"
+            },
+            {
+              "id": "b",
+              "label": "4"
+            },
+            {
+              "id": "c",
+              "label": "9"
+            },
+            {
+              "id": "d",
+              "label": "13"
+            },
+            {
+              "id": "e",
+              "label": "19"
+            }
+          ],
+          "why": "3² = 9, 2 + 4 = 6 e √9 = 3. Então 9 + 24 ÷ 6 − 3 = 10."
+        }
+      ],
+      "example": "Em 2³ + 18 ÷ (2 + 1) − √25, calcule 8 + 18 ÷ 3 − 5 = 9."
+    },
+    {
+      "id": "mat-2-10",
+      "topic": 1,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Quanto vale (√81 − 2²) × 3 + 2³?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "23"
+            },
+            {
+              "id": "b",
+              "label": "18"
+            },
+            {
+              "id": "c",
+              "label": "20"
+            },
+            {
+              "id": "d",
+              "label": "31"
+            },
+            {
+              "id": "e",
+              "label": "35"
+            }
+          ],
+          "why": "√81 = 9, 2² = 4 e 2³ = 8. Então (9 − 4) × 3 + 8 = 23."
+        }
+      ],
+      "example": "Em (√49 − 2²) × 2 + 3², calcule (7 − 4) × 2 + 9 = 15."
+    },
+    {
+      "id": "mat-3-09",
+      "topic": 2,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Bia leu 3/5 de um livro. Qual porcentagem do livro ela leu?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "60%"
+            },
+            {
+              "id": "b",
+              "label": "15%"
+            },
+            {
+              "id": "c",
+              "label": "35%"
+            },
+            {
+              "id": "d",
+              "label": "50%"
+            },
+            {
+              "id": "e",
+              "label": "75%"
+            }
+          ],
+          "why": "3/5 = 60/100, ou 60%."
+        }
+      ],
+      "example": "Ler 4/5 de um texto é ler 4 × 20 em cada 100 partes. Isso equivale a 80%."
+    },
+    {
+      "id": "mat-3-10",
+      "topic": 2,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Um jogo custa R$ 80,00 e está com desconto de 25%, que equivale a 1/4 do preço. Quanto custa com o desconto?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "R$ 60,00"
+            },
+            {
+              "id": "b",
+              "label": "R$ 20,00"
+            },
+            {
+              "id": "c",
+              "label": "R$ 55,00"
+            },
+            {
+              "id": "d",
+              "label": "R$ 65,00"
+            },
+            {
+              "id": "e",
+              "label": "R$ 75,00"
+            }
+          ],
+          "why": "Um quarto de R$ 80,00 é R$ 20,00. Depois do desconto, o jogo custa R$ 60,00."
+        }
+      ],
+      "example": "Um livro de R$ 50,00 com desconto de 10% fica R$ 5,00 mais barato. O preço final é R$ 45,00."
+    },
+    {
+      "id": "mat-4-10",
+      "topic": 3,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Em uma trilha, Caio caminhou 1,2 km pela manhã e mais 3/4 km à tarde. Qual foi a distância total?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "1,95 km"
+            },
+            {
+              "id": "b",
+              "label": "1,50 km"
+            },
+            {
+              "id": "c",
+              "label": "1,75 km"
+            },
+            {
+              "id": "d",
+              "label": "2,05 km"
+            },
+            {
+              "id": "e",
+              "label": "2,40 km"
+            }
+          ],
+          "why": "3/4 km = 0,75 km. Portanto, 1,20 km + 0,75 km = 1,95 km."
+        }
+      ],
+      "example": "Se você percorreu 0,6 km e depois mais 1/5 km, some 0,6 + 0,2 = 0,8 km."
+    },
+    {
+      "id": "mat-5-09",
+      "topic": 4,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Dois ângulos juntos formam um ângulo reto. Se um mede 37°, quanto mede o outro?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "53°"
+            },
+            {
+              "id": "b",
+              "label": "43°"
+            },
+            {
+              "id": "c",
+              "label": "47°"
+            },
+            {
+              "id": "d",
+              "label": "63°"
+            },
+            {
+              "id": "e",
+              "label": "143°"
+            }
+          ],
+          "why": "Um ângulo reto mede 90°. O outro mede 90° − 37° = 53°."
+        }
+      ],
+      "example": "Dois ângulos que formam um ângulo reto somam 90°. Se um mede 24°, o outro mede 66°."
+    },
+    {
+      "id": "mat-5-10",
+      "topic": 4,
+      "difficulty": "challenge",
+      "type": "choice",
+      "prompt": "Dois ângulos vizinhos formam um ângulo raso. O maior mede o triplo do menor. Quanto mede o menor?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "45°"
+            },
+            {
+              "id": "b",
+              "label": "30°"
+            },
+            {
+              "id": "c",
+              "label": "60°"
+            },
+            {
+              "id": "d",
+              "label": "90°"
+            },
+            {
+              "id": "e",
+              "label": "135°"
+            }
+          ],
+          "why": "O ângulo raso mede 180°. Juntos, os ângulos têm quatro partes iguais ao menor. 180° ÷ 4 = 45°."
+        }
+      ],
+      "example": "Num ângulo raso, se a parte maior é o dobro da menor, são três partes iguais à menor. Cada parte mede 180° ÷ 3 = 60°."
+    },
+    {
+      "id": "mat-6-09",
+      "topic": 5,
+      "difficulty": "easy",
+      "type": "choice",
+      "prompt": "Uma caneta mede 125 mm. Qual é seu comprimento em centímetros?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "12,5 cm"
+            },
+            {
+              "id": "b",
+              "label": "1,25 cm"
+            },
+            {
+              "id": "c",
+              "label": "10,5 cm"
+            },
+            {
+              "id": "d",
+              "label": "125 cm"
+            },
+            {
+              "id": "e",
+              "label": "1 250 cm"
+            }
+          ],
+          "why": "Cada centímetro tem 10 milímetros. Então 125 mm ÷ 10 = 12,5 cm."
+        }
+      ],
+      "example": "Como 10 mm = 1 cm, 83 mm equivalem a 83 ÷ 10 = 8,3 cm."
+    },
+    {
+      "id": "mat-6-10",
+      "topic": 5,
+      "difficulty": "medium",
+      "type": "choice",
+      "prompt": "Para uma maquete, Davi uniu uma fita de 2,4 m a outra de 35 cm, sem sobrepor as pontas. Qual é o comprimento total em centímetros?",
+      "items": [
+        {
+          "id": "1",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "label": "275 cm"
+            },
+            {
+              "id": "b",
+              "label": "59 cm"
+            },
+            {
+              "id": "c",
+              "label": "205 cm"
+            },
+            {
+              "id": "d",
+              "label": "240 cm"
+            },
+            {
+              "id": "e",
+              "label": "2 435 cm"
+            }
+          ],
+          "why": "2,4 m equivalem a 240 cm. Somando 35 cm, o comprimento total é 275 cm."
+        }
+      ],
+      "example": "Para somar uma fita de 1,6 m e uma de 28 cm, converta a primeira para 160 cm. Juntas somam 188 cm."
     }
   ]
 }

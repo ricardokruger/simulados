@@ -45,7 +45,7 @@ const Catalogo = (() => {
   }
 
   function attempts(entries, readSession) {
-    return entries.flatMap(entry => readSession(entry.id).history.flatMap(attempt => {
+    return entries.flatMap(entry => [...readSession(entry.id).history].reverse().flatMap(attempt => {
       const time = Date.parse(attempt.finishedAt);
       if (!Number.isFinite(time) || !Number.isInteger(attempt.units) || attempt.units < 0 || attempt.units > 50) return [];
       return [{ entry, attempt, time, score: attempt.units / 5 }];
@@ -54,6 +54,7 @@ const Catalogo = (() => {
 
   function route(hash) {
     if (!hash || hash === "#/" || hash === "#") return { type: "home" };
+    if (hash === "#/conquistas") return { type: "achievements" };
     const match = /^#\/simulado\/([a-z0-9-]+)(?:\/revisao\/([a-z0-9-]+))?$/.exec(hash);
     if (!match) return { type: "missing" };
     return { type: match[2] ? "review" : "quiz", entryId: match[1], attemptId: match[2] };
