@@ -14,6 +14,16 @@ O mapa mostra o avatar, o total de conquistas e o próximo equipamento. A galeri
 
 As questões têm um campo `example` com um exemplo resolvido, exibido em um painel recolhível antes das respostas. Para listening em uma avaliação de Inglês, use `subjectId: "ingles"` e `skill: "listening"` e omita o exemplo. A versão atual de Matemática inclui 60 questões. Mantenha pelo menos dez questões diferentes em cada tópico para que o domínio possa ser conquistado.
 
+## Números e temas
+
+Use vírgula nos decimais e ponto nos milhares, como em `1.234,56`. Nas respostas, digitar um inteiro sem agrupar os milhares também funciona. O corretor lê um ponto seguido por três algarismos como agrupamento, por exemplo, `1.234` equivale a `1234`.
+
+O seletor **Tema** no cabeçalho troca a aparência de todo o aplicativo e guarda a preferência neste navegador. Para incluir outro tema:
+
+1. Adicione um objeto com `id` e `label` à lista em `temas.js`.
+2. Em `estilos.css`, crie regras sob `:root[data-theme="seu-id"]` para as cores e seletores `[data-theme="seu-id"]` para detalhes visuais. O HTML resultante mantém os mesmos dados de tentativas.
+3. Rode `python3 gerar_html.py` para incorporar a alteração à versão autônoma.
+
 ## Cadastrar outra avaliação
 
 1. Crie um banco em `bancos/` seguindo a estrutura de `bancos/matematica.json`. Use um ID inédito por avaliação, inclusive quando ela for da mesma matéria. O banco e a entrada do catálogo usam o mesmo ID.

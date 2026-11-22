@@ -1,6 +1,6 @@
 {
   "id": "matematica-6-ano",
-  "version": 2,
+  "version": 3,
   "title": "Matemática",
   "topics": [
     "Operações com números naturais",
@@ -1968,7 +1968,7 @@
             },
             {
               "id": "d",
-              "label": "2 400 cm"
+              "label": "2.400 cm"
             },
             {
               "id": "e",
@@ -2002,8 +2002,8 @@
         {
           "id": "3",
           "label": "2 km em m",
-          "answer": "2000",
-          "why": "2 × 1 000 = 2 000 m."
+          "answer": "2.000",
+          "why": "2 × 1.000 = 2.000 m."
         },
         {
           "id": "4",
@@ -2013,12 +2013,12 @@
         },
         {
           "id": "5",
-          "label": "4500 m em km",
+          "label": "4.500 m em km",
           "answer": "4,5",
-          "why": "4 500 ÷ 1 000 = 4,5 km."
+          "why": "4.500 ÷ 1.000 = 4,5 km."
         }
       ],
-      "example": "Para converter 2,5 km em metros, calcule 2,5 × 1 000 = 2 500 m. Se o campo pede só o número, digite 2500."
+      "example": "Para converter 2,5 km em metros, calcule 2,5 × 1.000 = 2.500 m. Se o campo pede só o número, digite 2.500."
     },
     {
       "id": "mat-6-03",
@@ -2075,7 +2075,7 @@
           "id": "2",
           "label": "1,25 km",
           "answer": "2",
-          "why": "1,25 × 1 000 = 1 250 m."
+          "why": "1,25 × 1.000 = 1.250 m."
         },
         {
           "id": "3",
@@ -2093,7 +2093,7 @@
           "id": "5",
           "label": "0,08 m",
           "answer": "5",
-          "why": "0,08 × 1 000 = 80 mm."
+          "why": "0,08 × 1.000 = 80 mm."
         }
       ],
       "options": [
@@ -2103,7 +2103,7 @@
         },
         {
           "id": "2",
-          "label": "1 250 m"
+          "label": "1.250 m"
         },
         {
           "id": "3",
@@ -2137,7 +2137,7 @@
           "id": "2",
           "label": "0,45 km = 45 m.",
           "answer": "F",
-          "why": "0,45 × 1 000 = 450 m."
+          "why": "0,45 × 1.000 = 450 m."
         },
         {
           "id": "3",
@@ -2153,12 +2153,12 @@
         },
         {
           "id": "5",
-          "label": "8 400 m = 8,4 km.",
+          "label": "8.400 m = 8,4 km.",
           "answer": "V",
-          "why": "8 400 ÷ 1 000 = 8,4 km."
+          "why": "8.400 ÷ 1.000 = 8,4 km."
         }
       ],
-      "example": "A frase “0,7 km equivale a 70 m” é falsa. Como 1 km = 1 000 m, 0,7 km equivale a 700 m."
+      "example": "A frase “0,7 km equivale a 70 m” é falsa. Como 1 km = 1.000 m, 0,7 km equivale a 700 m."
     },
     {
       "id": "mat-6-06",
@@ -2184,7 +2184,7 @@
           "id": "2",
           "label": "Unidade de comprimento representada por km, no singular.",
           "answer": "QUILÔMETRO",
-          "why": "Um quilômetro tem 1 000 metros.",
+          "why": "Um quilômetro tem 1.000 metros.",
           "cells": [
             "16,1",
             "16,2",
@@ -2220,7 +2220,7 @@
           "id": "4",
           "label": "Unidade de comprimento representada por mm, no singular.",
           "answer": "MILÍMETRO",
-          "why": "Um milímetro equivale a 1/1 000 do metro.",
+          "why": "Um milímetro equivale a 1/1.000 do metro.",
           "cells": [
             "8,0",
             "8,1",
@@ -2295,7 +2295,7 @@
       "topic": 5,
       "difficulty": "challenge",
       "type": "choice",
-      "prompt": "Um percurso tem 1,75 km. Um estudante já andou 620 m e depois mais 48 000 cm. Quanto ainda falta, em metros?",
+      "prompt": "Um percurso tem 1,75 km. Um estudante já andou 620 m e depois mais 48.000 cm. Quanto ainda falta, em metros?",
       "items": [
         {
           "id": "1",
@@ -2315,17 +2315,17 @@
             },
             {
               "id": "d",
-              "label": "1 082 m"
+              "label": "1.082 m"
             },
             {
               "id": "e",
-              "label": "1 130 m"
+              "label": "1.130 m"
             }
           ],
-          "why": "1,75 km = 1 750 m e 48 000 cm = 480 m. Falta 1 750 − 620 − 480 = 650 m."
+          "why": "1,75 km = 1.750 m e 48.000 cm = 480 m. Falta 1.750 − 620 − 480 = 650 m."
         }
       ],
-      "example": "De um caminho de 1,2 km, foram percorridos 350 m e mais 25 000 cm. Em metros, faltam 1 200 − 350 − 250 = 600 m."
+      "example": "De um caminho de 1,2 km, foram percorridos 350 m e mais 25.000 cm. Em metros, faltam 1.200 − 350 − 250 = 600 m."
     },
     {
       "id": "mat-1-10",
@@ -2652,7 +2652,7 @@
             },
             {
               "id": "e",
-              "label": "1 250 cm"
+              "label": "1.250 cm"
             }
           ],
           "why": "Cada centímetro tem 10 milímetros. Então 125 mm ÷ 10 = 12,5 cm."
@@ -2689,7 +2689,7 @@
             },
             {
               "id": "e",
-              "label": "2 435 cm"
+              "label": "2.435 cm"
             }
           ],
           "why": "2,4 m equivalem a 240 cm. Somando 35 cm, o comprimento total é 275 cm."

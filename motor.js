@@ -105,18 +105,56 @@ const Simulado = (() => {
       .toUpperCase().trim();
   }
 
+  function integerDigits(value) {
+    if (!/^(?:\d+|\d{1,3}(?:\.\d{3})+)$/.test(value)) return null;
+    const digits = value.replaceAll(".", "");
+    return digits.length <= 30 ? digits : null;
+  }
+
   function rational(value) {
-    const clean = String(value ?? "").trim().replace(/−/g, "-");
-    const fraction = /^([+-]?\d{1,30})\s*\/\s*(\d{1,30})$/.exec(clean);
-    if (fraction && BigInt(fraction[2]) !== 0n) {
-      return [BigInt(fraction[1]), BigInt(fraction[2])];
+    let clean = String(value ?? "").trim().replace(/−/g, "-");
+    const sign = clean.startsWith("-") ? -1n : 1n;
+    if (/^[+-]/.test(clean)) clean = clean.slice(1);
+    const [numerator, denominator, extra] = clean.split("/");
+    if (extra !== undefined) return null;
+    if (denominator !== undefined) {
+      const top = integerDigits(numerator.trim());
+      const bottom = integerDigits(denominator.trim());
+      if (top === null || bottom === null || BigInt(bottom) === 0n) return null;
+      return [sign * BigInt(top), BigInt(bottom)];
     }
-    const decimal = /^([+-]?)(\d{1,30})(?:[,.](\d{1,30}))?$/.exec(clean);
-    if (!decimal) return null;
+
+    const [whole, fraction, extraDecimal] = clean.split(",");
+    const digits = integerDigits(whole);
+    if (digits === null || extraDecimal !== undefined ||
+        (fraction !== undefined && !/^\d{1,30}$/.test(fraction))) return null;
     return [
-      BigInt(decimal[1] + decimal[2] + (decimal[3] ?? "")),
-      10n ** BigInt(decimal[3]?.length ?? 0),
+      sign * BigInt(digits + (fraction ?? "")),
+      10n ** BigInt(fraction?.length ?? 0),
     ];
+  }
+
+  function groupInteger(value) {
+    return value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+
+  function brazilianText(value) {
+    return value.replace(/(?<![\p{L}\p{N}.,])(?:\d{1,3}(?:[ \u00a0\u202f]\d{3})+|\d{4,})(?:,\d+)?(?![\p{L}\p{N}]|[.,]\d)/gu,
+      match => {
+        const [whole, fraction] = match.split(",");
+        const grouped = groupInteger(whole.replace(/\s/g, ""));
+        return fraction === undefined ? grouped : grouped + "," + fraction;
+      });
+  }
+
+  function brazilianAnswer(value) {
+    if (rational(value) === null) return value;
+    return value.trim().split("/").map(part => brazilianText(part.trim())).join("/");
+  }
+
+  function legacyDecimal(value) {
+    const text = String(value ?? "");
+    return /^[+−-]?\d+\.\d+$/.test(text.trim()) ? text.replace(".", ",") : text;
   }
 
   function equivalent(given, expected) {
@@ -167,7 +205,8 @@ const Simulado = (() => {
     return { units, parts };
   }
 
-  return { selectQuestions, signature, normalizeWord, equivalent, complete, grade };
+  return { selectQuestions, signature, normalizeWord, equivalent, complete, grade,
+    brazilianText, brazilianAnswer, legacyDecimal, isNumeric: value => rational(value) !== null };
 })();
 
 if (typeof module !== "undefined") module.exports = Simulado;

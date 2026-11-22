@@ -6,7 +6,7 @@ const notice = document.querySelector("#notice");
 const scratchWidth = 13;
 const scratchHeight = 8;
 const booleanOptions = [{ id: "V", label: "Verdadeiro" }, { id: "F", label: "Falso" }];
-const points = new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 1 });
+const points = new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 1, useGrouping: true });
 const date = new Intl.DateTimeFormat("pt-BR", { dateStyle: "short", timeStyle: "short" });
 let bank;
 let entry;
@@ -96,6 +96,7 @@ function start() {
     session.active = {
       id: globalThis.crypto?.randomUUID?.() ?? Date.now() + "-" + Math.random().toString(36).slice(2),
       bankVersion: bank.version,
+      numberNotation: "pt-BR",
       topics: [...bank.topics],
       position: 0,
       questions: selection.questions,
@@ -112,6 +113,25 @@ function start() {
 
 function countComplete(attempt) {
   return attempt.questions.filter(q => Simulado.complete(q, attempt.answers[q.id])).length;
+}
+
+function studyText(value) {
+  return entry.subjectId === "matematica" ? Simulado.brazilianText(String(value ?? "")) : value;
+}
+
+function migrateDraftNumbers(attempt) {
+  if (attempt.numberNotation === "pt-BR") return;
+  for (const question of attempt.questions) {
+    if (question.type !== "fill") continue;
+    const answers = attempt.answers[question.id];
+    for (const item of question.items) {
+      if (typeof answers?.[item.id] === "string" && Simulado.isNumeric(item.answer)) {
+        answers[item.id] = Simulado.brazilianAnswer(Simulado.legacyDecimal(answers[item.id]));
+      }
+    }
+  }
+  attempt.numberNotation = "pt-BR";
+  save();
 }
 
 function renderQuestion() {
@@ -158,8 +178,8 @@ function renderQuestion() {
 
   const card = make("section", { className: "section question-card" },
     text("p", (attempt.topics ?? bank.topics)[question.topic], "kicker"),
-    text("h2", question.prompt, "question-heading"),
-    question.passage ? text("p", question.passage, "passage") : null,
+    text("h2", studyText(question.prompt), "question-heading"),
+    question.passage ? text("p", studyText(question.passage), "passage") : null,
     ...questionMedia(question),
     questionExample(question),
     renderAnswer(question, answer, () => {
@@ -200,31 +220,52 @@ function renderAnswer(q, answers, commit) {
     if (q.type === "choice" || q.type === "boolean") {
       const options = item.options ?? booleanOptions;
       const group = q.type === "boolean"
-        ? make("fieldset", { className: "boolean" }, text("legend", number + item.label))
+        ? make("fieldset", { className: "boolean" }, text("legend", number + studyText(item.label)))
         : form;
       for (const option of options) {
         const radio = make("input", { type: "radio", name: q.id + "-" + item.id,
           value: option.id, checked: value === option.id });
         radio.addEventListener("change", () => update(radio.value));
-        group.append(make("label", { className: "choice" }, radio, text("span", option.label)));
+        group.append(make("label", { className: "choice" }, radio, text("span", studyText(option.label))));
       }
       if (group !== form) form.append(group);
       return;
     }
 
     let field;
+    let hint;
     if (q.type === "match") {
       field = make("select", {},
         make("option", { value: "", textContent: "Selecione" }),
-        q.options.map(option => make("option", { value: option.id, textContent: option.label })));
+        q.options.map(option => make("option", { value: option.id, textContent: studyText(option.label) })));
       field.value = value;
       selects.push(field);
       field.addEventListener("change", () => update(field.value));
     } else {
       field = make("input", { value, type: "text", maxLength: 24, autocomplete: "off", spellcheck: false });
-      field.addEventListener("input", () => update(field.value));
+      field.addEventListener("input", () => {
+        if (hint) hint.hidden = true;
+        update(field.value);
+      });
+      if (Simulado.isNumeric(item.answer)) {
+        hint = text("span", "Use vírgula nos decimais e ponto nos milhares, como em 1.234,56.", "numeric-hint");
+        hint.id = q.id + "-numeric-hint-" + item.id;
+        hint.hidden = true;
+        hint.setAttribute("role", "status");
+        field.setAttribute("aria-describedby", hint.id);
+        field.addEventListener("blur", () => {
+          hint.hidden = !field.value.trim() || Simulado.isNumeric(field.value);
+          if (hint.hidden) {
+            const formatted = Simulado.brazilianAnswer(field.value);
+            if (formatted !== field.value) {
+              field.value = formatted;
+              update(field.value);
+            }
+          }
+        });
+      }
     }
-    form.append(make("label", { className: "short-answer" }, text("span", number + item.label), field));
+    form.append(make("label", { className: "short-answer" }, text("span", number + studyText(item.label)), field, hint));
   });
   updateSelects();
   return form;
@@ -367,7 +408,7 @@ function scratchBoard(scratch, editable, onChange) {
   }
 
   const tools = make("div", { className: "toolbar scratch-tools" },
-    [",", "+", "−", "×", "÷", "/", "="].map(symbol => button(symbol, () => {
+    [",", ".", "+", "−", "×", "÷", "/", "="].map(symbol => button(symbol, () => {
       changeCell(selected, symbol);
       move(selected % scratchWidth === scratchWidth - 1 ? selected : selected + 1);
     })),
@@ -460,18 +501,22 @@ function renderReview(attempt, celebrate = false) {
     const result = attempt.results[index];
     const section = make("section", { className: "section" },
       text("p", "Questão " + (index + 1) + " · " + points.format(result.units / 5) + " de 1 ponto", "kicker"),
-      text("h2", q.prompt),
-      q.passage ? text("p", q.passage, "passage") : null,
+      text("h2", studyText(q.prompt)),
+      q.passage ? text("p", studyText(q.passage), "passage") : null,
       ...questionMedia(q, true),
       questionExample(q));
     const parts = make("ol", { className: "review-list" });
-    for (const part of result.parts) {
+    for (const [itemIndex, part] of result.parts.entries()) {
+      const legacyFill = q.type === "fill" && attempt.numberNotation !== "pt-BR" &&
+        Simulado.isNumeric(q.items[itemIndex]?.answer);
+      const given = legacyFill ? Simulado.brazilianAnswer(Simulado.legacyDecimal(part.given)) :
+        studyText(part.given);
       const entry = make("li", { className: "review-item" },
-        part.label ? text("b", part.label) : null,
+        part.label ? text("b", studyText(part.label)) : null,
         text("b", part.correct ? "Correto" : "Incorreto", part.correct ? "correct" : "incorrect"),
-        text("div", "Sua resposta: " + part.given),
-        text("div", "Gabarito: " + part.expected),
-        text("div", part.why, "muted"));
+        text("div", "Sua resposta: " + given),
+        text("div", "Gabarito: " + studyText(part.expected)),
+        text("div", studyText(part.why), "muted"));
       parts.append(entry);
     }
     const scratch = attempt.scratch[q.id];
@@ -519,7 +564,7 @@ function questionExample(question) {
   if (listeningQuestion(question)) return null;
   const sample = question.example ?? banks.get(entry.id)?.questions.find(candidate => candidate.id === question.id)?.example;
   return sample ? make("details", { className: "question-example" },
-    text("summary", "Ver exemplo resolvido"), text("p", sample)) : null;
+    text("summary", "Ver exemplo resolvido"), text("p", studyText(sample))) : null;
 }
 
 function drawDiagram(diagram) {
@@ -676,8 +721,10 @@ async function followRoute(initial = false) {
     bank = selectedBank;
     session = selectedSession;
     document.title = entry.subject + " · Mapa de Estudos";
-    if (session.active) renderQuestion();
-    else start();
+    if (session.active) {
+      migrateDraftNumbers(session.active);
+      renderQuestion();
+    } else start();
   } catch {
     if (visit === routeVersion) {
       showRouteError("Banco indisponível", "Confira o arquivo cadastrado para esta avaliação e tente novamente.");

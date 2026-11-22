@@ -4,26 +4,26 @@ function earnedAchievements() {
   return Conquistas.calculate(Catalogo.attempts(catalog, readSession));
 }
 
-function sprite(sheet, sourceWidth, sourceHeight, left, top, width, height) {
+function sprite(sheet, sourceWidth, sourceHeight, left, top, width, height, alternate) {
   const frame = make("span", { className: "sprite-frame" });
-  frame.style.aspectRatio = width + " / " + height;
+  frame.style.setProperty("--sprite-ratio", width + " / " + height);
   frame.setAttribute("aria-hidden", "true");
   const img = art(sheet, "sprite-image");
   img.style.width = 100 * sourceWidth / width + "%";
   img.style.height = 100 * sourceHeight / height + "%";
   img.style.left = -100 * left / width + "%";
   img.style.top = -100 * top / height + "%";
-  frame.append(img);
+  frame.append(img, text("span", alternate, "classic-emblem"));
   return frame;
 }
 
 function badgeSprite(index) {
   const row = index < 5 ? 24 : 398;
-  return sprite("emblemas", 1983, 793, [38, 427, 812, 1190, 1560][index % 5], row, 355, 310);
+  return sprite("emblemas", 1983, 793, [38, 427, 812, 1190, 1560][index % 5], row, 355, 310, ["↗", "★", "↶", "◇", "✓", "≡", "▤", "⋯", "⌖", "▦"][index]);
 }
 
 function avatarSprite(index) {
-  return sprite("cartografo", 1774, 887, [16, 364, 699, 1045, 1402][index], 97, 330, 647);
+  return sprite("cartografo", 1774, 887, [16, 364, 699, 1045, 1402][index], 97, 330, 647, String(index + 1));
 }
 
 function avatarGoal(status, count) {
@@ -38,7 +38,7 @@ function avatarPanel(data, detailed = false) {
   const status = data.avatar;
   return make("section", { className: "avatar-panel" }, avatarSprite(status.index),
     make("div", {}, text("h2", status.name),
-      text("p", counts === 1 ? "1 conquista" : counts + " conquistas", "avatar-count"),
+      text("p", counts === 1 ? "1 conquista" : points.format(counts) + " conquistas", "avatar-count"),
       text("p", avatarGoal(status, counts), "muted"),
       detailed ? null : link("Ver conquistas", "#/conquistas")));
 }

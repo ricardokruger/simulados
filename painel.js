@@ -96,7 +96,9 @@ function assessmentList(entries, invalid) {
   const list = make("ul", { className: "assessment-list" });
   for (const entry of entries) {
     const active = readSession(entry.id).active;
-    const icon = entry.subjectId === "matematica" ? art("regua", "subject-icon") :
+    const icon = entry.subjectId === "matematica" ?
+      make("span", { className: "subject-icon themed-subject" }, art("regua", "subject-icon"),
+        text("span", "∑", "subject-icon subject-letter classic-subject")) :
       text("span", entry.subject.slice(0, 1), "subject-icon subject-letter");
     icon.setAttribute("aria-hidden", "true");
     const action = link(active ? "Continuar" : "Começar", quizPath(entry), "primary");
