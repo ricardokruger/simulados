@@ -9,8 +9,34 @@ const booleanOptions = [{ id: "V", label: "Verdadeiro" }, { id: "F", label: "Fal
 const points = new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 1 });
 const date = new Intl.DateTimeFormat("pt-BR", { dateStyle: "short", timeStyle: "short" });
 let bank;
-let key;
-let session = { active: null, history: [] };
+let entry;
+let session;
+let inlineData;
+let catalog = [];
+let routeVersion = 0;
+const sessions = new Map();
+const banks = new Map();
+
+function storageKey(id) {
+  return "simulados-escolares:v1:" + id;
+}
+
+function readSession(id) {
+  if (sessions.has(id)) return sessions.get(id);
+  let state = { active: null, history: [] };
+  try {
+    const stored = localStorage.getItem(storageKey(id));
+    if (stored) {
+      const data = JSON.parse(stored);
+      if (!Array.isArray(data?.history)) throw new Error("Histórico inválido.");
+      state = { active: data.active ?? null, history: data.history };
+    }
+  } catch {
+    console.warn("Histórico local indisponível para", id);
+  }
+  sessions.set(id, state);
+  return state;
+}
 
 function make(tag, properties = {}, ...children) {
   const element = document.createElement(tag);
@@ -38,8 +64,9 @@ function alertMessage(value) {
 
 function save(nextSession = session) {
   try {
-    localStorage.setItem(key, JSON.stringify(nextSession));
+    localStorage.setItem(storageKey(entry.id), JSON.stringify(nextSession));
     session = nextSession;
+    sessions.set(entry.id, session);
     alertMessage("");
     return true;
   } catch {
@@ -50,6 +77,7 @@ function save(nextSession = session) {
 
 function show(content, mainPage = false, focus = true) {
   home.hidden = mainPage;
+  if (!mainPage) disconnectChart();
   app.setAttribute("aria-busy", "false");
   app.replaceChildren(content);
   if (focus) {
@@ -67,6 +95,7 @@ function start() {
     session.active = {
       id: globalThis.crypto?.randomUUID?.() ?? Date.now() + "-" + Math.random().toString(36).slice(2),
       bankVersion: bank.version,
+      topics: [...bank.topics],
       position: 0,
       questions: selection.questions,
       answers: {},
@@ -76,32 +105,8 @@ function start() {
     if (selection.limited) alertMessage("O banco oferece apenas um conjunto disponível para a seleção atual.");
     renderQuestion();
   } catch (error) {
-    alertMessage(error.message);
+    showRouteError("Não foi possível iniciar", error.message);
   }
-}
-
-function renderHome(focus = true) {
-  const active = session.active;
-  const hero = make("section", { className: "hero" },
-    text("h1", "Simulado de Matemática"),
-    text("p", "Resolva 10 questões com os seis tópicos da avaliação. Use a folha quadriculada para fazer as contas e confira a resolução depois de finalizar."),
-    active
-      ? button("Continuar tentativa", renderQuestion, "primary")
-      : button(session.history.length ? "Começar nova tentativa" : "Começar simulado", start, "primary"));
-  if (active) hero.append(text("p", countComplete(active) + " de 10 questões respondidas", "active-progress"));
-  const topics = make("section", { className: "section" },
-    text("h2", "Tópicos da avaliação"),
-    make("ol", { className: "topics" }, bank.topics.map(topic => text("li", topic))));
-  const history = make("section", { className: "section" }, text("h2", "Histórico"));
-  if (!session.history.length) {
-    history.append(text("p", "As tentativas salvas aparecem aqui.", "muted"));
-  } else {
-    history.append(make("div", { className: "history-list" }, session.history.map(attempt =>
-      make("div", { className: "history-row" },
-        text("span", date.format(new Date(attempt.finishedAt)) + " · Nota " + points.format(attempt.units / 5) + " de 10"),
-        button("Ver revisão", () => renderReview(attempt))))));
-  }
-  show(make("div", {}, hero, topics, history), true, focus);
 }
 
 function countComplete(attempt) {
@@ -110,7 +115,7 @@ function countComplete(attempt) {
 
 function renderQuestion() {
   const attempt = session.active;
-  if (!attempt) return renderHome();
+  if (!attempt) return renderDashboard();
   const question = attempt.questions[attempt.position];
   const answer = attempt.answers[question.id] ??= {};
   function go(position) {
@@ -151,17 +156,19 @@ function renderQuestion() {
   }
 
   const card = make("section", { className: "section question-card" },
-    text("p", bank.topics[question.topic], "kicker"),
+    text("p", (attempt.topics ?? bank.topics)[question.topic], "kicker"),
     text("h2", question.prompt, "question-heading"),
     question.passage ? text("p", question.passage, "passage") : null,
-    question.diagram ? drawDiagram(question.diagram) : null,
+    ...questionMedia(question),
     renderAnswer(question, answer, () => {
       save();
       refreshProgress();
     }),
-    renderScratch(attempt, question));
-  show(make("div", {},
-    make("div", { className: "status" }, text("h1", "Questão " + (attempt.position + 1) + " de 10"), count),
+    entry.scratchpad ? renderScratch(attempt, question) : null);
+  show(make("div", { className: "quiz-page" },
+    make("div", { className: "quiz-header" }, text("h1", entry.subject),
+      text("p", entry.title, "muted")),
+    make("div", { className: "status" }, text("strong", "Questão " + (attempt.position + 1) + " de 10"), count),
     progress, nav, card,
     make("div", { className: "toolbar footer-actions" }, make("div", { className: "toolbar" }, previous, next), final)));
   refreshProgress();
@@ -415,6 +422,14 @@ function confirmFinish(attempt) {
       const next = { active: null, history: [finished, ...session.history.filter(entry => entry.id !== attempt.id)] };
       if (save(next)) {
         box.close();
+        const href = reviewPath(entry, finished);
+        try {
+          history.replaceState(null, "", href);
+        } catch {
+          location.replace(href);
+          return;
+        }
+        document.title = "Revisão · " + entry.subject + " · Mapa de Estudos";
         renderReview(finished);
       } else {
         box.querySelector(".save-error").hidden = false;
@@ -442,7 +457,7 @@ function renderReview(attempt) {
       text("p", "Questão " + (index + 1) + " · " + points.format(result.units / 5) + " de 1 ponto", "kicker"),
       text("h2", q.prompt),
       q.passage ? text("p", q.passage, "passage") : null,
-      q.diagram ? drawDiagram(q.diagram) : null);
+      ...questionMedia(q, true));
     const parts = make("ol", { className: "review-list" });
     for (const part of result.parts) {
       const entry = make("li", { className: "review-item" },
@@ -461,11 +476,11 @@ function renderReview(attempt) {
     }
     body.append(section);
   });
-  body.append(button("Voltar ao início", () => renderHome(), "primary"));
+  body.classList.add("quiz-page", "review-page");
+  body.append(make("div", { className: "toolbar" },
+    link("Voltar ao mapa", "#/"), link("Fazer outra tentativa", quizPath(entry), "primary")));
   show(body);
 }
-
-home.addEventListener("click", () => renderHome());
 
 function drawDiagram(diagram) {
   const width = 420, height = diagram.kind === "full" ? 264 : 212;
@@ -525,26 +540,109 @@ function drawDiagram(diagram) {
   return canvas;
 }
 
+function questionMedia(question, reviewing = false) {
+  const elements = [];
+  if (question.diagram) elements.push(drawDiagram(question.diagram));
+  if (question.image) elements.push(make("img", {
+    src: inlineData?.media?.[question.image.src] ?? question.image.src, alt: question.image.alt, className: "stimulus-image",
+  }));
+  if (question.audio) {
+    const player = make("audio", { src: inlineData?.media?.[question.audio.src] ?? question.audio.src, controls: true, preload: "metadata" });
+    player.setAttribute("aria-label", "Áudio da questão");
+    elements.push(player);
+    if (reviewing && question.audio.transcript) {
+      elements.push(make("details", { className: "transcript" },
+        text("summary", "Transcrição"), text("p", question.audio.transcript)));
+    }
+  }
+  return elements;
+}
+
+async function jsonFile(path) {
+  const response = await fetch(path);
+  if (!response.ok) throw new Error("Não foi possível carregar " + path);
+  return await response.json();
+}
+
+async function fetchBank(entry) {
+  if (banks.has(entry.id)) return banks.get(entry.id);
+  const value = inlineData ? inlineData.banks[entry.id] : await jsonFile(entry.bankPath);
+  if (value?.id !== entry.id || !Array.isArray(value.topics) || !value.topics.length ||
+      value.topics.length > 10 || !Array.isArray(value.questions)) {
+    throw new Error("O banco de questões não corresponde a esta avaliação.");
+  }
+  banks.set(entry.id, value);
+  return value;
+}
+
+function showRouteError(title, message) {
+  show(make("section", { className: "section quiz-page" }, text("h1", title), text("p", message),
+    link("Voltar ao mapa", "#/")));
+}
+
+async function followRoute(initial = false) {
+  const visit = ++routeVersion;
+  const route = Catalogo.route(location.hash);
+  alertMessage("");
+  if (route.type === "home") {
+    document.title = "Mapa de Estudos";
+    renderDashboard(!initial);
+    return;
+  }
+
+  const selected = catalog.find(item => item.id === route.entryId);
+  if (!selected) {
+    showRouteError("Avaliação indisponível", "Esta avaliação não está no catálogo.");
+    return;
+  }
+
+  const selectedSession = readSession(selected.id);
+  const saved = route.type === "review"
+    ? selectedSession.history.find(attempt => attempt.id === route.attemptId)
+    : null;
+  if (route.type === "review" && !saved) {
+    showRouteError("Revisão indisponível", "Esta tentativa não está salva neste navegador.");
+    return;
+  }
+
+  if (saved) {
+    entry = selected;
+    session = selectedSession;
+    document.title = "Revisão · " + entry.subject + " · Mapa de Estudos";
+    renderReview(saved);
+    return;
+  }
+
+  disconnectChart();
+  home.hidden = false;
+  app.setAttribute("aria-busy", "true");
+  app.replaceChildren(text("p", "Carregando " + selected.subject + "…"));
+  try {
+    const selectedBank = await fetchBank(selected);
+    if (visit !== routeVersion) return;
+    entry = selected;
+    bank = selectedBank;
+    session = selectedSession;
+    document.title = entry.subject + " · Mapa de Estudos";
+    if (session.active) renderQuestion();
+    else start();
+  } catch {
+    if (visit === routeVersion) {
+      showRouteError("Banco indisponível", "Confira o arquivo cadastrado para esta avaliação e tente novamente.");
+    }
+  }
+}
+
 async function boot() {
   try {
-    const embedded = document.querySelector("#bank-data");
-    if (embedded) bank = JSON.parse(embedded.textContent);
-    else {
-      const response = await fetch("./bancos/matematica.json");
-      if (!response.ok) throw new Error("O banco retornou " + response.status + ".");
-      bank = await response.json();
-    }
-    key = "simulados-escolares:v1:" + bank.id;
-    try {
-      const previous = localStorage.getItem(key);
-      if (previous) session = JSON.parse(previous);
-    } catch {
-      alertMessage("O histórico local não pôde ser aberto neste navegador.");
-    }
-    renderHome(false);
+    const embedded = document.querySelector("#map-data");
+    inlineData = embedded ? JSON.parse(embedded.textContent) : null;
+    catalog = Catalogo.validate(inlineData ? inlineData.catalog : await jsonFile("./catalogo.json"));
+    window.addEventListener("hashchange", () => followRoute());
+    await followRoute(true);
   } catch {
-    show(make("section", { className: "section" }, text("h1", "Não foi possível carregar o simulado"),
-      text("p", "Abra o HTML autônomo ou sirva a pasta completa por HTTP. O arquivo do banco precisa estar em bancos/matematica.json.")), true);
+    show(make("section", { className: "section" }, text("h1", "Não foi possível carregar as avaliações"),
+      text("p", "Abra o HTML autônomo ou sirva a pasta completa por HTTP. O catálogo precisa estar junto ao index.html.")), true);
   }
 }
 

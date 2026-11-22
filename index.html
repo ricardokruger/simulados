@@ -3,20 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#f5f7f2">
-  <title>Simulado de Matemática · 6º ano</title>
+  <meta name="theme-color" content="#f7f1e3">
+  <meta name="color-scheme" content="only light">
+  <title>Mapa de Estudos</title>
   <link rel="stylesheet" href="./estilos.css">
   <script defer src="./motor.js"></script>
+  <script defer src="./catalogo.js"></script>
+  <script defer src="./painel.js"></script>
   <script defer src="./app.js"></script>
 </head>
 <body>
   <header class="masthead">
     <div class="shell masthead-inner">
-      <div class="brand"><span class="brand-icon" aria-hidden="true">×</span><span>Matemática <small>6º ano</small></span></div>
-      <button class="button outline" id="home" type="button" hidden>Início</button>
+      <a class="brand" href="#/" aria-label="Mapa de Estudos, página inicial">
+        <img src="./arte/mochila.png" alt="" width="32" height="32">
+        <span>Mapa de Estudos</span>
+      </a>
+      <a class="back-link" id="home" href="#/" hidden>← Avaliações</a>
     </div>
   </header>
-  <main class="shell" id="app" aria-busy="true"><p>Carregando o simulado…</p></main>
+  <main class="shell" id="app" aria-busy="true"><p>Carregando avaliações…</p></main>
   <div id="notice" class="notice shell" role="status" hidden></div>
 </body>
 </html>

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "assessments": [
+    {
+      "id": "matematica-6-ano",
+      "subjectId": "matematica",
+      "subject": "Matemática",
+      "title": "Operações, frações e medidas",
+      "grade": "6º ano",
+      "period": null,
+      "examDate": null,
+      "addedAt": "2026-11-21",
+      "bankPath": "./bancos/matematica.json",
+      "scratchpad": true
+    }
+  ]
+}

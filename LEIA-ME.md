@@ -1,25 +1,23 @@
-# Simulado de Matemática · 6º ano
+# Mapa de Estudos
 
-O aplicativo usa HTML, CSS e JavaScript e contém 50 questões originais em seis tópicos. Em cada tentativa, o banco fornece 10 questões: três fáceis, cinco médias e duas de desafio. Cada tentativa cobre os seis tópicos. O banco inclui múltipla escolha, verdadeiro ou falso, lacunas, associação e cruzadinhas, além de questões que pedem interpretação de textos ou diagramas de ângulos. Cada questão vale 1 ponto. Em questões de cinco itens, cada acerto vale 0,2 ponto.
+Aplicativo estático com uma página inicial de avaliações, uma tela própria para cada simulado e uma tela de revisão. Matemática começa com 50 questões do 6º ano. Cada tentativa usa 10 questões e cobre os seis tópicos da avaliação. A grade de Matemática salva o rascunho por questão e por tentativa.
 
-| Tópico | Questões |
-| --- | ---: |
-| Operações com números naturais | 9 |
-| Expressões numéricas | 8 |
-| Frações e porcentagens | 8 |
-| Operações com números racionais | 9 |
-| Medidas de ângulos | 8 |
-| Unidades de comprimento | 8 |
+## Acompanhar as notas
 
-## Usar e testar
+Os filtros da página inicial combinam matéria e data da prova escolar. Os limites de data são inclusivos. Uma avaliação com data desconhecida aparece quando o intervalo está vazio. O eixo horizontal do gráfico usa a data em que cada tentativa foi concluída. A tabela abaixo do gráfico apresenta os mesmos registros e dá acesso às revisões.
 
-- Em **Rascunho da conta**, digite na grade. As setas movem o cursor. **Linha** marca uma linha horizontal abaixo da célula selecionada. As contas são salvas por questão e aparecem na revisão.
-- Cada tentativa só pode ser finalizada depois que as dez questões estiverem completas. A revisão reúne a nota, as respostas, o gabarito e as explicações.
-- O histórico e o rascunho ficam no navegador e no endereço usados. Use a mesma origem e o mesmo perfil do navegador para continuar. Para teste local, abra um terminal na pasta descompactada, execute `python3 -m http.server 8000` e acesse http://localhost:8000. No Windows, use `python -m http.server 8000`.
-- Há também uma edição HTML autônoma, distribuída separadamente. A persistência ao abrir um arquivo diretamente depende do navegador. A edição servida por HTTP ou HTTPS é a opção para manter um histórico no mesmo endereço.
+O histórico é local. O Mapa mantém a chave do simulado de Matemática original. Substitua a versão antiga no mesmo endereço e use o mesmo navegador para reaproveitar tentativas e rascunhos. O navegador mantém armazenamentos diferentes entre endereços diferentes e pode tratar arquivos abertos diretamente como armazenamentos distintos.
 
-## GitHub Pages
+## Cadastrar outra avaliação
 
-Coloque os arquivos descompactados na raiz da origem de publicação escolhida para o GitHub Pages, como a raiz do branch ou a pasta `docs`. Preserve a pasta `bancos/` junto ao `index.html`. O site carrega o banco por um caminho relativo, inclusive quando publicado no subdiretório de um repositório. Os diagramas são desenhados no navegador a partir do JSON.
+1. Crie um banco em `bancos/` seguindo a estrutura de `bancos/matematica.json`. Use um ID inédito por avaliação, inclusive quando ela for da mesma matéria. O banco e a entrada do catálogo usam o mesmo ID.
+2. Adicione uma entrada em `catalogo.json`. `subjectId` agrupa períodos da mesma matéria. `title` e `grade` identificam a avaliação. `period` é uma descrição como “2026 · 3º trimestre”. `examDate` e `addedAt` usam AAAA-MM-DD. Campos desconhecidos de período e data da prova recebem `null`. Use `scratchpad: true` para oferecer a grade.
+3. Teste a nova entrada, a abertura do simulado, os filtros e o gráfico após uma tentativa. Para imagens e áudios, use caminhos relativos a partir de `./` e inclua os arquivos no site. Formatos de resposta aceitos incluem escolha, verdadeiro/falso, lacunas, associação e cruzadinha. O motor usa bancos com até dez tópicos e sorteia dez questões por tentativa.
 
-A estrutura é `index.html` para a página, `estilos.css` para a interface, `motor.js` para sorteio e correção, `app.js` para interação e persistência e `bancos/matematica.json` para o conteúdo. O aplicativo efetua a correção no navegador. Os gabaritos fazem parte do JSON publicado.
+## Testar e publicar
+
+Descompacte o pacote e execute `python3 -m http.server 8000` na pasta do `index.html` (no Windows, `python -m http.server 8000`). Abra http://localhost:8000 no navegador. A edição HTML autônoma pode ser aberta diretamente. Se o navegador bloquear o armazenamento de arquivos locais, use a versão servida por HTTP.
+
+Para publicar no GitHub Pages, mantenha os arquivos e pastas juntos na origem de publicação escolhida. O site usa rotas com fragmento, como `#/simulado/matematica-6-ano`, e não requer regras de redirecionamento. O catálogo e os bancos JSON usam caminhos relativos, inclusive quando a publicação está no subdiretório de um repositório.
+
+Para gerar novamente a edição autônoma, execute `python3 gerar_html.py`. O script incorpora catálogo, bancos, imagens e áudios locais cadastrados nas questões. Arte em pixel da interface incluída no pacote.

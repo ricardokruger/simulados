@@ -22,7 +22,7 @@ const Simulado = (() => {
   function traits(q, topicCount) {
     const topic = 1 << q.topic;
     const format = 1 << (topicCount + formats.indexOf(q.type));
-    const visual = q.diagram ? 1 << (topicCount + formats.length) : 0;
+    const visual = (q.diagram || q.image) ? 1 << (topicCount + formats.length) : 0;
     const reading = q.passage ? 1 << (topicCount + formats.length + 1) : 0;
     return topic | format | visual | reading;
   }
@@ -80,7 +80,7 @@ const Simulado = (() => {
     }
 
     if (n < 10 || (remainingTraits[0] & topicMask) !== topicMask) {
-      throw new Error("O banco precisa de pelo menos 10 questões e deve cobrir os seis tópicos.");
+      throw new Error("O banco precisa de pelo menos 10 questões e deve cobrir todos os tópicos cadastrados.");
     }
     const varied = pick(full, true) ?? pick(topicMask, true);
     const chosen = varied ?? pick(full, false) ?? pick(topicMask, false);
@@ -149,7 +149,11 @@ const Simulado = (() => {
     const parts = question.items.map(item => {
       const answer = answerFor(question, answers, item);
       let correct = answer === item.answer;
-      if (question.type === "fill") correct = equivalent(answer, item.answer);
+      if (question.type === "fill") {
+        const word = value => String(value ?? "").trim().replace(/\s+/g, " ").normalize("NFC").toLocaleLowerCase("pt-BR");
+        correct = [item.answer, ...(item.accepted ?? [])].some(expected =>
+          rational(expected) ? equivalent(answer, expected) : word(answer) === word(expected));
+      }
       if (question.type === "crossword") correct = normalizeWord(answer) === normalizeWord(item.answer);
       return {
         label: item.label,
